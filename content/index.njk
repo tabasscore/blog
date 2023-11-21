@@ -1,0 +1,32 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: Accueil
+  order: 1
+numberOfLatestPostsToShow: 3
+---
+<h1>Les clefs du <i>narrative design</i> 🎮</h1>
+<p>Vous aimez quand un jeu vdiéo a une bonne narration ? Vous vous demandez parfois comment tout cela fonctionne ? Ou pire : vous écrivez peut-être vous-même des jeux ? </p>
+<p>Sur ce site, vous trouverez des <a href="/blog/">articles</a> d'analyse et de réflexion sur le narrative design dans les jeux vidéo. Avec mon expérience en tant qu'auteur et <i>narrative designer</i> dans un studio indépendant, j'analyse les structures et les techniques de design. Mon but : créer une boîte à outils utilisable par tous les <i>narrative designers</i> dans leur métier, et ouvrir quelques réflexions et débats sur le sujet.🔨</p>
+<p>N'hésitez pas à me contacter pour venir en discuter.</p>
+{% set postsCount = collections.posts | length %}
+{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
+<h1>{{ latestPostsCount }} derniers article{% if latestPostsCount != 1 %}s{% endif %}📝</h1>
+
+{% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
+{% set postslistCounter = postsCount %}
+{% include "postslist.njk" %}
+
+{% set morePosts = postsCount - numberOfLatestPostsToShow %}
+{% if morePosts > 0 %}
+<p>{{ morePosts }} article{% if morePosts != 1 %}s{% endif %} supplémentaire{% if morePosts != 1 %}s{% endif %} à retrouver dans <a href="/blog/">les archives</a>.</p>
+{% endif %}
+
+{# List every content page in the project #}
+{#
+<ul>
+	{%- for entry in collections.all %}
+	<li><a href="{{ entry.url }}"><code>{{ entry.url }}</code></a></li>
+	{%- endfor %}
+</ul>
+#}
