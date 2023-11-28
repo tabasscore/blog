@@ -5,8 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Tagged “another tag”</title>
 		<meta name="description" content="Narrative design en analyses">
-		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Atozi">
-		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Atozi">
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="From Atozi">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="From Atozi">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
@@ -298,12 +298,15 @@ header {
 
 /* Tags list */
 .post-metadata {
+	font-style: italic;
+	font-size: small;
 	display: inline-flex;
 	flex-wrap: wrap;
 	gap: .5em;
 	list-style: none;
 	padding: 0;
 	margin: 0;
+	margin-bottom: 3em;
 }
 .post-metadata time {
 	margin-right: 1em;
@@ -371,7 +374,24 @@ ul {
 
 	padding-top: 0;
 
-}</style>
+}
+
+.footer-note {
+	color: grey;
+	font-style: italic;
+	font-size: smaller;
+
+}
+
+
+@media screen and (max-width: 800px) {
+	main {
+	  padding-left: 2em;
+	  padding-right: 2em;
+	  font-size: smaller;
+	  text-align: justify;
+	}
+  }</style>
 	</head>
 	<body>
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
@@ -386,7 +406,7 @@ ul {
 				
 				</ul>
 			</nav>
-			<div class=site-title>Atozi écrit<img src="/img/avatar.png" alt="Atozi's logo" width=100 height=100>
+			<div class=site-title>From Atozi<img src="/img/avatar.png" alt="Atozi's logo" width=100 height=100>
 			</div>
 			
 
@@ -405,7 +425,7 @@ ul {
 
 	<li class="postlist-item">
 		<a href="/blog/firstpost/" class="postlist-link">This is my first post.</a>
-		<time class="postlist-date" datetime="2018-05-01">May 2018</time>
+		<time class="postlist-date" datetime="2018-05-01">01/05/2018</time>
 	</li>
 
 </ol>
