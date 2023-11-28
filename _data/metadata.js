@@ -1,5 +1,5 @@
 module.exports = {
-	title: "Atozi",
+	title: "From Atozi",
 	url: "https://example.com/",
 	language: "fr",
 	description: "Narrative design en analyses",

@@ -27,4 +27,10 @@ eleventyNavigation:
 
 🐘 <a href="https://mastodon.gamedev.place/@atozi" target="_blank">Mastodon</a> </br>
 📧 <a href="mailto:antonin.demeilliez@proton.me" target="_blank">Mail</a> </br>
-🐧 <a href="https://twitter.com/atozi_" target="_blank">Twitter (en dernier recours)<a> </br>
+🐧 <a href="https://twitter.com/atozi_" target="_blank">Twitter (en dernier recours)</a> </br>
+</br>
+</br>
+</br>
+<hr class="solid">
+
+<p class="footer-note">Ce site a été réalisé avec 11ty, et est en ligne grâce à l'aide précieuse de <a href="https://bigaston.me/" target="_blank">Bigaston</a>.</p>

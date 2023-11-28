@@ -3,10 +3,10 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Atozi</title>
+		<title>From Atozi</title>
 		<meta name="description" content="Narrative design en analyses">
-		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Atozi">
-		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Atozi">
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="From Atozi">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="From Atozi">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
@@ -279,12 +279,15 @@ header {
 
 /* Tags list */
 .post-metadata {
+	font-style: italic;
+	font-size: small;
 	display: inline-flex;
 	flex-wrap: wrap;
 	gap: .5em;
 	list-style: none;
 	padding: 0;
 	margin: 0;
+	margin-bottom: 3em;
 }
 .post-metadata time {
 	margin-right: 1em;
@@ -352,7 +355,24 @@ ul {
 
 	padding-top: 0;
 
-}</style>
+}
+
+.footer-note {
+	color: grey;
+	font-style: italic;
+	font-size: smaller;
+
+}
+
+
+@media screen and (max-width: 800px) {
+	main {
+	  padding-left: 2em;
+	  padding-right: 2em;
+	  font-size: smaller;
+	  text-align: justify;
+	}
+  }</style>
 	</head>
 	<body>
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
@@ -367,7 +387,7 @@ ul {
 				
 				</ul>
 			</nav>
-			<div class=site-title>Atozi écrit<img src="/img/avatar.png" alt="Atozi's logo" width=100 height=100>
+			<div class=site-title>From Atozi<img src="/img/avatar.png" alt="Atozi's logo" width=100 height=100>
 			</div>
 			
 
@@ -398,7 +418,12 @@ ul {
 <h1 id="contact" tabindex="-1">Contact <a class="header-anchor" href="#contact">#</a></h1>
 <p>🐘 <a href="https://mastodon.gamedev.place/@atozi" target="_blank">Mastodon</a> </br>
 📧 <a href="mailto:antonin.demeilliez@proton.me" target="_blank">Mail</a> </br>
-🐧 <a href="https://twitter.com/atozi_" target="_blank">Twitter (en dernier recours)<a> </br></p>
+🐧 <a href="https://twitter.com/atozi_" target="_blank">Twitter (en dernier recours)</a> </br>
+</br>
+</br>
+</br></p>
+<hr class="solid">
+<p class="footer-note">Ce site a été réalisé avec 11ty, et est en ligne grâce à l'aide précieuse de <a href="https://bigaston.me/" target="_blank">Bigaston</a>.</p>
 
 
 
