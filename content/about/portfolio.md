@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 eleventyNavigation:
-  key: Sur moi
+  key: Portfolio
   order: 3
 ---
 # Antonin "Atozi" Demeilliez
