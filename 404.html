@@ -41,16 +41,14 @@
 :root {
 	--color-gray-20: #e0e0e0;
 	--color-gray-50: #C0C0C0;
-	--color-gray-90: #333;
+	--color-gray-90: #dad8d8;
 
-	--background-color: #fff;
+	/* --text-color is assigned to --color-gray-_ above */
+	--text-color-link: #fdff61;
+	--text-color-link-active: #ffc861;
+	--text-color-link-visited: #fdff61;
 
-	--text-color: var(--color-gray-90);
-	--text-color-link: #082840;
-	--text-color-link-active: #5f2b48;
-	--text-color-link-visited: #17050F;
-
-	--syntax-tab-size: 2;
+	--background-color: #27270c ;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -391,6 +389,16 @@ ul {
 	  padding-right: 2em;
 	  font-size: smaller;
 	  text-align: justify;
+	}
+
+	p {
+		line-height: 1.5;
+		font-size: larger;
+		text-justify: auto;
+		max-width: 800px;
+		margin-top: 0em;
+		margin-bottom: 0.7em;
+	
 	}
   }</style>
 	</head>
