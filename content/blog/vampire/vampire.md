@@ -1,6 +1,6 @@
 ---
 title: "Vampire Swansong : la belle catastrophe"
-description: Article 1
+description: Ou la nécessité des péripéties.
 date: 2024-01-19
 tags:
   - analyse
@@ -17,7 +17,7 @@ tags:
 
 Les fictions interactives à embranchements comportent des structures qui peuvent facilement être schématisées. Quand elles ne tolèrent pas l’échec ou le mauvais choix, on parle traditionnellement de structure *one true path*<a href="#note-1">¹</a> (comme dans les plus revêches des *Livres dont vous êtes le héros*). Dans ce cas, la moindre erreur vous mène au *game over* et vous devez recommencer jusqu’à trouver le bon chemin. Dans le cas inverse, **on parlera d’*anti-one true path*, ou comme je préfère l’appeler, de design *always forward***, où le *game over* n’existe pas, et où l’histoire avance toujours, quelles que soient les décisions, bonnes ou mauvaises, prises par les joueurs et joueuses. 
 
-C’est le cas de *Vampire: The Masquerade - Swansong*, du studio Bordelais Big Bad Wolf, sorti en 2023. Dans ce jeu on incarne à tour de rôle trois vampires qui doivent naviguer dans les intrigues de cour du monde des ténèbres. Le *gameplay* se divise (en gros) en deux parties : des phases d’exploration pour tenter de découvrir des indices, et des phases de dialogue où l’on doit gérer ses ressources de pouvoir et où tous les coups sont permis pour arriver à ses fins. Il faut faire preuve de beaucoup de prudence, **car chaque joute verbale peut avoir des conséquences désastreuses.**
+C’est le cas de *Vampire: The Masquerade - Swansong*, du studio Bordelais Big Bad Wolf, sorti en 2022. Dans ce jeu on incarne à tour de rôle trois vampires qui doivent naviguer dans les intrigues de cour du monde des ténèbres. Le *gameplay* se divise (en gros) en deux parties : des phases d’exploration pour tenter de découvrir des indices, et des phases de dialogue où l’on doit gérer ses ressources de pouvoir et où tous les coups sont permis pour arriver à ses fins. Il faut faire preuve de beaucoup de prudence, **car chaque joute verbale peut avoir des conséquences désastreuses.**
 
 {% image "./illu-vampire-2.jpg", "Screenshot du jeu pendant une phase de dialogue. On peut utiliser son pouvoir d'intimidation pour faire plier son interlocuteur." %}
 
