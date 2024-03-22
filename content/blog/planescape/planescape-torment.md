@@ -4,7 +4,7 @@ description: Ou comment on se fait pigeonner.
 date: 2024-02-20
 tags:
   - analyse
-  - méthodes
+  - outil
 ---
 
 {% image "planescape-banner.jpg", "Un screenshot de Planescape Torment. On y voit le héros allongé sur un billaud dans un environnement glauque." %}

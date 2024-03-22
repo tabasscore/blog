@@ -5,6 +5,7 @@ date: 2024-01-19
 tags:
   - analyse
   - structure
+  - écriture
 ---
 
 {% image "./illu-vampire-1.jpg", "Un vampire devant un long couloir qui se termine par une porte sur laquelle figure le signe de la croix." %}
