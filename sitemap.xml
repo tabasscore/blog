@@ -12,37 +12,47 @@
 	</url>
 	
 	<url>
+		<loc>https://example.com/blog/firebird/</loc>
+		<lastmod>2024-03-22</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://example.com/about/portfolio/</loc>
-		<lastmod>2024-02-20</lastmod>
+		<lastmod>2024-03-22</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://example.com/blog/</loc>
-		<lastmod>2024-02-20</lastmod>
+		<lastmod>2024-03-22</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://example.com/</loc>
-		<lastmod>2024-02-20</lastmod>
+		<lastmod>2024-03-22</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://example.com/tags/</loc>
-		<lastmod>2024-02-20</lastmod>
+		<lastmod>2024-03-22</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://example.com/tags/analyse/</loc>
-		<lastmod>2024-02-20</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/tags/methodes/</loc>
-		<lastmod>2024-02-20</lastmod>
+		<lastmod>2024-03-22</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://example.com/tags/structure/</loc>
-		<lastmod>2024-02-20</lastmod>
+		<lastmod>2024-03-22</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/tags/outil/</loc>
+		<lastmod>2024-03-22</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/tags/ecriture/</loc>
+		<lastmod>2024-03-22</lastmod>
 	</url>
 </urlset>
