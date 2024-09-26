@@ -45,7 +45,7 @@ Là encore, par le biais de la parodie, le jeu crée une métaphore qui fait app
 
 Avec des moyens rudimentaires, peu de features et un design narratif très simple, *Frog Detective* ne nous fait pas littéralement mener une enquête. On ne trouve pas d'indices à interpréter, on ne fait pas de réelle déduction, on ne confond pas un témoin peu fiable ou un suspect menteur. Non, par sa structure, le jeu nous donne seulement *le sentiment* de mener l'enquête : on cherche des objets, on interroge les suspects, et on essaie de tout remettre dans le bon ordre. Ainsi, on voit bien qu'une bonne structure narrative peut donner un sentiment précis et que c'est un outil très puissant. Un jeu n'a pas besoin d'une structure complexe, il a besoin de la structure adaptée, et c'est tout à fait le cas dans les jeux de la série *Frog Detective*. Tant pis si les systèmes de jeux ne simulent pas réellement le travail d'investigation car, finalement, pourquoi joue-t-on à un jeu, si ce n'est pour les sentiments qu'il nous fait éprouver ?
 
-{% image "frog-5.jpg", "Un screenshot de Frog Detective 2. On y voit Détective Grenouille qui dit : Les mystères n'ont qu'à bien se tenir !" %}
+{% image "frog-4.jpg", "Un screenshot de Frog Detective 2. On y voit Détective Grenouille qui dit : Les mystères n'ont qu'à bien se tenir !" %}
 
 
 
