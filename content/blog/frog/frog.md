@@ -12,7 +12,7 @@ tags:
 
 ## La grenouille à la langue bien pendue
 
-Faire incarner un enquêteur est souvent un véritable <a href="https://www.youtube.com/watch?v=gwV_mA2cv_0" target="_blank">casse-tête de design</a> : comment donner le sentiment de déduire par soi-même la solution d'un mystère dans un système aussi déterministe et limité qu'un jeu vidéo ? Des jeux aujourd'hui célèbres y sont allés de leur solutions ingénieuses : on s'est pâmé devant *The Return of the Obra Dinn*, on s'est creusé la tête sur *The Case of the Golden Idol* et on s'est émerveillé devant la proposition qu'était *Her Story*. Dans ce paysage de jeux bien sérieux, la série des *Frog Detective* (worm club, 2018 – 2022)  fait figure d'exception avec son ton léger et son humour absurde. Pourtant, ne nous arrêtons pas aux apparences, car derrière ces masque de bêtise bonne enfant se cache une mécanique bien huilée et un design précis.
+Faire incarner un enquêteur est souvent un véritable <a href="https://www.youtube.com/watch?v=gwV_mA2cv_0" target="_blank">casse-tête de design</a> : comment donner le sentiment de déduire par soi-même la solution d'un mystère dans un système aussi déterministe et limité qu'un jeu vidéo ? Des jeux aujourd'hui célèbres y sont allés de leurs solutions ingénieuses : on s'est pâmé devant *The Return of the Obra Dinn*, on s'est creusé la tête sur *The Case of the Golden Idol* et on s'est émerveillé devant la proposition qu'était *Her Story*. Dans ce paysage de jeux bien sérieux, la série des *Frog Detective* (worm club, 2018 – 2022)  fait figure d'exception avec son ton léger et son humour absurde. Pourtant, ne nous arrêtons pas aux apparences, car derrière ces masque de bêtise bon enfant se cache une mécanique bien huilée et un design précis.
 
 Dans le petit village de la Lisière aux Sorcières, la fête donnée en l'honneur de la nouvelle habitante a été sabotée ! Par qui ? Pourquoi ? Voilà bien un mystère pour Détective Grenouille ! 
 
@@ -22,7 +22,7 @@ Son mode opératoire est simple. Dans la droite lignée des Maigret et autres Co
 
 Les réponses à nos questions nous apprendront deux choses essentielles : du contexte (quelques informations sur la vie du village, les rapports entre habitants et parfois des indices sur les événements de la veille) mais aussi ce que veulent les personnages, et c'est en réalité plus important que leurs témoignages incertains.
 
-## Alohomora!
+## Alohomora !
 
 Dans ce village de sorcières, tout le monde veut quelque chose et il sera nécessaire à Détective Grenouille de l'apprendre. Nous sommes ici devant un cas évident de design en "clefs et serrures". Chaque personnage cherche un objet "clef" et lui donner permet d'ouvrir sa "serrure". Toute la subtilité du jeu tient dans le fait que la récompense pour avoir ouvert la serrure d'un PNJ est… La clef d'un autre personnage !
 
@@ -43,7 +43,7 @@ Là encore, par le biais de la parodie, le jeu crée une métaphore qui fait app
 
 ## Structure et sentiments
 
-Avec des moyens rudimentaires, peu de features et un design narratif très simple, Frog Detective ne nous fait pas littéralement mener une enquête. On ne trouve pas d'indices à interpréter, on ne fait pas de réelle déduction, on ne confond pas un témoin peu fiable ou un suspect menteur. Non, par sa structure, le jeu nous donne seulement le sentiment de mener l'enquête : on cherche des objets, on interroge les suspects, et on essaie de tout remettre dans le bon ordre. Ainsi, on voit bien qu'une bonne structure narrative peut donner un sentiment précis et que c'est un outil très puissant. Un jeu n'a pas besoin d'une structure complexe, il a besoin de la structure adaptée, et c'est tout à fait le cas dans les jeux de la série Frog Detective. Tant pis si les systèmes de jeux ne simulent pas réellement le travail d'investigation car, finalement, pourquoi joue-t-on à un jeu, si ce n'est pour les sentiments qu'il nous fait éprouver ?
+Avec des moyens rudimentaires, peu de features et un design narratif très simple, *Frog Detective* ne nous fait pas littéralement mener une enquête. On ne trouve pas d'indices à interpréter, on ne fait pas de réelle déduction, on ne confond pas un témoin peu fiable ou un suspect menteur. Non, par sa structure, le jeu nous donne seulement *le sentiment* de mener l'enquête : on cherche des objets, on interroge les suspects, et on essaie de tout remettre dans le bon ordre. Ainsi, on voit bien qu'une bonne structure narrative peut donner un sentiment précis et que c'est un outil très puissant. Un jeu n'a pas besoin d'une structure complexe, il a besoin de la structure adaptée, et c'est tout à fait le cas dans les jeux de la série *Frog Detective*. Tant pis si les systèmes de jeux ne simulent pas réellement le travail d'investigation car, finalement, pourquoi joue-t-on à un jeu, si ce n'est pour les sentiments qu'il nous fait éprouver ?
 
 {% image "frog-3.jpg", "Un screenshot de Frog Detective 2. On y voit Détective Grenouille qui dit : Les mystères n'ont qu'à bien se tenir !" %}
 
