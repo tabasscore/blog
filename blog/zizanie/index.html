@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>From Atozi</title>
-		<meta name="description" content="Narrative design en analyses">
+		<title>La Zizanie : ma participation au #ConFi2025</title>
+		<meta name="description" content="La grand messe de la FI Francophone">
 		<link rel="icon" type="image/x-icon" href="/img/avatar.png">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="From Atozi">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="From Atozi">
@@ -13,24 +13,173 @@
 		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
 		
-		<style>.postlist { counter-reset: start-from 6 }
-/* Message Box */
-.message-box {
-	--color-message-box: #ffc;
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
 
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
 	display: block;
-	background-color: var(--color-message-box);
-	color: var(--color-gray-90);
-	padding: 1em 0.625em; /* 16px 10px /16 */
-}
-.message-box ol {
-	margin-top: 0;
-}
-
-@media (prefers-color-scheme: dark) {
-	.message-box {
-		--color-message-box: #082840;
-	}
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
 }
 * { box-sizing: border-box; }
 /* Defaults */
@@ -422,7 +571,7 @@ img {
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
 					<li class="nav-item"><a href="/">Accueil</a></li>
-					<li class="nav-item"><a href="/blog/" aria-current="page">Articles</a></li>
+					<li class="nav-item"><a href="/blog/">Articles</a></li>
 					<li class="nav-item"><a href="/about/portfolio/">Portfolio</a></li>
 				
 				</ul>
@@ -434,44 +583,24 @@ img {
 		</header>
 
 		<main id="skip">
-			<!-- Delete this message, it will also remove the component CSS from the bundle -->
+			
+<h1>La Zizanie : ma participation au #ConFi2025</h1>
 
-<!-- Stop deleting -->
+<ul class="post-metadata">
+	<li><time datetime="2025-03-12">12/03/2025</time></li>
+	<li><a href="/tags/fiction-interactive/" class="post-tag">fiction interactive</a></li>
+</ul>
 
-<h1>Tous les articles</h1>
+<p><a href="/img/QFcvhOcAyG-1701.jpeg" target="_blank"><picture><source type="image/avif" srcset="/img/QFcvhOcAyG-1701.avif 1701w"><source type="image/webp" srcset="/img/QFcvhOcAyG-1701.webp 1701w"><source type="image/png" srcset="/img/QFcvhOcAyG-1701.png 1701w"><img alt="Illustration en pixel art. Une silhouette de zombie, de dos, au premier plan, se dirige vers une petite maison au fond." loading="lazy" decoding="async" src="/img/QFcvhOcAyG-1701.jpeg" width="1701" height="447"></picture></a></p>
+<p>Chaque année se tient en ligne le grand <a href="https://www.fiction-interactive.fr/lancement-officiel-du-concours-2025/" target="_blank">Concours de Fiction Interactive</a> organisé par la communauté de fiction-interactive.fr, ou le <em>#ConFi</em> pour les intimes. Ce concours, encore confidentiel, reste néanmoins une institution dans le domaine des passionnés de jeux textuels et chaque année des auteurices nous gratifient de superbes propositions originales et personnelles.</p>
+<p>J'ai pu moi-même par le passé participer au concours : une première fois en 2022 avec Les Androïdes, une FI fleuve sur le danger des croyances, et en 2023 avec Entre-Deux, une histoire d'amour et de fantôme, <em>coming of age story</em> sur le fait de savoir abandonner son adolescence et grandir. J'ai eu la chance pour ces deux réalisations d'obtenir le prix d'excellence littéraire.</p>
+<p>Après une année de pause, je reviens avec La Zizanie, une FI moins verbeuse, plus axée sur le système que sur la prose. J'avais besoin d'expérimenter un peu plus sur la manière de faire des boucles de gameplay dans un jeu textuel. J'ai pu y réinvestir l'expérience acquise en travaillant sur <em>Baladins</em>, notamment pour écrire des réseaux de relations entre personnages et des pseudo-quêtes basées sur la connaissance de ces relations.</p>
+<p>La Zizanie se présente comme un <em>micro-knowledge-vania</em> dans lequel vous devrez repousser une invasion de zombies. Là encore, comme j'ai pu le faire dans Les Androïdes, je questionne la figure de personnage principal, en vous faisant incarner tous les villageois un par un si ces derniers viennent à mourir. L'idée est de montrer que l'effort collectif prime quand il s'agit de repousser une menace, et qu'on ne peux compter sur un héros solitaire.  À l'instar des <em>Androïdes</em> , ce récit est une métaphore politique, mais je ne vous en dit pas plus pour vous laisser le plaisir de la découvrir.</p>
+<p>Vous pouvez <a href="https://atozi.itch.io/la-zizanie" target="_blank">jouer à La Zizanie sur ma page itch</a> et me laisser un commentaire, je serai ravi de savoir comment vous vous en êtes sortis !</p>
+<p>N'hésitez pas à aussi donner leur chance aux <a href="https://itch.io/jam/concours-de-fiction-interactive-francophone-2025/entries" target="_blank">autres participations de cette année</a>, elles sont pleines d'idées originales et d'histoires personnelles encore trop rares dans le jeu vidéo commercial. Vous pouvez aussi noter les FI via <a href="https://docs.google.com/forms/d/e/1FAIpQLSdfhiMxR8roXJNoqdkh73MtA39yTK0vtiWRONrtTvtQI6JqnQ/viewform" target="_blank">ce formulaire</a> pour aider à décerner les différents prix ! Vous pourrez aussi me voir streamer quelques jeux si vous surveillez <a href="https://www.twitch.tv/atozi_" target="_blank">ma page twitch</a>.</p>
 
-
-
-<ol reversed class="postlist">
-
-	<li class="postlist-item">
-		<a href="/blog/zizanie/" class="postlist-link">La Zizanie : ma participation au #ConFi2025</a>
-		<time class="postlist-date" datetime="2025-03-12">12/03/2025</time>
-	</li>
-
-	<li class="postlist-item">
-		<a href="/blog/frog/" class="postlist-link">Frog Detective : la chaîne de clefs</a>
-		<time class="postlist-date" datetime="2024-09-27">27/09/2024</time>
-	</li>
-
-	<li class="postlist-item">
-		<a href="/blog/firebird/" class="postlist-link">Firebird : le cerbère de la porte</a>
-		<time class="postlist-date" datetime="2024-03-22">22/03/2024</time>
-	</li>
-
-	<li class="postlist-item">
-		<a href="/blog/planescape/planescape-torment/" class="postlist-link">Planescape Torment : La boîte de skinner narrative</a>
-		<time class="postlist-date" datetime="2024-02-20">20/02/2024</time>
-	</li>
-
-	<li class="postlist-item">
-		<a href="/blog/vampire/" class="postlist-link">Vampire Swansong : la belle catastrophe</a>
-		<time class="postlist-date" datetime="2024-01-19">19/01/2024</time>
-	</li>
-
-</ol>
-
-
+<ul class="links-nextprev"><li>Article prédécent: <a href="/blog/frog/">Frog Detective : la chaîne de clefs</a></li>
+</ul>
 
 
 
@@ -482,6 +611,6 @@ img {
 	
 
 
-		<!-- Current page: /blog/ -->
+		<!-- Current page: /blog/zizanie/ -->
 	</body>
 </html>
