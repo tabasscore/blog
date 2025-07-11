@@ -5,7 +5,7 @@ eleventyNavigation:
   order: 4
 ---
 <div style="max-width:350px; float :right; padding:30px">
-  {% image "C:/Users/anton/Documents/blog/public/img/jtt_keyart.png", "Key art de Jump the Track"%}
+  {% image "./jtt_keyart.png", "Key art de Jump the Track"%}
 </div>  
 
 # Jump the Track 🎡
@@ -45,7 +45,7 @@ Le gameplay du jeu est celui d'un visual novel, mais quand un choix de dialogue 
 </div>
 
 <div style="max-width:350px; float :right; padding:30px">
-  {% image "C:/Users/anton/Documents/blog/public/img/baladins_keyart.jpg", "Key art de Baladins"%}
+  {% image "./baladins_keyart.jpg", "Key art de Baladins"%}
 </div>  
 
 # Baladins 📯
@@ -95,7 +95,7 @@ L'univers de Baladins présente aussi la forte originalité d'être inspiré des
 
 </div>
 
-<div style="max-width:350px; float :right; padding:30px">{% image "C:/Users/anton/Documents/blog/public/img/pileup_keyart.jpg", "Key art de Pile Up! Box by box"%}</div>  
+<div style="max-width:350px; float :right; padding:30px">{% image "./pileup_keyart.jpg", "Key art de Pile Up! Box by box"%}</div>  
 
 # Pile Up! Box by box 📦
 *Seed by Seed, 2021, PC/Switch/PS4/XboxOne*

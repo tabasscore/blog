@@ -8,7 +8,7 @@ eleventyNavigation:
 # Antonin "Atozi" Demeilliez - Game & Narrative Designer
 
 <div style = max-width:800px> 
-<div style="max-width:350px;float :left; padding-right:30px">{% image "C:/Users/anton/Documents/blog/public/img/MoiRetoucheSmaller.jpg", "Mon portrait"%}</div>  
+<div style="max-width:350px;float :left; padding-right:30px">{% image "./MoiRetoucheSmaller.jpg", "Mon portrait"%}</div>  
 
 
 
