@@ -8,7 +8,7 @@ tags:
   - outil
 ---
 {% image "./firebird-banner.jpg", "Mariska attaquée par un ours." %}
-***À avancer tête baissée, on peut finir dans le mur. C'est la leçon que nous enseigne Firebird du studio Ludogram. Comment le jeu fait-il pour imposer son rythme et nous pousser à lever le pied de l'accélérateur ? Avec un bon chien de garde !***
+**À avancer tête baissée, on peut finir dans le mur. C'est la leçon que nous enseigne Firebird du studio Ludogram. Comment le jeu fait-il pour imposer son rythme et nous pousser à lever le pied de l'accélérateur ? Avec un bon chien de garde !**
 
 ## Mot de passe ?
 

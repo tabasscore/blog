@@ -88,10 +88,13 @@ p {
 
 }
 
+
+
 li {
 	font-size: larger;
-	line-height: 1.5;
+	line-height: 1.8;
 	margin-top: 0;
+	max-width: 680px;
 }
 
 a[href] {
@@ -172,6 +175,8 @@ pre:not([class*="language-"]) {
 code {
 	word-break: break-all;
 }
+
+
 
 /* Header */
 header {
@@ -349,7 +354,24 @@ ul {
 
 }
 
+.button {
+  background-color: #fdff61; /* Green */
+  
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 8px;
+  text-decoration: none;
+--text-color-link: #150323;
+--text-color-link-active: #fdff61;
+--text-color-link-visited: #150323;
+}
 
+.button:hover{
+	background-color: #0b3a3b
+}
 @media screen and (max-width: 800px) {
 	main {
 	  padding-left: 2em;
@@ -362,7 +384,7 @@ ul {
 		line-height: 1.5;
 		font-size: larger;
 		text-justify: auto;
-		max-width: 800px;
+		max-width: 1000px;
 		margin-top: 0em;
 		margin-bottom: 0.7em;
 	
