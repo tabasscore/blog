@@ -104,10 +104,13 @@ p {
 
 }
 
+
+
 li {
 	font-size: larger;
-	line-height: 1.5;
+	line-height: 1.8;
 	margin-top: 0;
+	max-width: 680px;
 }
 
 a[href] {
@@ -188,6 +191,8 @@ pre:not([class*="language-"]) {
 code {
 	word-break: break-all;
 }
+
+
 
 /* Header */
 header {
@@ -365,7 +370,24 @@ ul {
 
 }
 
+.button {
+  background-color: #fdff61; /* Green */
+  
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 8px;
+  text-decoration: none;
+--text-color-link: #150323;
+--text-color-link-active: #fdff61;
+--text-color-link-visited: #150323;
+}
 
+.button:hover{
+	background-color: #0b3a3b
+}
 @media screen and (max-width: 800px) {
 	main {
 	  padding-left: 2em;
@@ -378,7 +400,7 @@ ul {
 		line-height: 1.5;
 		font-size: larger;
 		text-justify: auto;
-		max-width: 800px;
+		max-width: 1000px;
 		margin-top: 0em;
 		margin-bottom: 0.7em;
 	
@@ -404,6 +426,7 @@ img {
 				<ul class="nav">
 					<li class="nav-item"><a href="/">Accueil</a></li>
 					<li class="nav-item"><a href="/blog/">Articles</a></li>
+					<li class="nav-item"><a href="/about/me/">À propos</a></li>
 					<li class="nav-item"><a href="/about/portfolio/" aria-current="page">Portfolio</a></li>
 				
 				</ul>
@@ -415,37 +438,156 @@ img {
 		</header>
 
 		<main id="skip">
-			<h1 id="antonin-atozi-demeilliez" tabindex="-1">Antonin &quot;Atozi&quot; Demeilliez <a class="header-anchor" href="#antonin-atozi-demeilliez">#</a></h1>
-<h2 id="narrative-designer-et-auteur-de-jeux-au-studio-seed-by-seed-depuis-2018" tabindex="-1">🌱 <i>Narrative designer</i> et auteur de jeux au studio Seed by Seed depuis 2018. <a class="header-anchor" href="#narrative-designer-et-auteur-de-jeux-au-studio-seed-by-seed-depuis-2018">#</a></h2>
+			<div style="max-width:350px; float :right; padding:30px">
+  <a href="/img/2B7gUzho1m-600.jpeg" target="_blank"><picture><source type="image/avif" srcset="/img/2B7gUzho1m-600.avif 600w"><source type="image/webp" srcset="/img/2B7gUzho1m-600.webp 600w"><source type="image/png" srcset="/img/2B7gUzho1m-600.png 600w"><img alt="Key art de Jump the Track" loading="lazy" decoding="async" src="/img/2B7gUzho1m-600.jpeg" width="600" height="900"></picture></a>
+</div>  
+<h1 id="jump-the-track" tabindex="-1">Jump the Track 🎡 <a class="header-anchor" href="#jump-the-track">#</a></h1>
+<p><em>Seed by Seed, 2025, PC</em></p>
+<h2 id="pitch" tabindex="-1">Pitch <a class="header-anchor" href="#pitch">#</a></h2>
+<p>Dans ce visual novel teinté de pachinko, suivez les aventures de Sam, un jeune entrepeneur qui va devoir gagner la tombola de la ville pour sauver sa peau !</p>
+<h2 id="originalite-du-jeu" tabindex="-1">Originalité du jeu <a class="header-anchor" href="#originalite-du-jeu">#</a></h2>
+<p>Le gameplay du jeu est celui d'un visual novel, mais quand un choix de dialogue intervient, on doit d'abord jouer un jeu de pachinko pour débloquer les différentes options. Cette mécanique m'a permis de voir les possibilités et les limites d'intégrer le gameplay en prise directe avec le dialogue, et de comprendre les problématiques de choix multiple quand le personnage incarné est déjà caractérisé.</p>
+<h2 id="ce-que-j-ai-fait-sur-le-jeu" tabindex="-1">Ce que j'ai fait sur le jeu <a class="header-anchor" href="#ce-que-j-ai-fait-sur-le-jeu">#</a></h2>
+<h3 id="ecriture" tabindex="-1">Écriture <a class="header-anchor" href="#ecriture">#</a></h3>
 <ul>
-<li><a href="https://store.steampowered.com/app/1866320/Baladins" target="_blank">Baladins (2024) </a></li>
-<li><a href="https://store.steampowered.com/app/1109820/Pile_Up_Box_by_Box" target="_blank">Pile Up! Box by box (2021)</a></li>
+<li>Worldbuilding</li>
+<li>Scénario : trame narrative, <em>beats</em>, structure, arcs narratifs</li>
+<li>Personnages : conception de fiches de personnages, définition de leur « voix » et personnalité en collaboration avec la <em>character designer</em></li>
+<li>Dialogues : écriture des dialogues à embranchements en français et en anglais</li>
+<li>Brief créatif avec notre <em>background artist</em> prestataire</li>
 </ul>
-<h2 id="auteur-de-fictions-interactives" tabindex="-1">👻 Auteur de fictions interactives <a class="header-anchor" href="#auteur-de-fictions-interactives">#</a></h2>
+<h3 id="narrative-design" tabindex="-1">Narrative design <a class="header-anchor" href="#narrative-design">#</a></h3>
 <ul>
-<li><a href="https://atozi.itch.io/" target="_blank">itch</a></li>
+<li>Itération sur l'interaction pachinko/dialogue</li>
+<li>Conception du système global</li>
+<li>Conception de templates de structures d'embranchements</li>
+<li>Tenue à jour d'un document de contenu du jeu</li>
 </ul>
-<h2 id="enjmin-alumnus-section-ergonomie-p13-2016-2018" tabindex="-1">🎮 ENJMIN Alumnus, section ergonomie (P13, 2016-2018) <a class="header-anchor" href="#enjmin-alumnus-section-ergonomie-p13-2016-2018">#</a></h2>
+<div style = "max-width:800px; padding-right:100px">
+  <div style="text-align: center;">
+      </br>
+      <a href="https://store.steampowered.com/app/2946390/Jump_the_Track/" class="button" target="_blank" >Voir le jeu</a> </br></br>
+  </div>
+  <hr class="solid">
+</div>
+<div style="max-width:350px; float :right; padding:30px">
+  <a href="/img/p5Ni8qeBTx-1080.jpeg" target="_blank"><picture><source type="image/avif" srcset="/img/p5Ni8qeBTx-1080.avif 1080w"><source type="image/webp" srcset="/img/p5Ni8qeBTx-1080.webp 1080w"><img alt="Key art de Baladins" loading="lazy" decoding="async" src="/img/p5Ni8qeBTx-1080.jpeg" width="1080" height="1920"></picture></a>
+</div>  
+<h1 id="baladins" tabindex="-1">Baladins 📯 <a class="header-anchor" href="#baladins">#</a></h1>
+<p><em>Seed by Seed, 2024, PC/Switch/PS5/PS4</em></p>
+<h2 id="pitch-1" tabindex="-1">Pitch <a class="header-anchor" href="#pitch-1">#</a></h2>
+<p>Baladins est un jeu de rôle coopératif et non-violent se jouant jusqu'à quatre personnes. Dans cette aventure, incarnez un baladin, un amuseur public qui va devoir rétablir la paix au sein du peuple de Gatherac et satisfaire l'appêtit d'un dragon mystique dans une boucle temporelle !</p>
+<h2 id="originalite-du-jeu-1" tabindex="-1">Originalité du jeu <a class="header-anchor" href="#originalite-du-jeu-1">#</a></h2>
+<p>L'idée de Baladins est de proposer l'expérience d'un jeu de rôle sur table sans préparation et sans la dimension chronophage. Nous avons donc décidé d'organiser le gameplay autour d'une boucle temporelle (six semaines dans la diégèse, environ une heure de jeu). On peut (et doit) ainsi rejouer les mêmes quêtes pour en explorer tous les embranchements possibles, sans avoir à rejouer toute l'aventure comme dans les autres jeux du genre.
+Le challenge a été de proposer une boucle de gameplay sans combat et un système de narration systémique.</p>
+<p>L'univers de Baladins présente aussi la forte originalité d'être inspiré des contes et légendes du folklore français. Un long travail de worldbuilding a été fait pour s'éloigner le plus possible des poncifs du genre et intégrer des créatures et des histoires typiques de nos régions.</p>
+<h2 id="ce-que-j-ai-fait-sur-le-jeu-1" tabindex="-1">Ce que j'ai fait sur le jeu <a class="header-anchor" href="#ce-que-j-ai-fait-sur-le-jeu-1">#</a></h2>
+<h3 id="ecriture-1" tabindex="-1">Écriture <a class="header-anchor" href="#ecriture-1">#</a></h3>
 <ul>
-<li><a href="https://www.facebook.com/Parallel91" target="_blank">Parallel 91°</a></li>
-<li><a href="https://zeantwan.itch.io/flampage" target="_blank">Flampage</a></li>
+<li>Worldbuilding</li>
+<li>Scénario : trame narrative, beats, structure</li>
+<li>Personnages : conception de fiches pour les 78 PNJ du jeu, définition de leur « voix », histoire et personnalité en collaboration avec la <em>character designer</em></li>
+<li>Quêtes : Conception et écriture en réunissant les idées de toute l'équipe</li>
+<li>Dialogues : écriture des dialogues à embranchements en français et en anglais avec des protagonistes non-genrés</li>
+<li>Descriptions des 168 objets du jeu</li>
+<li>Suivi au long cours de la traduction avec une équipe de localisation au japon</li>
+<li>Intégration des idées et noms de personnages des pledgers Kickstarter</li>
 </ul>
-<h2 id="m2-cinema-audiovisuel-a-paris-3-sorbonne-nouvelle" tabindex="-1">👾 M2 Cinéma Audiovisuel à Paris 3 Sorbonne Nouvelle <a class="header-anchor" href="#m2-cinema-audiovisuel-a-paris-3-sorbonne-nouvelle">#</a></h2>
-<p>Vous pourrez trouver ici mon mémoire intitulé &quot;Le Glitch comme moyen de révolte dans le jeu vidéo&quot; écrit sous la direction d'Alexis Blanchet.</p>
+<h3 id="narrative-design-1" tabindex="-1">Narrative design <a class="header-anchor" href="#narrative-design-1">#</a></h3>
 <ul>
-<li><a href="https://www.academia.edu/29652147/Le_Glitch_comme_moyen_de_r%C3%A9volte_dans_le_jeu_vid%C3%A9o_M%C3%A9moire_Antonin_Demeilliez_pdf" target="_blank">Lien</a></li>
+<li>Système narratif systémique : gestion de la boucle temporelle, mémoire des PJ, réputation auprès des PNJ...</li>
+<li>Système d'événements aléatoires pondérés et contextuels</li>
+<li>Quêtes principales et secondaires à solutions multiples et interconnectés</li>
+<li>Journal des quêtes</li>
+<li>Tenue à jour d'un document de contenu du jeu</li>
 </ul>
- </br>
+<div style = "max-width:800px; padding-right:100px">
+  <div style="text-align: center;">
+      </br>
+      <a href="https://store.steampowered.com/app/1866320/Baladins/" class="button" target="_blank" >Voir le jeu</a> </br></br>
+  </div>
+  <hr class="solid">
+</div>
+<div style="max-width:350px; float :right; padding:30px"><a href="/img/4s9Hdlu-_T-667.jpeg" target="_blank"><picture><source type="image/avif" srcset="/img/4s9Hdlu-_T-667.avif 667w"><source type="image/webp" srcset="/img/4s9Hdlu-_T-667.webp 667w"><img alt="Key art de Pile Up! Box by box" loading="lazy" decoding="async" src="/img/4s9Hdlu-_T-667.jpeg" width="667" height="1000"></picture></a></div>  
+<h1 id="pile-up-box-by-box" tabindex="-1">Pile Up! Box by box 📦 <a class="header-anchor" href="#pile-up-box-by-box">#</a></h1>
+<p><em>Seed by Seed, 2021, PC/Switch/PS4/XboxOne</em></p>
+<h2 id="pitch-2" tabindex="-1">Pitch <a class="header-anchor" href="#pitch-2">#</a></h2>
+<p>Pile Up! est un jeu de plates-formes coopératif jouable seul ou jusqu'à quatre. Incarnez des petites boîtes qui peuvent s'empiler pour explorer des mondes 3D tout en carton, et entraidez-vous pour résoudre les puzzles.</p>
+<h2 id="originalite-du-jeu-2" tabindex="-1">Originalité du jeu <a class="header-anchor" href="#originalite-du-jeu-2">#</a></h2>
+<p>La coopération était au centre du projet créatif de Pile Up! Nous voulions imaginer un jeu autour duquel les familles et les amis pourraient se réunir manette en main. Le jeu a été pitché en 2017 avec la récente Nintendo Switch en tête. Cet ancien projet de fin d'études à l'ENJMIN est devenu le premier jeu commercial du studio Seed by Seed.</p>
+<h2 id="ce-que-j-ai-fait-sur-le-jeu-2" tabindex="-1">Ce que j'ai fait sur le jeu <a class="header-anchor" href="#ce-que-j-ai-fait-sur-le-jeu-2">#</a></h2>
+<h3 id="narrative-design-2" tabindex="-1">Narrative design <a class="header-anchor" href="#narrative-design-2">#</a></h3>
+<ul>
+<li>Propositions de settings et intrigues de niveaux</li>
+</ul>
+<h3 id="game-design" tabindex="-1">Game design <a class="header-anchor" href="#game-design">#</a></h3>
+<ul>
+<li>Flow global et scope du jeu : nombre de niveaux, progression dans ces niveaux</li>
+<li>Conception et documentation d'objets gameplay</li>
+</ul>
+<h3 id="level-design" tabindex="-1">Level design <a class="header-anchor" href="#level-design">#</a></h3>
+<ul>
+<li>Layout, conception et fabrication des niveaux</li>
+<li>Placement des caméras pour favoriser la lisibilté de l'action et les moments de contemplation</li>
+<li>Puzzle design</li>
+<li>Level art avec les assets fabriqués par les artistes 3D</li>
+</ul>
+<h3 id="ux-design" tabindex="-1">UX Design <a class="header-anchor" href="#ux-design">#</a></h3>
+<ul>
+<li>Conception de menuflows</li>
+<li>Playtests</li>
+</ul>
+<div style = "max-width:800px">
+  <div style="text-align: center;">
+      </br>
+      <a href="https://store.steampowered.com/app/1109820/Pile_Up_Box_by_Box/" class="button" target="_blank" >Voir le jeu</a> </br></br>
+  </div>
 <hr class="solid">
-<h1 id="contact" tabindex="-1">Contact <a class="header-anchor" href="#contact">#</a></h1>
-<p>🐘 <a href="https://mastodon.gamedev.place/@atozi" target="_blank">Mastodon</a> </br>
-📧 <a href="mailto:antonin.demeilliez@proton.me" target="_blank">Mail</a> </br>
-🐧 <a href="https://twitter.com/atozi_" target="_blank">Twitter (en dernier recours)</a> </br>
-</br>
-</br>
-</br></p>
+</div>
+<h1 id="autres-participations" tabindex="-1">Autres participations <a class="header-anchor" href="#autres-participations">#</a></h1>
+<h2 id="scourgebringer-mobile" tabindex="-1">ScourgeBringer Mobile 🔥 <a class="header-anchor" href="#scourgebringer-mobile">#</a></h2>
+<p><em>Flying Oak, 2022, Android</em></p>
+<p>Travail de <em>game design</em> sur l'adaptation mobile de ScourgeBringer pour le studio Flying Oak.</p>
+<ul>
+<li>Adaptation des contrôles à l'écran tactile en conservant l'essence du jeu</li>
+<li>Facilitation du jeu</li>
+</ul>
+<h2 id="wild-arena-survivors" tabindex="-1">Wild Arena Survivors 🐯 <a class="header-anchor" href="#wild-arena-survivors">#</a></h2>
+<p><em>Ubisoft, 2022, Android/iOS / Stage réalisé en 2018</em></p>
+<p>Stage de <em>game design</em> au sein du studio Ubisoft Paris Mobile lors de la phase de pré-production du jeu.</p>
+<ul>
+<li>Conception et documentation de features avec prise en compte des problématiques ARM (acquisition, rétention, monétisation)</li>
+<li>Analyse et benchmark d'autres jeux sur des questions de boucle de gameplay et d'ARM</li>
+</ul>
+<div style = "max-width:800px">
+  <hr class="solid">
+</div>
+<h1 id="fictions-interactives" tabindex="-1">👻 Fictions interactives <a class="header-anchor" href="#fictions-interactives">#</a></h1>
+<p>En parallèle de mon travail au studio Seed by Seed, j'ai pu écrire différentes fictions interactives textuelles. Cette pratique me permet à la fois d'affiner mon style d'écriture, d'expérimenter plus librement des formes d'interaction et d'exprimer des idées politiques et philosophiques plus personnelles.</p>
+<h2 id="la-zizanie" tabindex="-1">La Zizanie 🧟 <a class="header-anchor" href="#la-zizanie">#</a></h2>
+<p><em>2025</em></p>
+<p>Exploration d'une approche plus systémique du langage ink dans un <em>die &amp; retry</em> post-post-apocalyptique et expérimentation sur la notion de personnage-joueur. Un projet où j'ai passé beaucoup plus de temps à coder les systèmes qu'à écrire du contenu.</p>
+<h2 id="entre-deux" tabindex="-1">Entre-Deux 💘 <a class="header-anchor" href="#entre-deux">#</a></h2>
+<p>🏆<em>Prix d'excellence littéraire au concours de Fiction Interactive Francophone 2023</em></p>
+<p>Cette fiction interactive vient d'un constat : trop peu de jeux vidéo parlent du monde réel, d'amour et de deuil. J'ai voulu remédier à cela dans Entre-Deux, qui s'inspire largement de mon vécu de jeune adulte au début des années 2010 avec un twist fantastique.</p>
+<h2 id="les-androides" tabindex="-1">Les Androïdes 🤖 <a class="header-anchor" href="#les-androides">#</a></h2>
+<p>🏆<em>Prix d'excellence littéraire au concours de Fiction Interactive Francophone 2022</em></p>
+<p>Réflexion sur la notion de première et troisième personne dans une fiction interactive, avec la volonté de questionner le rapport aux personnages.</p>
+<div style = "max-width:800px; padding-right:100px">
+<div style="text-align: center;">
+    </br>
+    <a href="https://atozi.itch.io/" class="button" target="_blank" >Voir les FI</a> </br></br>
+</div>
+</div>
 <hr class="solid">
-<p class="footer-note">Ce site a été réalisé avec 11ty, et est en ligne grâce à l'aide précieuse de <a href="https://bigaston.me/" target="_blank">Bigaston</a>.</p>
+<h1 id="cours" tabindex="-1">Cours 📖 <a class="header-anchor" href="#cours">#</a></h1>
+<p>J'ai la chance de pouvoir donner des cours de <em>game design</em> dans différents établissements universitaires.</p>
+<ul>
+<li>Le design de jeux mobile (CNAM ENJMIN, Sorbonne Paris Nord, depuis 2022)</li>
+<li>Introduction au <em>narrative design</em> (Sorbonne Paris Nord, depuis 2025)</li>
+<li>La Conception de jeux vidéo (Paris 3 Sorbonne Nouvelle, depuis 2024)</li>
+<li><em>UX design</em> appliqué au jeu vidéo (Futurae, 2020)</li>
+</ul>
 
 
 

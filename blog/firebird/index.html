@@ -272,10 +272,13 @@ p {
 
 }
 
+
+
 li {
 	font-size: larger;
-	line-height: 1.5;
+	line-height: 1.8;
 	margin-top: 0;
+	max-width: 680px;
 }
 
 a[href] {
@@ -356,6 +359,8 @@ pre:not([class*="language-"]) {
 code {
 	word-break: break-all;
 }
+
+
 
 /* Header */
 header {
@@ -533,7 +538,24 @@ ul {
 
 }
 
+.button {
+  background-color: #fdff61; /* Green */
+  
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 8px;
+  text-decoration: none;
+--text-color-link: #150323;
+--text-color-link-active: #fdff61;
+--text-color-link-visited: #150323;
+}
 
+.button:hover{
+	background-color: #0b3a3b
+}
 @media screen and (max-width: 800px) {
 	main {
 	  padding-left: 2em;
@@ -546,7 +568,7 @@ ul {
 		line-height: 1.5;
 		font-size: larger;
 		text-justify: auto;
-		max-width: 800px;
+		max-width: 1000px;
 		margin-top: 0em;
 		margin-bottom: 0.7em;
 	
@@ -572,6 +594,7 @@ img {
 				<ul class="nav">
 					<li class="nav-item"><a href="/">Accueil</a></li>
 					<li class="nav-item"><a href="/blog/">Articles</a></li>
+					<li class="nav-item"><a href="/about/me/">À propos</a></li>
 					<li class="nav-item"><a href="/about/portfolio/">Portfolio</a></li>
 				
 				</ul>
@@ -594,7 +617,7 @@ img {
 </ul>
 
 <p><a href="/img/RX6mAnbUFx-1017.jpeg" target="_blank"><picture><source type="image/avif" srcset="/img/RX6mAnbUFx-1017.avif 1017w"><source type="image/webp" srcset="/img/RX6mAnbUFx-1017.webp 1017w"><img alt="Mariska attaquée par un ours." loading="lazy" decoding="async" src="/img/RX6mAnbUFx-1017.jpeg" width="1017" height="446"></picture></a>
-<em><strong>À avancer tête baissée, on peut finir dans le mur. C'est la leçon que nous enseigne Firebird du studio Ludogram. Comment le jeu fait-il pour imposer son rythme et nous pousser à lever le pied de l'accélérateur ? Avec un bon chien de garde !</strong></em></p>
+<strong>À avancer tête baissée, on peut finir dans le mur. C'est la leçon que nous enseigne Firebird du studio Ludogram. Comment le jeu fait-il pour imposer son rythme et nous pousser à lever le pied de l'accélérateur ? Avec un bon chien de garde !</strong></p>
 <h2 id="mot-de-passe" tabindex="-1">Mot de passe ? <a class="header-anchor" href="#mot-de-passe">#</a></h2>
 <p>Le <em>narrative design</em> est souvent une histoire de clefs et de portes. Les jeux sont rythmés par des portes dont il faut trouver la ou les clefs pour progresser. Parfois il s'agit de portes bien concrètes fermées à clef, ou par des fragments de clefs, ou par un code noté sur un post-it dans le bureau voisin. Parfois, il s'agit de portes plus abstraites : tuer tous les ennemis d'une zone, trouver la bonne option de dialogue, le bon objet à donner à quelqu'un, rendre un service pour qu'un PNJ se confie à vous… Cette notion de clefs et de portes permet de donner des objectifs clairs et des récompenses satisfaisantes : j'ai trouvé la clef, la porte s'ouvre, je progresse dans le jeu et dans l'histoire.</p>
 <p><em>Firebird</em>, écrit par Fibretigre et publié par le studio Ludogram, ne déroge pas à la règle. On y incarne Mariska, une camionneuse russe lancée sur les routes de Sibérie pour ramener une jeune fille chez elle, loin au nord.  Au volant de son camion, il lui faudra déjouer les pièges d'une terre hostile, échapper aux fantômes de l'URSS, et surtout, et c'est là un des piliers du <em>gameplay</em> : gérer l'intégrité de son camion et ses réserves de carburant, car dans les forêts de Sibérie, la panne d'essence est question de vie ou de mort.</p>

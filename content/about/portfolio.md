@@ -2,36 +2,195 @@
 layout: layouts/base.njk
 eleventyNavigation:
   key: Portfolio
-  order: 3
+  order: 4
 ---
-# Antonin "Atozi" Demeilliez
+<div style="max-width:350px; float :right; padding:30px">
+  {% image "./jtt_keyart.png", "Key art de Jump the Track"%}
+</div>  
 
-## 🌱 <i>Narrative designer</i> et auteur de jeux au studio Seed by Seed depuis 2018.
-+ <a href="https://store.steampowered.com/app/1866320/Baladins" target="_blank">Baladins (2024) </a>
-+ <a href="https://store.steampowered.com/app/1109820/Pile_Up_Box_by_Box" target="_blank">Pile Up! Box by box (2021)</a>
+# Jump the Track 🎡
 
-## 👻 Auteur de fictions interactives
-+ <a href="https://atozi.itch.io/" target="_blank">itch</a>
+*Seed by Seed, 2025, PC*
 
-## 🎮 ENJMIN Alumnus, section ergonomie (P13, 2016-2018)
-+ <a href="https://www.facebook.com/Parallel91" target="_blank">Parallel 91°</a>  
-+ <a href="https://zeantwan.itch.io/flampage" target="_blank">Flampage</a>
+## Pitch
 
-## 👾 M2 Cinéma Audiovisuel à Paris 3 Sorbonne Nouvelle
-Vous pourrez trouver ici mon mémoire intitulé "Le Glitch comme moyen de révolte dans le jeu vidéo" écrit sous la direction d'Alexis Blanchet.
-+ <a href="https://www.academia.edu/29652147/Le_Glitch_comme_moyen_de_r%C3%A9volte_dans_le_jeu_vid%C3%A9o_M%C3%A9moire_Antonin_Demeilliez_pdf" target="_blank">Lien</a>
+Dans ce visual novel teinté de pachinko, suivez les aventures de Sam, un jeune entrepeneur qui va devoir gagner la tombola de la ville pour sauver sa peau !
 
- </br>
+## Originalité du jeu
+
+Le gameplay du jeu est celui d'un visual novel, mais quand un choix de dialogue intervient, on doit d'abord jouer un jeu de pachinko pour débloquer les différentes options. Cette mécanique m'a permis de voir les possibilités et les limites d'intégrer le gameplay en prise directe avec le dialogue, et de comprendre les problématiques de choix multiple quand le personnage incarné est déjà caractérisé. 
+
+## Ce que j'ai fait sur le jeu
+### Écriture
+- Worldbuilding
+- Scénario : trame narrative, *beats*, structure, arcs narratifs
+- Personnages : conception de fiches de personnages, définition de leur « voix » et personnalité en collaboration avec la *character designer*
+- Dialogues : écriture des dialogues à embranchements en français et en anglais
+- Brief créatif avec notre *background artist* prestataire
+
+### Narrative design
+- Itération sur l'interaction pachinko/dialogue
+- Conception du système global
+- Conception de templates de structures d'embranchements
+- Tenue à jour d'un document de contenu du jeu
+
+
+
+<div style = "max-width:800px; padding-right:100px">
+  <div style="text-align: center;">
+      </br>
+      <a href="https://store.steampowered.com/app/2946390/Jump_the_Track/" class="button" target="_blank" >Voir le jeu</a> </br></br>
+  </div>
+  <hr class="solid">
+</div>
+
+<div style="max-width:350px; float :right; padding:30px">
+  {% image "./baladins_keyart.jpg", "Key art de Baladins"%}
+</div>  
+
+# Baladins 📯
+*Seed by Seed, 2024, PC/Switch/PS5/PS4*
+
+## Pitch
+
+Baladins est un jeu de rôle coopératif et non-violent se jouant jusqu'à quatre personnes. Dans cette aventure, incarnez un baladin, un amuseur public qui va devoir rétablir la paix au sein du peuple de Gatherac et satisfaire l'appêtit d'un dragon mystique dans une boucle temporelle !
+
+## Originalité du jeu
+
+L'idée de Baladins est de proposer l'expérience d'un jeu de rôle sur table sans préparation et sans la dimension chronophage. Nous avons donc décidé d'organiser le gameplay autour d'une boucle temporelle (six semaines dans la diégèse, environ une heure de jeu). On peut (et doit) ainsi rejouer les mêmes quêtes pour en explorer tous les embranchements possibles, sans avoir à rejouer toute l'aventure comme dans les autres jeux du genre.
+Le challenge a été de proposer une boucle de gameplay sans combat et un système de narration systémique.
+
+L'univers de Baladins présente aussi la forte originalité d'être inspiré des contes et légendes du folklore français. Un long travail de worldbuilding a été fait pour s'éloigner le plus possible des poncifs du genre et intégrer des créatures et des histoires typiques de nos régions.
+
+## Ce que j'ai fait sur le jeu
+
+### Écriture
+
+- Worldbuilding
+- Scénario : trame narrative, beats, structure
+- Personnages : conception de fiches pour les 78 PNJ du jeu, définition de leur « voix », histoire et personnalité en collaboration avec la *character designer*
+- Quêtes : Conception et écriture en réunissant les idées de toute l'équipe
+- Dialogues : écriture des dialogues à embranchements en français et en anglais avec des protagonistes non-genrés
+- Descriptions des 168 objets du jeu
+- Suivi au long cours de la traduction avec une équipe de localisation au japon
+- Intégration des idées et noms de personnages des pledgers Kickstarter
+
+### Narrative design
+
+- Système narratif systémique : gestion de la boucle temporelle, mémoire des PJ, réputation auprès des PNJ... 
+- Système d'événements aléatoires pondérés et contextuels
+- Quêtes principales et secondaires à solutions multiples et interconnectés
+- Journal des quêtes
+- Tenue à jour d'un document de contenu du jeu
+
+
+<div style = "max-width:800px; padding-right:100px">
+
+  <div style="text-align: center;">
+      </br>
+      <a href="https://store.steampowered.com/app/1866320/Baladins/" class="button" target="_blank" >Voir le jeu</a> </br></br>
+  </div>
+
+  <hr class="solid">
+
+</div>
+
+<div style="max-width:350px; float :right; padding:30px">{% image "./pileup_keyart.jpg", "Key art de Pile Up! Box by box"%}</div>  
+
+# Pile Up! Box by box 📦
+*Seed by Seed, 2021, PC/Switch/PS4/XboxOne*
+## Pitch
+Pile Up! est un jeu de plates-formes coopératif jouable seul ou jusqu'à quatre. Incarnez des petites boîtes qui peuvent s'empiler pour explorer des mondes 3D tout en carton, et entraidez-vous pour résoudre les puzzles.
+
+## Originalité du jeu
+La coopération était au centre du projet créatif de Pile Up! Nous voulions imaginer un jeu autour duquel les familles et les amis pourraient se réunir manette en main. Le jeu a été pitché en 2017 avec la récente Nintendo Switch en tête. Cet ancien projet de fin d'études à l'ENJMIN est devenu le premier jeu commercial du studio Seed by Seed.
+
+## Ce que j'ai fait sur le jeu
+### Narrative design
+- Propositions de settings et intrigues de niveaux
+### Game design
+- Flow global et scope du jeu : nombre de niveaux, progression dans ces niveaux
+- Conception et documentation d'objets gameplay 
+### Level design
+- Layout, conception et fabrication des niveaux
+- Placement des caméras pour favoriser la lisibilté de l'action et les moments de contemplation
+- Puzzle design
+- Level art avec les assets fabriqués par les artistes 3D
+
+### UX Design
+- Conception de menuflows
+- Playtests
+
+<div style = "max-width:800px">
+
+  <div style="text-align: center;">
+      </br>
+      <a href="https://store.steampowered.com/app/1109820/Pile_Up_Box_by_Box/" class="button" target="_blank" >Voir le jeu</a> </br></br>
+  </div>
+
 <hr class="solid">
 
-# Contact
+</div>
 
-🐘 <a href="https://mastodon.gamedev.place/@atozi" target="_blank">Mastodon</a> </br>
-📧 <a href="mailto:antonin.demeilliez@proton.me" target="_blank">Mail</a> </br>
-🐧 <a href="https://twitter.com/atozi_" target="_blank">Twitter (en dernier recours)</a> </br>
-</br>
-</br>
-</br>
+
+# Autres participations
+## ScourgeBringer Mobile 🔥
+*Flying Oak, 2022, Android*
+
+Travail de *game design* sur l'adaptation mobile de ScourgeBringer pour le studio Flying Oak.
+- Adaptation des contrôles à l'écran tactile en conservant l'essence du jeu
+- Facilitation du jeu
+
+## Wild Arena Survivors 🐯
+*Ubisoft, 2022, Android/iOS / Stage réalisé en 2018*
+
+Stage de *game design* au sein du studio Ubisoft Paris Mobile lors de la phase de pré-production du jeu.
+- Conception et documentation de features avec prise en compte des problématiques ARM (acquisition, rétention, monétisation)
+- Analyse et benchmark d'autres jeux sur des questions de boucle de gameplay et d'ARM
+
+<div style = "max-width:800px">
+
+  <hr class="solid">
+
+</div>
+
+
+
+# 👻 Fictions interactives
+En parallèle de mon travail au studio Seed by Seed, j'ai pu écrire différentes fictions interactives textuelles. Cette pratique me permet à la fois d'affiner mon style d'écriture, d'expérimenter plus librement des formes d'interaction et d'exprimer des idées politiques et philosophiques plus personnelles. 
+
+## La Zizanie 🧟
+*2025*
+
+Exploration d'une approche plus systémique du langage ink dans un *die & retry* post-post-apocalyptique et expérimentation sur la notion de personnage-joueur. Un projet où j'ai passé beaucoup plus de temps à coder les systèmes qu'à écrire du contenu.
+## Entre-Deux 💘
+🏆*Prix d'excellence littéraire au concours de Fiction Interactive Francophone 2023*
+
+Cette fiction interactive vient d'un constat : trop peu de jeux vidéo parlent du monde réel, d'amour et de deuil. J'ai voulu remédier à cela dans Entre-Deux, qui s'inspire largement de mon vécu de jeune adulte au début des années 2010 avec un twist fantastique.
+
+## Les Androïdes 🤖
+🏆*Prix d'excellence littéraire au concours de Fiction Interactive Francophone 2022*
+
+Réflexion sur la notion de première et troisième personne dans une fiction interactive, avec la volonté de questionner le rapport aux personnages.
+
+
+
+
+<div style = "max-width:800px; padding-right:100px">
+<div style="text-align: center;">
+    </br>
+    <a href="https://atozi.itch.io/" class="button" target="_blank" >Voir les FI</a> </br></br>
+</div>
+</div>
+
 <hr class="solid">
 
-<p class="footer-note">Ce site a été réalisé avec 11ty, et est en ligne grâce à l'aide précieuse de <a href="https://bigaston.me/" target="_blank">Bigaston</a>.</p>
+# Cours 📖
+J'ai la chance de pouvoir donner des cours de *game design* dans différents établissements universitaires.
+
+- Le design de jeux mobile (CNAM ENJMIN, Sorbonne Paris Nord, depuis 2022)
+- Introduction au *narrative design* (Sorbonne Paris Nord, depuis 2025)
+- La Conception de jeux vidéo (Paris 3 Sorbonne Nouvelle, depuis 2024)
+- *UX design* appliqué au jeu vidéo (Futurae, 2020)
+
+
