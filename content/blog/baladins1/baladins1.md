@@ -1,0 +1,65 @@
+---
+title: "Baladins: narration procédurale interdite"
+description: Ou comment choisir les bons outils.
+date: 2025-07-17
+tags:
+  - postmortem
+  - Procedural
+  - écriture
+---
+
+{% image "./banner-baladins.jpg", "key art du jeu Baladins" %}
+
+*La narration procédurale paraît souvent être une solution rêvée pour concevoir des jeux narratifs systémiques : la création d'un système narratif complexe et intelligent permettrait théoriquement de créer des histoires à l'infini ! Cependant, au fil du développement de* Baladins, *nous nous sommes peu à peu éloignés de manière inconsciente de la narration procédurale pour revenir à une narration plus fixe, et c'était la bonne chose à faire. Mais alors, quel était le problème avec la narration procédurale ?*
+
+## De bonnes intentions
+ <a href="https://store.steampowered.com/app/1866320/Baladins/" target ="blank" >*Baladins*</a> a avant tout été pensé comme une expérience de jeu de rôle très allégée et rapide. Le nom de travail du projet était même "*Fast Adventure*".   **L'idée première était de proposer un système proche d'un jeu de plateau permettant de créer des histoires vivantes, interactives, toujours changeantes selon les parties des joueurs.** Des amis pourraient s'inviter à venir vivre l'expérience complète d'un jeu de rôle le temps d'une heure. Nous voulions qu'on rejoue à *Fast Adventure* comme on rejoue à un bon jeu de société, en éprouvant ses mécaniques, en se laissant surprendre par ses possibilités narratives infinies. Les joueurs et joueuses auraient écrit leurs propres histoires et les auraient écrites ensemble.
+
+Nous avons d'abord imaginé des plateaux de jeux modulables, constitués de lieux génériques dans lesquels les personnages auraient pu effectuer des actions génériques (explorer un donjon, acheter de l'équipement chez le forgeron, se reposer à la taverne etc.). Dans ces lieux, des personnages leur auraient donné des quêtes, des prémices d'histoires, elles aussi relativement génériques, et dont le déroulement aurait pu être simplement infléchi par les actions des joueurs, le hasard des rencontres sur le plateau et les jets de dés.
+Le berger vous demande de retrouver son fils, vous le retrouvez perché en haut d'un arbre ou tombé dans une rivière, et une fois récupéré vous pouviez l'échanger contre votre vie sauve à des bandits croisés sur la route. **L'idée était de construire des quêtes à partir de briques narratives et d'interactions avec des objets.**
+
+{% image "./baladins1.png", "Extrait du document de pitch original de Fast Adventure. On y voit l'idée du plateau de jeu avec des lieux génériques." %}
+
+*Extrait du document de pitch original de Fast Adventure. On y voit l'idée du plateau de jeu avec des lieux génériques.*
+
+Pour parfaire ce système, j'avais commencé à imaginer une idée rudimentaire selon laquelle **chaque PNJ était une boîte fermée**. Le PNJ n'aurait consenti à nous aider, à s'ouvrir, que si nous trouvions la clef pour cette boîte : un service à lui rendre, être méchant avec son ennemi, lui donner un objet qui lui plait, etc. Ainsi les PNJ auraient eu une liste de goûts et de relations, indiquant les objets ou types d'objets aimés ou non, les personnages aimés ou non. Les joueurs et joueuses, au fil de leurs parties auraient pu apprendre ces préférences : cet aubergiste aime les objets magiques, les lutins aiment la nourriture, ce magicien déteste les armes etc.
+
+Il ne reste que peu de choses de ces idées dans *Baladins*. Un système trop compliqué ? Pas assez fun ? Nous ne le saurons jamais, car il est resté au stade de documents de design. Nous avons vite dû repenser la narration du jeu car, si l'intention première était d'offrir des parties rapides, la seconde était **d'offrir des parties rejouables**. Et si un système comme celui-ci permet de rejouer et de toujours avoir de la nouveauté grâce aux différentes combinaisons d'événements, est-il suffisant pour donner *envie* de rejouer? 
+
+## La carte aux trésors
+Nous voulions absolument que les joueurs aient envie de rejouer à *Baladins*. **Pour ce faire, notre stratégie a été de miser sur l'univers du jeu.** Il nous fallait un univers attirant, avec du caractère. Cette solution s'est imposée à nous car nous avions à cœur de faire un réel travail de *world building* pour éviter de proposer aux joueurs une *fantasy* convenue et générique. De plus, l'idée d'un plateau de jeu procédural ajoutait une grande quantité de travail de programmation. **Concevoir un système de narration procédurale tout en ayant un univers riche et travaillé faisait éclater le *scope* de notre projet** : il aurait fallu concevoir et coder le système de génération des cartes, le placement des personnages, créer les banques de phrases, de quêtes, d'histoires, ainsi que le système pour faire fonctionner le tout, tester toutes ses possibilités et s'assurer que tout fonctionne. Il aurait fallu imaginer et écrire des milliers de morceaux d'histoire et le système pour les faire s'articuler plutôt que la cinquantaine de quêtes présentes finalement dans le jeu. Tout cela aurait demandé un temps et une énergie démesurés par rapport à notre budget et la taille de notre équipe. **Imaginer des possibilités narratives infinies qui donnent le sentiment d'un univers cohérent, original et attrayant était donc hors de notre portée.**
+
+Les terrains de jeu ont donc été conçus en amont, avec des lieux reconnaissables et uniques. Adieu tavernes, donjons et forêts génériques. Les plateaux sont pensés et les lieux visitables sont intimement liés aux quêtes et aux histoires qu'on peut y vivre : le château est un centre administratif où vivent des pigeons voyageurs, les deux villes voisines se querellent au sujet de l'école de magie qu'elles revendiquent, les savonniers finissent de récurer leurs chaudrons avant leur fermeture hivernale, etc. **L'univers de Gatherac est un monde écrit qu'on va explorer de partie en partie.**
+
+{% image "./baladins2.png", "" %}
+
+## Donner de la voix
+Cette exploration ne serait rien sans les quêtes jouées et les personnages rencontrés. Si nous avons pris le parti de faire des personnages jouables sans nom, ni genre, ni véritable personnalité (quoique), nous avons tout de suite voulu **que nos PNJ incarnent l'univers.** Cet univers, que voulions fort et original, devait être peuplé de personnages attachants et pleins de caractère. Nous voulions que les joueurs aiment ces personnages, les reconnaissent, connaissent leurs noms, aient leur préféré, et cela a définitivement éloigné le jeu d'une approche systémique, car quand on veut donner du caractère à un personnage, on doit, il me semble, écrire ses dialogues avec soin. C'était pour nous la solution la plus évidente et la moins coûteuse.
+
+Utiliser un système de dialogue procédural nous aurait permis d'utiliser un nombre limité de phrases génériques pour simuler les interactions avec les personnages. Cependant, il m'était inconcevable de mettre dans la bouche de tous les PNJ les mêmes mots pour signifier leurs réactions. Comment se prendre d'affection pour le marchand de fromage s'il me parle avec le même ton que la puissante magicienne ? **Comment croire à cet univers si ses habitants parlent tous avec le même vocabulaire neutre ?** Si toutes les particularités de langage sont gommées au profit d'une langue générique ? Pour avoir ce résultat avec de la narration procédurale, il aurait fallu écrire des banques de phrases pour chaque personnage, dans lesquels nous serions venus piocher pour composer des dialogues selon les situations vécues en jeu. Un tel travail de fourmi nous aurait fait passer à côté de l'intérêt d'un système de dialogue procédural.
+
+{% image "./baladins3.png", "" %}
+
+Chaque personnage a donc une manière différente de réagir aux objets qu'on lui donne et les quêtes débloquent des options de dialogue spécifiques, **écrites à la main.** Tant pis si les soixante-dix-sept PNJ du jeu n'ont pas tous une réplique pour répondre aux cent soixante-trois objets qu'on peut leur donner ! Quand ils parlent, ils parlent pour de bon, et je pense pouvoir dire que c'est avec une voix bien à eux.
+
+## Chasser le dragon
+Nous avons donc un univers cohérent et spécifique prêt à être visité et revisité, habité de personnages ayant chacun leur voix, mais le dernier élément qui a fini de faire basculer *Baladins* (ou plutôt *Fast Adventure*) de la narration procédurale à de la narration écrite fut la volonté de proposer **une histoire cohérente sur le temps long**.
+
+Toujours dans cette volonté de rétention, il nous semblait nécessaire de proposer une histoire continue d'une partie à l'autre, même de manière ténue. C'est ainsi que nous avons finalement imaginé l'histoire du Coulobre, ce dragon mangeur de temps qu'on doit rassasier. En nous renvoyant dans le passé inlassablement à la fin de chaque partie, le Coulobre nous fait revivre les mêmes événements. **Adieu les histoires procédurales recomposées à chaque fois** : il nous fallait un univers cohérent, qui subsiste et qu'on puisse apprivoiser, une boucle temporelle après l'autre. Les quêtes sont ainsi conçues pour être jouées et rejouées, et la narration elle-même devient un espace d'exploration : **un arbre dont on voudrait grimper toutes les branches**.
+
+{% image "./baladins4.png", "" %}
+
+
+## La narration procédurale interdite
+Cette tension entre une approche systémique et une approche écrite a créé des difficultés au début du projet, notamment car nous n'avions pas identifié ce problème, cette incompatibilité : certains d'entre nous imaginaient le jeu comme un pur système, d'autres le voyaient plus comme un espace narratif écrit. Finalement, **c'est la volonté artistique qui a tranché à notre place** : pour permettre de réunir les gens autour du jeu sur le temps long, pour que les joueurs aient envie de relancer notre jeu, nous avons misé sur la spécificité de l'univers, son originalité, son charme, et sur une histoire au long cours. 
+
+Si cette volonté était consciente, notre manque d'expérience dans les jeux narratifs nous a empêchés de savoir tout de suite quels moyens utiliser pour rendre cette volonté en jeu. C'est instinctivement, au fil du développement des personnages et de leurs dialogues, que s'est dessiné un jeu écrit, éloigné des volontés systémiques originelles. Il reste encore quelques vestiges des premières réflexions : les personnages ont presque tous une ou plusieurs "clefs" pour les "ouvrir" aux baladins, ainsi qu'une ou plusieurs manières de les fermer complètement au dialogue. Les événements aléatoires rencontrés sur la carte sont étroitement liés à la complétion d'une ou plusieurs quêtes et les actions dans les lieux sont des moyens d'avoir une approche plus "*gameplay*". Si le système n'a pas existé dans sa forme originelle, il a permis de poser les bases et la structure de l'univers et des quêtes. **C'est en travaillant avec comme objectif des intentions d'expérience clairement affirmées que le jeu s'est révélé ne pas être vraiment systémique.** Ce n'était pas un choix, plutôt quelque chose que nous avons constaté pendant la production, en prenant un pas de recul. Le tout-systémique n'aurait pas fonctionné pour *Baladins*.
+
+{% image "./baladins5.png", "Le schéma des quêtes de Baladins" %}
+*Le schéma des quêtes de Baladins. Chaque PNJ a une ou plusieurs "clefs" pour les "ouvrir" aux baladins.*
+
+Il existe pourtant des jeux à la narration procédurale qu'on relance volontiers et auquel on peut jouer des dizaines d'heures. On peut penser à des jeux comme *Dwarf Fortress*, *Sunless Sea* ou *Curious Expedition* dans lesquels les personnages n'ont pas de voix propre et dont l'histoire se forge au fil des péripéties du *gameplay*.  Mais, contrairement à *Baladins*, ces jeux présentent des systèmes de *gameplay* complexes. Le plaisir ludique vient des combats, de la navigation sur une mer plongée dans les ténèbres, de la gestion de son navire ou de sa forteresse. Dans *Baladins*, le *gameplay* **est** la narration : pas de combat, pas de gestion, et une construction de personnage réduite au minimum. **Dans notre jeu, le plaisir ludique vient des rencontres, des dialogues, de l'expérimentation en donnant des objets à des personnages, de l'exploration des possibilités narratives.** Voilà l'enseignement que j'ai pu tirer de mon travail sur *Baladins* : la narration procédurale n'a de sens que si elle vient s'adosser à un système de jeu fort, avec des boucles de *gameplay* captivantes. 
+**La narration procédurale n'est pas faite pour les jeux narratifs.**
+
+Si votre jeu est fondé sur la narration, il faut que ses dialogues, ses enjeux, ses péripéties, soient écrits de manière fixe. Il faut qu'il transmette votre voix, vos idées et celles de votre équipe, car c'est cela qui va le rendre original et attachant. Un narration procédurale, si elle est fonctionnelle d'un point de vue dramaturgique, manquera sûrement du supplément d'âme et de propos qu'on cherche dans une histoire écrite et pensée. Car il ne faut pas oublier que le propre du récit est d'avoir un début, un milieu et une fin : pourquoi vouloir à tout prix imaginer des histoires infinies ?
+
