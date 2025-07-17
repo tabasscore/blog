@@ -57,21 +57,6 @@
 	</url>
 	
 	<url>
-		<loc>https://example.com/tags/analyse/</loc>
-		<lastmod>2025-07-17</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/tags/structure/</loc>
-		<lastmod>2025-07-17</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/tags/outil/</loc>
-		<lastmod>2025-07-17</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://example.com/tags/postmortem/</loc>
 		<lastmod>2025-07-17</lastmod>
 	</url>
@@ -83,6 +68,21 @@
 	
 	<url>
 		<loc>https://example.com/tags/ecriture/</loc>
+		<lastmod>2025-07-17</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/tags/analyse/</loc>
+		<lastmod>2025-07-17</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/tags/structure/</loc>
+		<lastmod>2025-07-17</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/tags/outil/</loc>
 		<lastmod>2025-07-17</lastmod>
 	</url>
 	
