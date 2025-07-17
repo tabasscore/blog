@@ -23,7 +23,7 @@ Aujourd'hui, j'ai donc une approche **rationnelle et technique** de l'art du *ga
 
 <div style="text-align: center;">
     <a href="mailto:antonin.demeilliez@proton.me" class="button" target="_blank" >Me contacter</a>
-    <a href="./AntoninDemeilliez_Plaquette.pdf" class="button" download >Mes services</a> </br></br>
+    <a href="./AntoninDemeilliez_Plaquette.pdf" class="button" >Mes services</a> </br></br>
 </div>
 <hr class="solid">
 
