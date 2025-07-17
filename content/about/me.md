@@ -22,7 +22,8 @@ En parallèle de cette expérience, j'ai exploré les univers du **jeu de rôle*
 Aujourd'hui, j'ai donc une approche **rationnelle et technique** de l'art du *game design* que je mets au service de ma créativité, et, pourquoi pas, de la vôtre. Je propose des prestations de *game design* et de *narrative design*, alors n'hésitez pas à me contacter si vous avez besoin d'aide pour faire naître vos idées.
 
 <div style="text-align: center;">
-    <a href="mailto:antonin.demeilliez@proton.me" class="button" target="_blank" >Me contacter</a> </br></br>
+    <a href="mailto:antonin.demeilliez@proton.me" class="button" target="_blank" >Me contacter</a>
+    <a href="./AntoninDemeilliez_Plaquette.pdf" class="button" download >Mes services</a> </br></br>
 </div>
 <hr class="solid">
 
@@ -55,6 +56,7 @@ Vous pourrez trouver ici mon mémoire intitulé "Le Glitch comme moyen de révol
 
 🐘 <a href="https://mastodon.gamedev.place/@atozi" target="_blank">Mastodon</a> </br>
 🦋 <a href="https://bsky.app/profile/atozi.bsky.social" target="_blank">Bluesky</a> </br>
+🟦 <a href="https://www.linkedin.com/in/antonin-demeilliez/" target="_blank">Linkedin</a> </br>
 </br>
 </br>
 </br>
