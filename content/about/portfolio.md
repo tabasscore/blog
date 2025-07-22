@@ -133,20 +133,80 @@ La coopération était au centre du projet créatif de Pile Up! Nous voulions im
 </div>
 
 
+<div style="max-width:350px; float :right; padding:30px">{% image "./parallel.jpg", "Logo de Parallel 91°"%}</div>  
+
+# Parallel 91° 👁️
+*CNAM-ENJMIN, 2017*
+
+## Pitch
+Dans ce jeu en réalité augmentée sur mobile, incarnez l'agent d'une entité gouvernementale dédiée à la surveillance et la traque des activités paranormales.  Armé de votre système Odin, vous allez devoir scanner une pièce pour retrouver une anomalie dans le continuum espace-temps, en apprendre plus sur son origine et (peut-être) la renvoyer d'où elle vient.
+
+## Originalité du jeu
+Projet de fin de M1 au CNAM-ENJMIN réalisé avec le soutien du ___Stategic Innovation Lab d'Ubisoft___. Ce jeu utilise la technologie **Tango**, une expérimentation de Google dans le monde de la réalité augmentée sur mobile.
+Ce projet m'a permis de retirer beaucoup d'enseignements sur le design de jeux, et en particulier les jeux en AR sur mobile, tout en découvrant le monde de la R&D chez Ubisoft.
+
+Étant à l'origine de l'idée, j'ai eu le plaisir de coordonner les autres corps de métiers pour faire naître notre vision avec les contraintes de l'exercice scolaire. Nous avons réussi à réaliser une expérience narrative interactive de moins de quinze minutes avec une nouvelle technologie.
+
+Le jeu n'est malheureusement plus disponible sur le Playstore, Google ayant mis fin au développement de **Tango**.
+
+
+## Ce que j'ai fait sur le jeu
+### Direction créative
+- Idée originale
+- Coordination créative sur le projet (dev, art, son, game design)
+
+## Narrative design et writing
+- Écriture du pitch et du scénario
+- Design des moments de narration
+- Écriture des dialogues
+- Direction d'actrice pour les enregistrements voix
+
+### Game design
+- Conception de mécaniques du jeu en collaboration avec les autres membres de l'équipe
+
+### UX design
+- Organisation de playtests
+- Conception d'interfaces pour la réalité augmentée 
+
+
+<div style = "max-width:800px">
+
+  <div style="text-align: center;">
+      </br>
+      <a href="https://www.youtube.com/watch?v=R5ou_6IrfCI" class="button" target="_blank" >Voir le jeu</a> </br></br>
+  </div>
+
+<hr class="solid">
+
+</div>
+
+
 # Autres participations
 ## ScourgeBringer Mobile 🔥
 *Flying Oak, 2022, Android*
 
-Travail de *game design* sur l'adaptation mobile de ScourgeBringer pour le studio Flying Oak.
+Travail de *game design* sur l'adaptation mobile de ScourgeBringer pour le studio Flying Oak. Cette adaptation a reçu un très bon accueil de la part des joueurs et joueuses. 
+
+Playstore : 4.7⭐ // Appstore : 5⭐
+
 - Adaptation des contrôles à l'écran tactile en conservant l'essence du jeu
 - Facilitation du jeu
+<div style = "max-width:800px">
+
+  <div style="text-align: center;">
+      </br>
+      <a href="https://apps.apple.com/fr/app/scourgebringer/id1552864378" class="button" target="_blank" >Voir le jeu</a> </br></br>
+  </div>
+
+
+</div>
 
 ## Wild Arena Survivors 🐯
 *Ubisoft, 2022, Android/iOS / Stage réalisé en 2018*
 
 Stage de *game design* au sein du studio Ubisoft Paris Mobile lors de la phase de pré-production du jeu.
-- Conception et documentation de features avec prise en compte des problématiques ARM (acquisition, rétention, monétisation)
-- Analyse et benchmark d'autres jeux sur des questions de boucle de gameplay et d'ARM
+- Conception et documentation de features avec prise en compte des problématiques **ARM** (acquisition, rétention, monétisation)
+- Analyse et **benchmark** d'autres jeux sur des questions de boucle de gameplay et d'ARM
 
 <div style = "max-width:800px">
 
