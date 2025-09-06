@@ -1,0 +1,13 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: Nouvelles
+  order: 5
+---
+
+<h1>Nouvelles</h1>
+
+Voici toutes les nouvelles écrites pour le Bradbury Challenge entre 2025 et 2026 :
+
+{% set postslist = collections.nouvelles %}
+{% include "postslist.njk" %}
