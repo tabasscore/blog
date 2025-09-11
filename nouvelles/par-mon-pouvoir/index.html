@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Par mon pouvoir !</title>
+		<meta name="description" content="Narrative design en analyses">
+		<link rel="icon" type="image/x-icon" href="/img/avatar.png">
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="From Atozi">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="From Atozi">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+		
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+* { box-sizing: border-box; }
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #dad8d8;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #fdff61;
+	--text-color-link-active: #ffc861;
+	--text-color-link-visited: #fdff61;
+
+	--syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #fdff61;
+		--text-color-link-active: #ffc861;
+		--text-color-link-visited: #fdff61;
+
+		--background-color: #0f0e26 ;
+	}
+}
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	color: var(--text-color);
+	
+	height: auto;
+
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+
+/* élargir le body*/
+body {
+	max-width: 80em;
+	--background-color: #080713 ;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+
+	
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+	font-size: larger;
+	text-justify: auto;
+	max-width: 800px;
+	margin-top: 0em;
+	margin-bottom: 0.7em;
+
+}
+
+
+
+li {
+	font-size: larger;
+	line-height: 1.8;
+	margin-top: 0;
+	max-width: 680px;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+main {
+	padding: 1rem;
+	padding-left: 7em;
+	padding-right: 7em;
+	padding-top:2em;
+	min-height: auto;
+	text-align: justify;
+
+}
+main :first-child {
+	margin-top: 0;
+}
+
+header {
+	height: 150px;
+	padding-left: 2% ;
+	background-color: #fdff61;
+	--text-color-link: #000000;
+	--text-color-link-active: #5a210f;
+	--text-color-link-visited: #000000;
+	font-size: 2em;
+	font-family: 'Libre Baskerville', serif;
+}
+header:after {
+	content: "";
+	display: table;
+	clear: both;
+	--background-color: #ad9f1d;
+
+}
+
+.links-nextprev {
+	list-style: none;
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+}
+code {
+	word-break: break-all;
+}
+
+
+
+/* Header */
+header {
+	display: flex;
+	gap: 1em .5em;
+	flex-wrap: wrap-reverse;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px;
+	height: auto;
+}
+.home-link {
+	font-size: 1em; /* 16px /16 */
+	font-weight: 700;
+	margin-right: 2em;
+}
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	font-size: 0.7em;
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+	margin-right: 1em;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav-item a[href]:hover {
+	text-decoration: none;
+
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+	font-weight: bold;
+
+}
+
+/* Posts list */
+.postlist {
+	list-style: none;
+	padding: 0;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+.postlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	font-style: italic;
+	font-size: small;
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 3em;
+}
+.post-metadata time {
+	margin-right: 1em;
+}
+
+/* Direct Links / Markdown Headers */
+.header-anchor {
+	text-decoration: none;
+	font-style: normal;
+	font-size: 1em;
+	margin-left: .1em;
+}
+a[href].header-anchor,
+a[href].header-anchor:visited {
+	color: transparent;
+}
+a[href].header-anchor:focus,
+a[href].header-anchor:hover {
+	text-decoration: underline;
+}
+a[href].header-anchor:focus,
+:hover > a[href].header-anchor {
+	color: #aaa;
+}
+
+
+
+
+h1 {
+	font-family: 'Libre Baskerville', serif;
+
+	color: white;
+}
+
+h2 + .header-anchor {
+
+	font-family: 'Libre Baskerville', serif;
+	font-weight: bold;
+	font-size: 1.5em;
+	color: white;
+}
+
+.site-footer {
+
+	background: orange;
+	color: black;
+	position: relative;
+	min-height: 5%-150px;
+
+}
+
+.site-title{
+	display: flex;
+	flex-grow: 1;
+	gap: 1em .5em;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: right;
+	color: black;
+	font-weight: bolder;
+
+}
+
+ul {
+
+	padding-top: 0;
+
+}
+
+.footer-note {
+	color: grey;
+	font-style: italic;
+	font-size: medium;
+
+}
+
+.button {
+  background-color: #fdff61; /* Green */
+  
+  width: 250px;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 8px;
+  text-decoration: none;
+--text-color-link: #150323;
+--text-color-link-active: #fdff61;
+--text-color-link-visited: #150323;
+}
+
+.button:hover{
+	background-color: #0b3a3b
+}
+@media screen and (max-width: 800px) {
+	main {
+	  padding-left: 2em;
+	  padding-right: 2em;
+	  font-size: smaller;
+	  text-align: justify;
+	}
+
+	p {
+		line-height: 1.5;
+		font-size: larger;
+		text-justify: auto;
+		max-width: 1000px;
+		margin-top: 0em;
+		margin-bottom: 0.7em;
+	
+	}
+  }
+
+picture {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}</style>
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<nav>
+				<h2 class="visually-hidden">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/">Accueil</a></li>
+					<li class="nav-item"><a href="/blog/">Articles</a></li>
+					<li class="nav-item"><a href="/about/me/">À propos</a></li>
+					<li class="nav-item"><a href="/about/portfolio/">Portfolio</a></li>
+					<li class="nav-item"><a href="/writing/">Nouvelles</a></li>
+				
+				</ul>
+			</nav>
+			<div class=site-title>From Atozi<img src="/img/avatar.png" alt="Atozi's logo" width=100 height=100>
+			</div>
+			
+
+		</header>
+
+		<main id="skip">
+			
+<h1>Par mon pouvoir !</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2025-09-11">11/09/2025</time></li>
+	<li><a href="/tags/nouvelles/" class="post-tag">nouvelles</a></li>
+</ul>
+
+<p><a href="/img/eb9eiOvEYV-1140.jpeg" target="_blank"><picture><source type="image/avif" srcset="/img/eb9eiOvEYV-1140.avif 1140w"><source type="image/webp" srcset="/img/eb9eiOvEYV-1140.webp 1140w"><img alt="Gravure du 19ème siècle représentant Robert-Houdin réalisant le tour de la suspension éthéréenne." loading="lazy" decoding="async" src="/img/eb9eiOvEYV-1140.jpeg" width="1140" height="641"></picture></a></p>
+<p>Sur un boulevard de l’ouest parisien fraîchement creusé par le baron Haussmann, chez un autre baron au nom aujourd’hui oublié, des messieurs de la haute société prirent place sur des rangées de chaises dans le plus grand salon de l’hôtel particulier. Devant eux se dressait une estrade de bois bordée de rideaux décorés de constellations. Cette estrade, banale à l’œil profane, dissimulait en réalité des merveilles d’ingénierie : trappes, poulies, courroies, engrenages et leviers en tout genre. Ce soir-là, sur cette estrade, des messieurs bien comme il faut, en redingote et chapeau haut de forme, se succédèrent sous les applaudissements de l’assemblée, car ce soir on rendit hommage à la vie et à l’œuvre de Monsieur Jean-Eugène Robert-Houdin.</p>
+<p>Le père de tous les illusionnistes, un vieillard de soixante ans à l’œil vif, était assis au premier rang et suivait avec intérêt la représentation des plus grands tours de son répertoire. La bouteille inépuisable, la boîte magique, l'escarpolette polonaise et bien entendu la suspension éthéréenne, clou du spectacle, avaient été récréées avec brio par des confrères talentueux mais déférents envers le maître. Ils avaient aussi fait montre de leur créativité et de leur ingéniosité en proposant des illusions de leur cru : on avait coupé une femme en deux, fait usage de la télépathie et escamoté un cheval adulte sur scène ! Les aristocrates et bons bourgeois applaudirent en balayant la fumée de leurs cigares.
+Quand le spectacle fut terminé, un conciliabule d’illusionnistes professionnels se réunit autour du vieux maître. On s’y échangea des louanges et des flatteries, tout en cherchant l’approbation de Robert-Houdin, homme fort affable et prompt à la donner. Un jeune homme s’était faufilé dans cette aréopage de magiciens. C’était Henri de Broglie, poitevin de son état, et fraîchement diplômé en ingénierie hydraulique. Il avait été convié par le cercle des illusionnistes car ses premières prestations dans des salons étudiants lui avaient déjà valu une solide réputation. Pour autant, face à ses aînés, l’admiration le réduisait au silence. Alors il en profitait pour écouter les échanges, ne voulant perdre une miette de la sagesse de ces messieurs, en particulier de Robert-Houdin.</p>
+<p>— Maître, nous regrettons tout de même de ne pas vous avoir vu sur scène ! brava un illusionniste plus cavalier que les autres.</p>
+<p>— Je comprends votre déception, mais mes années de scène sont derrière moi. Je vois que la relève est bien assurée et cela apaise mon cœur. Je n’ai plus rien à vous apprendre, ni même à vous montrer.</p>
+<p>— N’avez-vous point un dernier tour dans votre sac ? Une ultime illusion pour nous couper le souffle ?
+On insista. Malgré les rechignements, personne n’était dupe : l’ancien avait quelque chose derrière la tête.</p>
+<p>— Bien, finit-il par lâcher. Suivez-moi dans ce petit salon, nous y serons plus à l’aise.
+Dans le dos du maître, les illusionnistes échangèrent des regards entendus. Le vieux avait certainement déjà préparé son coup et les amenait sur son terrain : un terrain truffé de mécanismes dont lui seul avait le secret.
+Les illusionnistes pénétrèrent dans un salon aux volets fermés. Seule la lumière des lampes à gaz se reflétait sur les dorures du faste mobilier. Au milieu de la pièce se tenait un énorme guéridon en bois marqueté. On se répartit en cercle autour de la table, et Henri de Broglie remercia le ciel que personne n’eut remarqué sa présence, ou qu’en tout cas personne ne s’en fut offusqué.</p>
+<p>— Avez-vous cédé aux sirènes du spiritisme, maître ? railla l’un des magiciens.
+Robert-Houdin sourit. On aimait à se moquer des médiums chez les ingénieurs.</p>
+<p>— Non pas, mais regardez plutôt. Ce que vous allez voir ce soir est certainement mon plus grand tour de magie.
+Un frisson d’excitation parcourut la salle. Le maître savait ménager ses effets, aussi sortit-il de sa poche, un œuf et un mouchoir. Henri en déduisit qu’il avait bien préparé son coup, à moins que les vrais illusionnistes ne sortent jamais sans un œuf dans la poche de leur veston. L’œuf fut passé de main en main pour attester de son intégrité, puis disposé au centre du guéridon — lui aussi préalablement vérifié à la demande du maître — et recouvert par le mouchoir. L’étoffe formait une bosse visible à l’endroit où elle recouvrait l’œuf.</p>
+<p>— Ce que vous allez voir, messieurs, est un mystère absolu. Vous n’êtes pas sans savoir que notre bon empereur Napoléon m’avait mandé pour voyager en Algérie et rencontrer les marabouts musulmans.</p>
+<p>À nouveau, on échangea des regards entendus entre magiciens. Enrober son tour d’une saveur d’orientalisme était très en vogue.</p>
+<p>— Évidemment, la plupart n’était pas plus mages que moi, et je pus démontrer sans difficulté l’étendue de leur supercherie. Cependant, dans les hauteurs de l’Atlas, dans un village berbère dont le nom m’échappe aujourd’hui, un mage kabyle m’a enseigné ce sortilège dont l’origine se perd dans le fond des âges sémitiques.
+Robert-Houdin plaça sa main trente centimètres au-dessus de l’œuf et dit d’une voix forte :</p>
+<p>— Par mon pouvoir, je te bannis de notre monde !</p>
+<p>Et le mouchoir s’affaissa.</p>
+<p>— Allez-y. Regardez, je vous en prie.</p>
+<p>Un des hommes saisit le mouchoir et le retira d’un coup sec, dévoilant la surface lisse et brillante du guéridon. Des « Oh ! » retentirent et on attendit la suite. Cependant, elle ne semblait pas venir, le magicien regardait l’assemblée avec une mine satisfaite.</p>
+<p>— Et maintenant ? dit l’un.</p>
+<p>— Maintenant ?</p>
+<p>— Eh bien, quoi ? C’est tout ? Vous n’allez pas le faire réapparaître quelque part ?</p>
+<p>— Réapparaître ? Oh non ! Le kabyle en était bien incapable, et moi aussi. L’œuf n’est pour ainsi dire plus de ce monde !
+Cette fois-ci, les regards échangés furent circonspects et après un moment de silence gêné, on applaudit poliment, puis on regagna la salle de réception.</p>
+</br>
+<p>La fête continua, animée par les conversations au sujet de la dernière illusion du maître. Tout le monde y allait de son commentaire, certains saluaient l’élégance et la simplicité du tour, d’autres déploraient un escamotage simple, voire enfantin, sûrement symptôme d’une sénilité nouvelle. Les plus espiègles attendirent le retour de l’œuf toute la soirée, gageant qu’un bon gag aurait rattrapé une piètre illusion.</p>
+<p>Tout le monde reconnaissait cependant la perfection de l’exécution et chacun avait sa théorie. Trappe turque, manchette chinoise, foulard indien, doigts de dentiste : toutes les techniques du répertoire des illusionnistes y passèrent. Henri écoutait, n’osant pas lui-même proposer son interprétation du tour, mais quelque chose le dérangeait : Robert-Houdin avait dit que c’était son plus grand tour, et le jeune magicien sentait qu’il ne s’agissait pas là seulement d’un effet scénique. Si le résultat était peu impressionnant, le truc devait être sensationnel et au-delà des limites de la science moderne de l’illusionnisme. Quelle invention formidable était-elle née de l’esprit génial de l’inventeur pour faire disparaître cet œuf ? Henri voulait le savoir, et pour cela il fallait briser un tabou absolu. Au détour d’un corridor, le jeune fondit sur le vieux maître au profit d’un instant où ce dernier était seul plus de dix secondes.</p>
+<p>— Maître, pardonnez par avance mon indiscrétion et l’affront que je vais vous faire, mais je n’y tiens plus, et nous sommes entre personnes de la profession : quel est le truc ?</p>
+<p>— Le truc ? Vous parlez de mon tour avec l’œuf ?</p>
+<p>— Oui. Tout le monde ici, illusionniste ou pas, pense avoir la solution, mais je pense qu’ils se trompent. Par pitié, dites-moi ce qui fait que ce tour est le plus grand ! Et par pitié, pardonnez mon audace !</p>
+<p>Le maître esquissa un sourire devant tant de fougue et de curiosité.</p>
+<p>— Vous êtes tout excusé, jeune homme. Je n’ai jamais adhéré à cette croyance selon laquelle, comme on ne demande pas son âge à une femme, il ne faudrait pas demander son truc à un magicien. Dans les deux cas, il faut oser demander : cela permet d’apprendre. Cependant je vais seulement vous dire une chose, sans tout vous révéler : vous souvenez-vous des mots que j’ai prononcés ? La formule ?</p>
+<p>— Par mon pouvoir, je te bannis de notre monde !</p>
+<p>— Bien, bien ! Mais ne me bannissez pas trop vite ! Vous avez donc tout ce qu’il vous faut pour comprendre le tour. Mais sachez une chose : cela ne fonctionne qu’avec les œufs.</p>
+</br>
+<p>Henri rentra chez lui, le cœur plein de cet échange avec le maître. Il était fort tard quand il s’effondra dans son lit, mais il lui fut impossible de fermer l’œil. Qu’avait-il voulu dire ? Comment cette formule était-elle la clef ? Y avait-il un mécanisme déclenché par la voix ? Non, même cela pourrait fonctionner avec autre chose qu’un œuf…
+Il se retourna dans tous les sens et en fit de même avec le problème, si bien qu’à un moment, il n’eut d’autre solution que de bondir de son lit, traverser son grand appartement jusqu’au garde-manger de la cuisine pour en tirer un œuf de poule, bien rond. Il le posa sur la table, jeta un torchon pendu là, tendit la main et prononça les mots :</p>
+<p>— Par mon pouvoir, je te bannis de notre monde !</p>
+<p>Et le torchon s’affaissa. Henri, sidéré, pris une minute entière avant de se résoudre à soulever l’étoffe. La table était immaculée. L’œuf n’était plus de ce monde.
+</br>
+</br></p>
+<p style="text-align: center;">*</p>
+</br>
+<p>— Alors ? dit le vieux, rayonnant. Vous avez trouvé ?</p>
+<p>Robert-Houdin se tenait droit, à l’autre bout de la pièce où on venait de faire entrer Henri, et regardait le boulevard par la fenêtre de son appartement.</p>
+<p>— C’est inconcevable. C’est… De l’authentique magie ! J’ai banni un œuf de notre monde, moi aussi !</p>
+<p>— Et nous ne serions pas les seuls, si seulement les gens savaient écouter et voir ce qu’ils ont sous le nez.</p>
+<p>— Mais, c’est prodigieux ! Pourquoi ne pas l’avoir montré à tout le monde une fois revenu d’Algérie ?</p>
+<p>— Mais, jeune homme, c’est bien ce que j’ai fait. Demandez aux quelques heureux ayant vu mes spectacles au Palais-Royal à mon retour. Ils vous parleront de l’œuf, si tant est qu’ils s’en souviennent ! J’ai fait ce tour tous les soirs, deux semaines durant, et savez-vous ce qu’en a pensé le public ? Il a invariablement détesté. C’est à peine si je n’ai pas reçu les premières huées de ma carrière. J’ai dû rapidement retirer l’œuf de mon récital avant que ma réputation ne s’en retrouve entachée.</p>
+<p>— Enfin ! De l’authentique magie ! Le public aurait dû être émerveillé !</p>
+<p>— Mon enfant, déjà en dix-huit cent cinquante-sept, on n’émerveillait plus les gens de Paris en faisant disparaître un œuf. Si vous voulez faire carrière, évertuez-vous à faire disparaître un cheval ou un canon d’artillerie, voilà ce que veut le public. Sur les planches du théâtre, l’authentique magie ne veut pas mieux que la fausse.</p>
+</br>
+<hr>
+</br>
+<p><em>Thème : Attention les yeux</em></p>
+
+
+
+
+		</main>
+		
+		
+
+	
+
+
+		<!-- Current page: /nouvelles/par-mon-pouvoir/ -->
+	</body>
+</html>
