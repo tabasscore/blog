@@ -98,7 +98,7 @@ Robert-Houdin se tenait droit, à l’autre bout de la pièce où on venait de f
 
 — Enfin ! De l’authentique magie ! Le public aurait dû être émerveillé !
 
-— Mon enfant, déjà en dix-huit cent cinquante-sept, on n’émerveillait plus les gens de Paris en faisant disparaître un œuf. Si vous voulez faire carrière, évertuez-vous à faire disparaître un cheval ou un canon d’artillerie, voilà ce que veut le public. Sur les planches du théâtre, l’authentique magie ne veut pas mieux que la fausse. 
+— Mon enfant, déjà en dix-huit cent cinquante-sept, on n’émerveillait plus les gens de Paris en faisant disparaître un œuf. Si vous voulez faire carrière, évertuez-vous à faire disparaître un cheval ou un canon d’artillerie, voilà ce que veut le public. Sur les planches du théâtre, l’authentique magie ne vaut pas mieux que la fausse. 
 
 
 </br>
