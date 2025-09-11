@@ -161,10 +161,6 @@ Je versai plus de larmes que de pluie ne tomba sur toute la Bretagne ce jour-là
 
 
 
-</br>
-
-____
-</br>
 
 *Thème : Balade au phare*
 
