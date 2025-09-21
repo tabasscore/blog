@@ -41,11 +41,17 @@ Alors ils s'assoient à leur place et jouent.
 Ils se connaissent, évidemment, ça fait six mois qu'ils jouent l'un à côté de l'autre, ils ont même déjà discuté. Mais s'étaient-ils déjà regardés ? Avaient-ils déjà vu l'être humain assis à leur côté toutes ces journées avant d'avoir eu à traverser un tourniquet avec fracas ? Pourtant, cela fait déjà plusieurs semaines qu’ils s’endorment et se réveillent au même moment, même en pleine nuit, que leurs humeurs se synchronisent et que leur cœur bat au même rythme. Évidemment, ils l’ignorent. 
 Axel était né à Neuilly, Alex à Passy. Il avait commencé tôt le conservatoire, elle aussi. Pas nés le même jour, mais dans le même hôpital. Pas  avec le même docteur, mais sont-ils si différents ? Il et elle ont appris à marcher sur le parquet ciré, le vélo dans les parcs, l'amour sur les plages de Ré et le reste dans des écoles privées. Il et elle n’ont pas fini avocate d’affaire ou médecin, car il et elle n’ont pas eu la chance de rater leur carrière dans la musique. Les deux ont atterri dans le même orchestre, comme une évidence, comme si leur place les attendait.
 Leur place, Axel et Alex l’occupent à la perfection. L’incident à l’entrée n’a esquinté ni leur violon, ni leur concentration, ni leur talent. Imperturbables, comme les dix-huit autres violons, comme les quatre-vingts autres musiciens, tout ce petit monde déroule la symphonie comme on se brosse les dents le matin. Alex et Axel se les brossent en rythme. Les notes s’enchaînent, vite, lentement, triste quand il faut, fort au bon moment. Les archets frottent, les vents soufflent, et les marteaux s’abattent sur les peaux tendues. Premier mouvement, check, deuxième mouvement, OK. Reprise du leitmotiv. S’il y avait un public, il aurait des frissons. Ça joue bien, ça sait jouer. Par cœur, parfait. Pourquoi on répète encore, déjà ? 
+
 « PON ! »
+
 Un canard, mais pas n’importe quel canard. Chacun des quatre-vingt-deux musiciens a fait une fausse note, en même temps, pour rien, et s’est arrêté de jouer. Même ceux qui n’avaient rien à jouer se sont manifestés. 
+
 Silence.
+
 Épuisement général, ras-le-bol contenu, déprime soudaine. À quoi bon ?
+
 « J’ai besoin de réfléchir. » dit l’orchestre, d’une seule voix.
+
 Comme un seul homme, tous se lèvent et sortent au pas de l’oie. Le chef d’orchestre, médusé, regarde le flot des musiciens quitter la salle de répétition. Peu de temps après, on entend un grand bruit : quatre-vingt-deux personnes ne peuvent entrer en même temps dans la porte tambour, celle-ci a cédé et les concertistes se dispersent, libres, dans le 16ème arrondissement de Paris.
 
 
