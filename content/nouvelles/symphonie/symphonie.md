@@ -1,6 +1,7 @@
 ---
 title: En rythme
 ---
+{% image "./tar.jpg", "Photogramme du film Tár de Todd Field. Une cheffe d'orchestre, de profil, les bras tendu, la tête baissée en avant." %}
 
 Six mois que l'orchestre répète, huit heures par jour. Le nom en haut de la partition n'est plus qu'un détail, seules les notes comptent à ce stade. Des centaines de notes sur la portée, vues sans être lues, gravées dans la mémoire des musiciens. Six mois que tous les jours, quatre-vingt-deux personnes viennent s'assoir à leur pupitre, qu’une vingtaine de violons s'accordent, et parmi eux Alex et Axel jouent à l'unisson. Six mois que le va-et-vient de leurs archers découpe l'air qu'ils respirent ensemble. Six mois qu'ils fixent les mêmes pages, que leurs yeux suivent les mêmes lignes, avec, dans un coin, les arabesques de la baguette du chef. Six mois qu'ils suivent le tempo, la mesure battue, rebattue.
 
@@ -63,3 +64,4 @@ ____
 </br>
 
 *Thème : Symphonie*
+*Crédit image: Tár, Standard Film Company, EMJAG Productions*
