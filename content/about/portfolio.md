@@ -77,8 +77,11 @@ L'univers de Baladins présente aussi la forte originalité d'être inspiré des
 
 ### Narrative design
 
-- Système narratif systémique : gestion de la boucle temporelle, mémoire des PJ, réputation auprès des PNJ... 
-- Système d'événements aléatoires pondérés et contextuels
+- Narration systémique : gestion de la boucle temporelle, mémoire des PJ, réputation auprès des PNJ... 
+  -  Documentation technique et implémentation en langage YarnSpinner
+- Système d'événements aléatoires pondérés et contextuels utilisant probabilités et conditions
+    - Documentation technique
+    - Équilibrage
 - Quêtes principales et secondaires à solutions multiples et interconnectés
 - Journal des quêtes
 - Tenue à jour d'un document de contenu du jeu
@@ -155,7 +158,7 @@ Le jeu n'est malheureusement plus disponible sur le Playstore, Google ayant mis 
 - Idée originale
 - Coordination créative sur le projet (dev, art, son, game design)
 
-## Narrative design et writing
+### Narrative design et writing
 - Écriture du pitch et du scénario
 - Design des moments de narration
 - Écriture des dialogues
