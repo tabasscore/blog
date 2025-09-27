@@ -3,7 +3,7 @@ title: 04/52 - Après la fermeture
 date : 2025-09-27
 ---
 
-{% image "./banner.jpg", "une silhouette s'éloigne d'un phare à l'horizon" %}
+{% image "./banner.jpg", "Les balles colorées d'une piscine à balles" %}
 
 
 Le premier voyage de Pauline dans le couloir de service n’était pas une franche réussite. Cela faisait dix bonnes minutes qu’elle allait et venait en essayant toutes les portes sans succès. Ce soir, elle n’avait pas pu sortir de la boutique par l’avant, comme elle le faisait d’habitude. Il y avait une petite sauterie dans le centre commercial, avec toutes les huiles de la ville. La direction avait insisté depuis une semaine sur le fait qu’aucun grouillot ne croise tout le beau monde venu guincher pour fêter l’ouverture d’une nouvelle boutique. Ou une galerie d’art ? Pauline n’avait pas bien compris, elle se demandait quelle inauguration pouvait rameuter du si beau monde, sensible à la simple vue d’une vendeuse de chez Sephora.
