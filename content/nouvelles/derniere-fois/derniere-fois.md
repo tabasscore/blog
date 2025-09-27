@@ -1,6 +1,6 @@
 ---
 title: 01/52 - La Dernière Fois
-
+date: 2025-09-08
 ---
 {% image "./phare.jpg", "une silhouette s'éloigne d'un phare à l'horizon" %}
 

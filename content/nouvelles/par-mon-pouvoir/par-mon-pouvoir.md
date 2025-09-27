@@ -1,5 +1,6 @@
 ---
 title: 02/52 - Par mon pouvoir !
+date:  2025-09-11
 ---
 {% image "./houdin.jpg", "Gravure du 19ème siècle représentant Robert-Houdin réalisant le tour de la suspension éthéréenne." %}
 

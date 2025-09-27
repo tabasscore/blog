@@ -1,6 +1,7 @@
 ---
 title: "Arcane : la quête du cool"
 description: Vos histoires ne sont pas assez cool, et les miennes non plus.
+date : 2025-09-16
 tags:
   - take
 ---
