@@ -1,5 +1,6 @@
 ---
 title: 03/52 - En rythme
+date: 2025-09-21
 ---
 {% image "./tar.jpg", "Photogramme du film Tár de Todd Field. Une cheffe d'orchestre, de profil, les bras tendu, la tête baissée en avant." %}
 

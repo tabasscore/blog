@@ -1,6 +1,6 @@
 ---
 title: 04/52 - Après la fermeture
-
+date : 2025-09-27
 ---
 
 {% image "./banner.jpg", "une silhouette s'éloigne d'un phare à l'horizon" %}
