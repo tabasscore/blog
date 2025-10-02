@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>05/52 - Le trésor du Preciosa</title>
+		<meta name="description" content="Narrative design en analyses">
+		<link rel="icon" type="image/x-icon" href="/img/avatar.png">
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="From Atozi">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="From Atozi">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+		
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+* { box-sizing: border-box; }
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #dad8d8;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #fdff61;
+	--text-color-link-active: #ffc861;
+	--text-color-link-visited: #fdff61;
+
+	--syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #fdff61;
+		--text-color-link-active: #ffc861;
+		--text-color-link-visited: #fdff61;
+
+		--background-color: #0f0e26 ;
+	}
+}
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	color: var(--text-color);
+	
+	height: auto;
+
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+
+/* élargir le body*/
+body {
+	max-width: 80em;
+	--background-color: #080713 ;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+
+	
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+	font-size: larger;
+	text-justify: auto;
+	max-width: 800px;
+	margin-top: 0em;
+	margin-bottom: 0.7em;
+
+}
+
+
+
+li {
+	font-size: larger;
+	line-height: 1.8;
+	margin-top: 0;
+	max-width: 680px;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+main {
+	padding: 1rem;
+	padding-left: 7em;
+	padding-right: 7em;
+	padding-top:2em;
+	min-height: auto;
+	text-align: justify;
+
+}
+main :first-child {
+	margin-top: 0;
+}
+
+header {
+	height: 150px;
+	padding-left: 2% ;
+	background-color: #fdff61;
+	--text-color-link: #000000;
+	--text-color-link-active: #5a210f;
+	--text-color-link-visited: #000000;
+	font-size: 2em;
+	font-family: 'Libre Baskerville', serif;
+}
+header:after {
+	content: "";
+	display: table;
+	clear: both;
+	--background-color: #ad9f1d;
+
+}
+
+.links-nextprev {
+	list-style: none;
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+}
+code {
+	word-break: break-all;
+}
+
+
+
+/* Header */
+header {
+	display: flex;
+	gap: 1em .5em;
+	flex-wrap: wrap-reverse;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px;
+	height: auto;
+}
+.home-link {
+	font-size: 1em; /* 16px /16 */
+	font-weight: 700;
+	margin-right: 2em;
+}
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	font-size: 0.7em;
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+	margin-right: 1em;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav-item a[href]:hover {
+	text-decoration: none;
+
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+	font-weight: bold;
+
+}
+
+/* Posts list */
+.postlist {
+	list-style: none;
+	padding: 0;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+.postlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	font-style: italic;
+	font-size: small;
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 3em;
+}
+.post-metadata time {
+	margin-right: 1em;
+}
+
+/* Direct Links / Markdown Headers */
+.header-anchor {
+	text-decoration: none;
+	font-style: normal;
+	font-size: 1em;
+	margin-left: .1em;
+}
+a[href].header-anchor,
+a[href].header-anchor:visited {
+	color: transparent;
+}
+a[href].header-anchor:focus,
+a[href].header-anchor:hover {
+	text-decoration: underline;
+}
+a[href].header-anchor:focus,
+:hover > a[href].header-anchor {
+	color: #aaa;
+}
+
+
+
+
+h1 {
+	font-family: 'Libre Baskerville', serif;
+
+	color: white;
+}
+
+h2 + .header-anchor {
+
+	font-family: 'Libre Baskerville', serif;
+	font-weight: bold;
+	font-size: 1.5em;
+	color: white;
+}
+
+.site-footer {
+
+	background: orange;
+	color: black;
+	position: relative;
+	min-height: 5%-150px;
+
+}
+
+.site-title{
+	display: flex;
+	flex-grow: 1;
+	gap: 1em .5em;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: right;
+	color: black;
+	font-weight: bolder;
+
+}
+
+ul {
+
+	padding-top: 0;
+
+}
+
+.footer-note {
+	color: grey;
+	font-style: italic;
+	font-size: medium;
+
+}
+
+.button {
+  background-color: #fdff61; /* Green */
+  
+  width: 250px;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 8px;
+  text-decoration: none;
+--text-color-link: #150323;
+--text-color-link-active: #fdff61;
+--text-color-link-visited: #150323;
+}
+
+.button:hover{
+	background-color: #0b3a3b
+}
+@media screen and (max-width: 800px) {
+	main {
+	  padding-left: 2em;
+	  padding-right: 2em;
+	  font-size: smaller;
+	  text-align: justify;
+	}
+
+	p {
+		line-height: 1.5;
+		font-size: larger;
+		text-justify: auto;
+		max-width: 1000px;
+		margin-top: 0em;
+		margin-bottom: 0.7em;
+	
+	}
+  }
+
+picture {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}</style>
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<nav>
+				<h2 class="visually-hidden">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/">Accueil</a></li>
+					<li class="nav-item"><a href="/blog/">Articles</a></li>
+					<li class="nav-item"><a href="/about/me/">À propos</a></li>
+					<li class="nav-item"><a href="/about/portfolio/">Portfolio</a></li>
+					<li class="nav-item"><a href="/writing/">Nouvelles</a></li>
+				
+				</ul>
+			</nav>
+			<div class=site-title>From Atozi<img src="/img/avatar.png" alt="Atozi's logo" width=100 height=100>
+			</div>
+			
+
+		</header>
+
+		<main id="skip">
+			
+<h1>05/52 - Le trésor du Preciosa</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2025-10-03">03/10/2025</time></li>
+	<li><a href="/tags/nouvelles/" class="post-tag">nouvelles</a></li>
+</ul>
+
+<p><a href="/img/SVLKYJ2Dos-1920.jpeg" target="_blank"><picture><source type="image/avif" srcset="/img/SVLKYJ2Dos-1920.avif 1920w"><source type="image/webp" srcset="/img/SVLKYJ2Dos-1920.webp 1920w"><img alt="la silhouette d'une épave sous l'eau bleue de l'océan" loading="lazy" decoding="async" src="/img/SVLKYJ2Dos-1920.jpeg" width="1920" height="709"></picture></a></p>
+<p>La frêle embarcation de Maia s’approcha de l’embarcadère sans bruit. La jeune femme attacha une amarre et mit le pied sur les planches chauffées par le soleil. Au bout de la jetée se trouvait la maison sur pilotis de Toa, îlot de bois au milieu du Pacifique. Devant la cabane, Toa avait construit une tonnelle de palmes séchées, à l’ombre de laquelle il avait tendu son hamac.</p>
+<p>— Tu vas faire fuir tous les poissons à ronfler si fort.</p>
+<p>Toa ouvrit les yeux.</p>
+<p>— Je ne ronfle pas. Je médite.</p>
+<p>— Ben, voyons. C’est dommage, j’avais un boulot à te proposer, mais je ne voudrais pas troubler tes méditations.</p>
+<p>— Un boulot ?</p>
+<p>Toa se leva d’un bond, avec une agilité surprenante pour un homme de sa carrure, dominant sa visiteuse de plus d’une tête. Il était vêtu d’un short de bain et de ses tatouages. Maia ne
+l’avait jamais vu porter autre chose, à part sa combinaison de plongée. Dans leur archipel, il ne faisait jamais froid.</p>
+<p>La jeune femme tendit une petite clef rouillée en souriant de toutes ses dents blanches. Un sourire auquel Toa n’avait jamais su résister. Elle savait ce qu’elle faisait.</p>
+<p>— Où est-ce que t’as trouvé ça ?</p>
+<p>— Chez Rangi. Il l’a repêchée cette semaine. Une idée de ce que ça peut ouvrir ?</p>
+<p>— Peut-être bien. Qu’est-ce que tu veux ?</p>
+<p>— Cinquante-cinquante.</p>
+<p>— Cinquante ? Alors que je vais prendre tous les risques ? Je te laisse dix pourcents.</p>
+<p>— Trente. J’ai payé cher pour cette clef, il faut que je rentre dans mes frais.</p>
+<p>— Qu’est-ce que t’as payé ?</p>
+<p>— Deux canettes de Coca.</p>
+<p>L’argent n’avait plus court depuis bien longtemps dans l’archipel. Le soda du monde capitaliste valait de l’or. Bien sûr, ça n’était pas de l’eau potable, mais trouver des canettes encore buvables était rare. Maia avait misé gros dans cet échange.</p>
+<p>— Sinon, je peux toujours demander à Kauri.</p>
+<p>Toa eut un pincement au cœur à l’évocation de ce nom.</p>
+<p>— Kauri ?! Cet escroc ? Tu ferais mieux de jeter ta clef à la mer directement. OK pour trente pourcents.</p>
+<p>Maia savait vraiment ce qu’elle faisait.</p>
+</br>
+<p>Dans des volutes de bulles, Toa agitait des palmes jaunes pour s’enfoncer dans les profondeurs de l’océan. Il connaissait le chemin. En dix ans, il l’avait parcouru nombreuses fois, aller et retour. Aussi ne fut-il pas surpris quand, au détour d’un récif de corail, sa destination se dessina sur le fond marin. Elle était là, blanche, immense, grouillant de vie : l’épave du Preciosa. Plus de trois cents mètres de long, haut comme un immeuble de vingt étages, deux dauphins bleus encore discernables à sa proue et l’énorme trou béant dans sa coque.
+C’était par-là que, depuis une décennie, les plongeurs comme Toa rentraient dans le bateau à la recherche de trésors. En s’engouffrant dans le bâtiment, Toa regarda l’acier plié avec amertume.</p>
+<p>Ce jour-là, il y a dix ans, une charge explosive avait laissé s’engouffrer des millions de litres d’eau, mettant fin à la croisière pour tous ses passagers et son équipage innocent. Plusieurs navires du genre avaient été ciblés le même jour. Après ça, tous les riches de l’hémisphère Nord avaient eu une peur bleue de prendre le large et le marché s’était effondré. Les écoterroristes avaient réussi leur coup. Est-ce que ça a fait du bien à la planète ? Peut-être. En tout cas, ça avait fait un bien fou à beaucoup de monde.
+Toa passa par la salle des machines, puis remonta dans les espaces de loisir : le casino, la fontaine de cristal, le parc aquatique et ses toboggans. Tout était recouvert par les algues, le plexiglas était cassé, des meubles flottaient au plafond, d’autres, vissés au sol, servaient de repaire à toute une faune qui se carapatait à la vue de la lampe torche du plongeur.</p>
+<p>Évidemment, même s’il n’en restait plus grand-chose après dix ans sous la mer, il y avait aussi des gens, là-dedans. Lors des premières plongées, on trouvait des bourgeois gonflés d’eau, morts noyés. Les crustacés et les poissons les avaient rongés au fil des ans, ne laissant que quelques os. Prenant part à cet écosystème, les plongeurs s’étaient affairés à récupérer bagues, colliers de perles, gourmettes, lunettes, sacs à mains, chaussures, ceintures, Rolex et dents en or. L’argenterie avait disparu des cuisines, les bouteilles quittèrent le bar, et les chambres avaient été délestées de leur literie : on recommençait à fabriquer des bateaux à voile à cette époque. Les premiers pillards avaient même réussi à remonter quelques billets de banque, mais aujourd’hui, tout ça ne valait plus rien.</p>
+<p>Toa n’avait jamais eu aucun scrupule à voler ces gens morts dans d’atroces souffrances : c’était à cause d’égoïstes comme eux que l’île où il était né avait disparu sous la montée des eaux.
+Après des années de pillage, il ne restait plus grand-chose dans le Preciosa, à part les fantômes d’une époque révolue, mais quelques mystères subsistaient pour les connaisseurs : des pièces impossibles à ouvrir, des coffres-forts restés inviolés. C’était vers l’un d’eux que nageait Toa, avec l’intuition que la clef de Maia pourrait l’ouvrir. C’était un gros coffre, plus ancien que les autres. Il ne ressemblait pas à ceux intégrés dans le mobilier des chambres. L’un des voyageurs avait dû l’apporter sur le bateau et son contenu était sûrement précieux. Il avait glissé le long du parquet d’une chambre quand le bateau avait chaviré, écrasant dans son mouvement la cage thoracique de son propriétaire contre le mur. Ni le coffre, ni le corps, dont il ne restait aujourd’hui que des os, n’avaient bougé en dix ans, malgré les nombreuses tentatives pour tenter de le forcer.
+Toa dut frotter la porte pour trouver la serrure derrière une mince couche d’algues vertes. Avec ses grosses mains gantées, l’homme glissa la petite clef dans le trou et dut forcer pour la faire tourner.</p>
+<p>Un déclic assourdi par l’eau. Bingo !</p>
+<p>Toa glissa l’extrémité d’un court pied de biche dans la rainure de la porte pour l’aider à pivoter sur ses gonds. Ni les algues, ni la rouille ne faisaient le poids face aux muscles puissants du maori. Une volute de bulles d’air s’échappa du coffre au moment où Toa réussit à faire jouer le panneau de métal. « Pourvu que ce ne soient pas des contrats ou un testament. » priait le plongeur. Ces foutus papiers avaient eu une grande valeur à l’époque.
+La porte pivota et laissa entrer la lumière. Dans le coffre, des papiers, il y en avait, mais dessus était posé un coffret en acajou vernis, grand comme un échiquier plié en deux. Toa l’empoigna sans demander son reste, c’était tout ce qu’il pourrait tirer de ce pillage. Il ne fallait pas trainer, ses réserves d’oxygène n’étaient pas éternelles.</p>
+<p>Il s’autorisa tout de même un dernier adieu au squelette écrasé sous le coffre. Il tourna la tête et un reflet lumineux dans le crâne humain le surpris. La peur lui attrapa les entrailles une seconde, mais Toa retrouva vite son sang-froid. Le crâne rivait sur lui un œil bleu glaçant.</p>
+<p>Étrange, les yeux disparaissaient en premier chez les noyés : un vrai festin pour les crevettes ! Le plongeur n’eut pas le temps de réfléchir à cette bizarrerie car il vit, au-dessus du squelette, deux autres yeux blancs tournés vers lui, éblouis par la lumière blafarde de sa lampe frontale. Une murène se glissa dans la chambre par le hublot béant et fondit sur Toa, la gueule ouverte. Ses crocs incurvés se plantèrent dans la chair de l’avant-bras puissant de l’homme, traversant le goretex. La bête commença à s’enrouler autour du membre comme un python tandis que Toa se débattait. Il lâcha le coffret un instant, et de sa main libre dégaina le petit couteau à sa ceinture et plongea la lame dans le côté de la tête du monstre. Même mort, son emprise ne se desserrait pas et il fallut scier les ligaments de sa mâchoire pour s’en libérer.</p>
+<p>Le sang de Toa répandait des nuées de ténèbres dans les profondeurs. Il eut grand peine à se calmer et reprendre son souffle, tandis que l’eau salée sur la plaie ouverte lui faisait souffrir le martyr.</p>
+<p>À l’aide d’un câble de télévision, il improvisa un garrot autour de son bras meurtri, cala le coffret sous celui-ci et se mit en route vers la surface. Sa chirurgie de pacotille ne ralentissait que peu le saignement et l’effort lui avait fait consommer beaucoup d’oxygène. Il devait à tout prix remonter avant de se vider de son sang ou de mourir asphyxié, mais il devait aussi prendre son temps, ne pas remonter à la surface trop vite, ou l’azote dans son corps boucherait ses veines et le tuerait sous l’effet de la décompression.
+Lentement mais sûrement, activant ses palmes jaunes, Toa regarda s’éloigner l’épave du Preciosa. Il n’y retournerait sûrement jamais, même s’il survivait. Il serrait son garrot, prenait de grandes inspirations et soufflait ses grosses bulles, pour que le vilain azote quitte son organisme.
+Sa vue se brouillait. Le Preciosa avait disparu. Maia l’attendait là-haut, sur la barque.
+Une main le tira hors de l’eau. Cette fille savait ce qu’elle faisait.</p>
+</br>
+<p>Toa se réveilla sur son lit, dans sa maison, nu, avec un gros bandage sur l’avant-bras. Maia avait dû utiliser toute la gaze de l’armoire à pharmacie pour emballer cet énorme gigot.
+Par la porte, Toa pouvait voir le ciel prendre les couleurs du soir. La jeune femme était allongée à côté de lui, une main posée sur son torse. Elle se redressa.</p>
+<p>— Tu devrais investir dans une armure, à mettre par-dessus ta combi.</p>
+<p>— L’armure elle est en-dessous. C’est à ça que servent les tatouages.</p>
+<p>— Apparemment, ils sont au goût des requins !</p>
+<p>— Pas des requins, des murènes.</p>
+<p>Maia eut une expression de dégoût. Toa se redressa d’un bloc, manquant de la faire du lit.</p>
+<p>— Le coffre !</p>
+<p>— Pas de panique, grand guerrier. Il est là. Même dans les vapes, j’ai eu un mal de chien à te le faire lâcher.</p>
+<p>Le coffret était posé sur la table basse de l’unique pièce de la cabane. Toa bondit hors du lit pour le voir de plus près.</p>
+<p>— Tu l’as ouvert ?</p>
+<p>— Non, je t’attendais. Tu as bravé la mort pour nous le rapporter, à toi l’honneur !</p>
+<p>L’homme tomba à genoux et ses grosses mains firent jouer les deux fermoirs en laiton, libérant le couvercle. Il mit un moment avant de comprendre ce qu’il avait devant lui et laissa finalement échapper un rire jaune.</p>
+<p>— Alors ? C’est quoi ? s’enquit la jeune femme.</p>
+<p>Toa resta silencieux à contempler sa prise. En s’approchant, Maia découvrit que le coffret renfermait seize billes blanches serties d’un cercle de couleur dans des compartiments en feutre vert foncé. Des yeux de verre, tous différents.</p>
+<p>— J’espère que Rangi sera intéressé, ricana Toa par-dessus son épaule.</p>
+</br>
+<hr>
+</br>
+<p><em>Thème : 🎽 · 🤿 · 📦 · 🧿</em></p>
+<p><em>Crédits image : Mitchell Luo sur Unsplash</em></p>
+
+
+
+
+		</main>
+		
+		
+
+	
+
+
+		<!-- Current page: /nouvelles/preciosa/ -->
+	</body>
+</html>
