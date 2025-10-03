@@ -91,7 +91,7 @@ Par la porte, Toa pouvait voir le ciel prendre les couleurs du soir. La jeune fe
 
 — Pas des requins, des murènes.
 
-Maia eut une expression de dégoût. Toa se redressa d’un bloc, manquant de la faire du lit.
+Maia eut une expression de dégoût. Toa se redressa d’un bloc, manquant de la faire tomber du lit.
 
 — Le coffre !
 
