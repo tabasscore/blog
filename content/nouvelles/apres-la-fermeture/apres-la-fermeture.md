@@ -1,6 +1,8 @@
 ---
 title: 04/52 - Après la fermeture
 date : 2025-09-27
+nouvelle_theme : Liminal
+credits:  CJ Juarez sur Unspalsh
 ---
 
 {% image "./banner.jpg", "Les balles colorées d'une piscine à balles" %}
@@ -43,13 +45,4 @@ Pauline est incapable de répondre, ou de bouger. C’est quoi ces masques ?
 Les autres animaux l’imitent et en un instant encerclent Pauline, l’agrippent et la soulèvent du sol. Elle essaie de se débattre, pendant les quelques secondes durant lesquels elle est emportée vers le mur du fond et jetée sans ménagement dans l’embouchure du toboggan. Son corps disparaît dans les ténèbres. Son cri résonne dans le tuyau de plastique. 
 On ne la reverra jamais.
 
-</br>
-
-______
-
-</br>
-
-*Thème : Liminal*
-
-*Crédits image : CJ Juarez sur Unspalsh*
 

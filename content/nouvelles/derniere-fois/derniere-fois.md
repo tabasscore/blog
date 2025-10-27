@@ -1,6 +1,8 @@
 ---
 title: 01/52 - La Dernière Fois
 date: 2025-09-08
+nouvelle_theme : Balade au phare
+credits: Tomás Robertson sur Unslpash
 ---
 {% image "./phare.jpg", "une silhouette s'éloigne d'un phare à l'horizon" %}
 
@@ -160,12 +162,4 @@ Je versai plus de larmes que de pluie ne tomba sur toute la Bretagne ce jour-là
 
 
 
-</br>
 
-______
-
-</br>
-
-*Thème : Balade au phare*
-
-*Crédit image: Tomás Robertson sur Unslpash*
