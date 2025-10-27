@@ -1,6 +1,7 @@
 ---
 title: 02/52 - Par mon pouvoir !
 date:  2025-09-11
+nouvelle_theme : Attention les yeux
 ---
 {% image "./houdin.jpg", "Gravure du 19ème siècle représentant Robert-Houdin réalisant le tour de la suspension éthéréenne." %}
 
@@ -102,9 +103,3 @@ Robert-Houdin se tenait droit, à l’autre bout de la pièce où on venait de f
 — Mon enfant, déjà en dix-huit cent cinquante-sept, on n’émerveillait plus les gens de Paris en faisant disparaître un œuf. Si vous voulez faire carrière, évertuez-vous à faire disparaître un cheval ou un canon d’artillerie, voilà ce que veut le public. Sur les planches du théâtre, l’authentique magie ne vaut pas mieux que la fausse. 
 
 
-</br>
-
-____
-</br>
-
-*Thème : Attention les yeux*

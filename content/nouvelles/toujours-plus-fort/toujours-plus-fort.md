@@ -1,0 +1,34 @@
+---
+title: 08/52 - Toujours plus fort
+date: 2025-10-27
+nouvelle_theme: Bruit
+credits: Jon Del Rivero sur Unslpash
+---
+{% image "./port.jpg", "Photographie d'un port industriel la nuit. On voit les grues, les containers et les entrepots." %}
+
+
+
+La voiture avançait dans les rues du Havre, direction les docks, sans griller de feu ni excès de vitesse. Dans l’habitacle régnait un silence parfait. La paire d’immenses baffles sur la plage arrière restait muette, chose peu commune pour les trois passagers. Rico avait même éteint les néons de la Peugeot 206 : il s’agissait d’être discret. On se scellait la bouche avec une clope, l’œil perçant l’obscurité de la nuit à la recherche du lieu de rendez-vous. De temps à autre, Lyne brisait le silence donnant une indication de la route à prendre, lue sur un SMS.
+
+D’un coup il était là : un mec, ou plutôt une silhouette à capuche, au détour d’un grillage ouvert. La voiture s’arrêta et Rico montra le SMS sur son smartphone au guetteur. Sans un mot, ce dernier lui montra au loin une file de bagnoles garées à l’arrache à l’ombre d’un hangar, et Rico comprit. Il alla parquer son bolide avec les autres et il sortit dans le froid de la nuit, accompagné de Lyne et Fred.
+
+Il fallait veiller tard pour profiter du port sans les dockers. Ces gars bossent jour et nuit. Le créneau était serré pour eux, il fallait faire vite. Alors ils se pressèrent de repasser devant l’ombre plantée à l’entrée, de passer le grillage et filer vers l’entrepôt sur la jetée de béton. Il ne fallait pas rater le spectacle. Ils pénétrèrent dans l’édifice vétuste, pas rassurant. Dedans il faisait presque noir. La lumière était superflue, on ne venait pas regarder, mais entendre. On distinguait quand même une cinquantaine de personnes en un large cercle. Au-dessus de leurs têtes, le toit était ouvert et laissait passer la faible lueur de la lune. De loin, personne ne pourrait s’imaginer la petite sauterie qui se préparait ici. Pour le moment. 
+
+On parlait peu. De toute façon, la plupart des gens ici présents étaient à moitié sourds. Ces hommes, femmes, jeunes, vieux, riches, pauvres, étaient tous des addicts d’un genre rare : c’étaient des accros au bruit. 
+
+Quelques types s’assuraient que personne ne rentre dans le cercle et se tienne directement sous l’ouverture, et surtout sous la star du spectacle : le container suspendu à une grue, prêt à se décrocher d’une minute à l’autre.
+
+Les accros aux bruits commençaient généralement leur carrière dans les concerts de death metal et les rave parties, à se scotcher près des enceintes. Ils choppaient les virus au moment où la vibration se répandait de leurs tympans meurtris vers leur boîte crânienne, leurs côtes, leurs vertèbres et qu’ils se sentaient vivants pour la première fois. Ces gens avaient vu la lumière, ou plutôt l’avaient entendue. Le son trop fort était la seule chose susceptible de secouer leurs carcasses apathiques, anesthésiées par la société de consommation. La pure gifle de l’onde propagée dans l’air, le coup de fouet, il n’y avait que comme ça qu’ils avaient leur dose de dopamine. 
+
+Les types de la sécurité fermèrent la grande porte coulissante par laquelle les trois accros fans de tuning étaient passés. Il s’en était fallu de peu pour rester dehors. Le bâtiment était maintenant clos en dehors de l’ouverture du toit. Ce n’était pas tant par souci de discrétion : la résonnance n’en serait que meilleure.
+
+Évidemment, comme tous les addicts, les accros au bruit cherchaient une dose toujours plus forte. On s’habitue au volume même des sonos les plus puissantes. Leurs tympans flingués, meurtris, cornés, ne vibraient plus autant qu’au premier jour. Alors ce cercle très fermé cherchait et organisait ce genre d’événements, où il se réunissait pour provoquer et entendre un son d’une puissance et d’un timbre hors du commun. Certains venaient de loin, faisaient le tour du monde pour pouvoir avoir ce kick de jouissance, se bousiller un peu plus le nerf auditif. Certains sont morts en s’approchant trop près de volcans prêts à exploser, d’autres ont fini en taule en essayant de passer les grillages à Cap Canaveral pour écouter le blast d’une SpaceX au décollage. Il paraît que ceux-là passent leur temps à exciter les mâtons pour qu’ils donnent des coups de matraque sur les barreaux de leur cage. Un piètre substitut à la vraie drogue.
+Ce soir, la dose était dans la seringue, prête à être injectée : un container MAERSK suspendu à une grue portuaire, prêt à s’écraser sur le sol trente mètres plus bas. Le tout était évidemment volé, et leur présence à tous complètement illégale. Tous scrutaient le rectangle noir dans le ciel, hagards, impatients. 
+
+Une sonnerie déchira le silence, comme un amuse-gueule, faisant sursauter les silhouettes dont les oreilles fonctionnaient le mieux. « On ne bouge plus ! » hurlèrent les gardes. L’excitation monta, le spectacle commençait ! Les addicts tremblèrent comme des feuilles, fébriles dans le silence. Le calme avant la tempête.
+
+Grincement métallique d’un mécanisme de la grue. Le rectangle noir grossit d’un coup, traversa le toit et s’écrasa sur le sol. Une onde de choc, l’éternuement d’un monstre d’airain, un bruit terrible de métal écrasé contre du béton inonda le hangar, résonna quelques dixièmes de secondes dans le container, entre les murs et quelques secondes de plus encore dans le crâne des spectateurs. Et là ce fut l’extase. Pendant un instant leurs acouphènes se turent, puis ils reprirent de plus belle. La vibration les avait traversés, secouant chaque os du fémur à l’étrier, faisant frémir leur sang, retardant le battement de leur cœur. La dopamine envahit leur cerveau, la douleur se mua en plaisir. Un laisser-aller absolu s’empara d’eux. Des jambes se dérobèrent, certains souillèrent leurs sous-vêtements. Un vieux cracha même une dent, il lui en restait peu.
+
+La vague passée, il fallait déjà reprendre ses esprits et filer. Le bruit avait dû s’entendre dans toute la ville, les gardiens de nuit ne tarderaient pas à rappliquer et appeler la police. On se releva. Les quelques évanouis venus accompagnés furent ramassés, ceux venus seuls furent laissés à leur sort et devront s’expliquer avec les autorités.
+Rico, Lyne et Fred sortirent en courant avec les autres et se ruèrent sur la voiture, sourds, extatiques, comme dans un rêve. L’adrénaline de la fuite les empêchait délicieusement de redescendre de leur trip. Rico n’entendit pas le moteur s’allumer, mais la voiture bougea, c’est ce qui comptait. Il n’entendit pas les tours monter à mesure qu’il écrasait l’accélérateur. En tête de file des fuyards, il ne vit que les lumières de la ville filer à travers le pare-brise. Il n’entendit pas non plus la sirène et le moteur de la voiture de police venue d’une rue perpendiculaire.  Les trois amis sentirent une nouvelle onde de choc traverser tous leurs os. Ce fut la dernière.
+

@@ -1,6 +1,8 @@
 ---
 title: 03/52 - En rythme
 date: 2025-09-21
+nouvelle_theme : Symphonie
+credits: Tár, Standard Film Company, EMJAG Productio
 ---
 {% image "./tar.jpg", "Photogramme du film Tár de Todd Field. Une cheffe d'orchestre, de profil, les bras tendu, la tête baissée en avant." %}
 
@@ -57,13 +59,3 @@ Silence.
 Comme un seul homme, tous se lèvent et sortent au pas de l’oie. Le chef d’orchestre, médusé, regarde le flot des musiciens quitter la salle de répétition. Peu de temps après, on entend un grand bruit : quatre-vingt-deux personnes ne peuvent entrer en même temps dans la porte tambour, celle-ci a cédé et les concertistes se dispersent, libres, dans le 16ème arrondissement de Paris.
 
 
-
-
-</br>
-
-____
-</br>
-
-*Thème : Symphonie*
-
-*Crédit image: Tár, Standard Film Company, EMJAG Productions*

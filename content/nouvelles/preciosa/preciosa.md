@@ -1,6 +1,8 @@
 ---
 title: 05/52 - Le trésor du Preciosa
 date:  2025-10-03
+nouvelle_theme : 🎽 · 🤿 · 📦 · 🧿
+credits: Mitchell Luo sur Unsplash
 ---
 {% image "./banner.jpg", "la silhouette d'une épave sous l'eau bleue de l'océan" %}
 
@@ -113,11 +115,3 @@ Toa resta silencieux à contempler sa prise. En s’approchant, Maia découvrit 
 
 
 
-</br>
-
-____
-</br>
-
-*Thème : 🎽 · 🤿 · 📦 · 🧿*
-
-*Crédits image : Mitchell Luo sur Unsplash*
