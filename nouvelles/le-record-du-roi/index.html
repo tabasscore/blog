@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>09/52 - Le Record du Roi</title>
+		<meta name="description" content="Narrative design en analyses">
+		<link rel="icon" type="image/x-icon" href="/img/avatar.png">
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="From Atozi">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="From Atozi">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+		
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+* { box-sizing: border-box; }
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #dad8d8;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #fdff61;
+	--text-color-link-active: #ffc861;
+	--text-color-link-visited: #fdff61;
+
+	--syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #fdff61;
+		--text-color-link-active: #ffc861;
+		--text-color-link-visited: #fdff61;
+
+		--background-color: #0f0e26 ;
+	}
+}
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	color: var(--text-color);
+	
+	height: auto;
+
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+
+/* élargir le body*/
+body {
+	max-width: 80em;
+	--background-color: #080713 ;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+
+	
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+	font-size: larger;
+	text-justify: auto;
+	max-width: 800px;
+	margin-top: 0em;
+	margin-bottom: 0.7em;
+
+}
+
+
+
+li {
+	font-size: larger;
+	line-height: 1.8;
+	margin-top: 0;
+	max-width: 680px;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+main {
+	padding: 1rem;
+	padding-left: 7em;
+	padding-right: 7em;
+	padding-top:2em;
+	min-height: auto;
+	text-align: justify;
+
+}
+main :first-child {
+	margin-top: 0;
+}
+
+header {
+	height: 150px;
+	padding-left: 2% ;
+	background-color: #fdff61;
+	--text-color-link: #000000;
+	--text-color-link-active: #5a210f;
+	--text-color-link-visited: #000000;
+	font-size: 2em;
+	font-family: 'Libre Baskerville', serif;
+}
+header:after {
+	content: "";
+	display: table;
+	clear: both;
+	--background-color: #ad9f1d;
+
+}
+
+.links-nextprev {
+	list-style: none;
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+}
+code {
+	word-break: break-all;
+}
+
+
+
+/* Header */
+header {
+	display: flex;
+	gap: 1em .5em;
+	flex-wrap: wrap-reverse;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px;
+	height: auto;
+}
+.home-link {
+	font-size: 1em; /* 16px /16 */
+	font-weight: 700;
+	margin-right: 2em;
+}
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	font-size: 0.7em;
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+	margin-right: 1em;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav-item a[href]:hover {
+	text-decoration: none;
+
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+	font-weight: bold;
+
+}
+
+/* Posts list */
+.postlist {
+	list-style: none;
+	padding: 0;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+.postlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	font-style: italic;
+	font-size: small;
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 3em;
+}
+.post-metadata time {
+	margin-right: 1em;
+}
+
+/* Direct Links / Markdown Headers */
+.header-anchor {
+	text-decoration: none;
+	font-style: normal;
+	font-size: 1em;
+	margin-left: .1em;
+}
+a[href].header-anchor,
+a[href].header-anchor:visited {
+	color: transparent;
+}
+a[href].header-anchor:focus,
+a[href].header-anchor:hover {
+	text-decoration: underline;
+}
+a[href].header-anchor:focus,
+:hover > a[href].header-anchor {
+	color: #aaa;
+}
+
+
+
+
+h1 {
+	font-family: 'Libre Baskerville', serif;
+
+	color: white;
+}
+
+h2 + .header-anchor {
+
+	font-family: 'Libre Baskerville', serif;
+	font-weight: bold;
+	font-size: 1.5em;
+	color: white;
+}
+
+.site-footer {
+
+	background: orange;
+	color: black;
+	position: relative;
+	min-height: 5%-150px;
+
+}
+
+.site-title{
+	display: flex;
+	flex-grow: 1;
+	gap: 1em .5em;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: right;
+	color: black;
+	font-weight: bolder;
+
+}
+
+ul {
+
+	padding-top: 0;
+
+}
+
+.footer-note {
+	color: grey;
+	font-style: italic;
+	font-size: medium;
+
+}
+
+.button {
+  background-color: #fdff61; /* Green */
+  
+  width: 250px;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 8px;
+  text-decoration: none;
+--text-color-link: #150323;
+--text-color-link-active: #fdff61;
+--text-color-link-visited: #150323;
+}
+
+.button:hover{
+	background-color: #0b3a3b
+}
+@media screen and (max-width: 800px) {
+	main {
+	  padding-left: 2em;
+	  padding-right: 2em;
+	  font-size: smaller;
+	  text-align: justify;
+	}
+
+	p {
+		line-height: 1.5;
+		font-size: larger;
+		text-justify: auto;
+		max-width: 1000px;
+		margin-top: 0em;
+		margin-bottom: 0.7em;
+	
+	}
+  }
+
+picture {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}</style>
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<nav>
+				<h2 class="visually-hidden">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/">Accueil</a></li>
+					<li class="nav-item"><a href="/blog/">Articles</a></li>
+					<li class="nav-item"><a href="/about/me/">À propos</a></li>
+					<li class="nav-item"><a href="/about/portfolio/">Portfolio</a></li>
+					<li class="nav-item"><a href="/writing/">Nouvelles</a></li>
+				
+				</ul>
+			</nav>
+			<div class=site-title>From Atozi<img src="/img/avatar.png" alt="Atozi's logo" width=100 height=100>
+			</div>
+			
+
+		</header>
+
+		<main id="skip">
+			
+<h1>09/52 - Le Record du Roi</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2025-10-31">31/10/2025</time></li>
+	<li><a href="/tags/nouvelles/" class="post-tag">nouvelles</a></li>
+</ul>
+
+
+<p><a href="/img/3GF_-H6bv0-768.jpeg" target="_blank"><picture><source type="image/avif" srcset="/img/3GF_-H6bv0-768.avif 768w"><source type="image/webp" srcset="/img/3GF_-H6bv0-768.webp 768w"><img alt="Gravure du 19ème siècle représentant Robert-Houdin réalisant le tour de la suspension éthéréenne." loading="lazy" decoding="async" src="/img/3GF_-H6bv0-768.jpeg" width="768" height="432"></picture></a></p>
+<p>Le roi Morgon entre dans la pièce et ses conseillers se lèvent comme un seul homme.</p>
+<p>— Père Arnaud, quel est l’ordre du jour ?</p>
+<p>Le valet pousse la chaise sous le royal séant.</p>
+<p>— Oh, assis, assis…</p>
+<p>Les nobles imitent leur suzerain.</p>
+<p>— Alors, quel sujet est si important qu’il me faut interrompre mes classes d’armes ?</p>
+<p>— Eh bien… répond père Arnaud.</p>
+<p>Le prêtre jette des regards fugaces vers les conseillers autour de la table, cherchant l’approbation ou l’encouragement. Les seigneurs, eux, regardent leurs mains, les solives ou le feu dans la cheminée, mais ni le scribe, ni leur roi.</p>
+<p>— Eh bien ?</p>
+<p>— Eh bien il s’agit de la proposition en mariage de votre fille Bardane au roi Fleoch.</p>
+<p>— Ha ! Alors, qu’en est-il ? Avons-nous eu la réponse ? Faut-il commencer les préparatifs ?</p>
+<p>— C’est-à-dire que…</p>
+<p>Le père Arnaud transpire à grosses gouttes.</p>
+<p>— Enfin ! Parlez, mon père ! éructe Morgon.</p>
+<p>— Fleoch refuse, interrompit le seigneur Norbert en roulant des yeux à l’intention de l’ecclésiastique, évitant sciemment de croiser le regard du roi.</p>
+<p>— Pardon ?! Mais comment ?! Comment ose-t-il ?! Quelles sont ses raisons ?!</p>
+<p>— Il… Euh…, bafouille le prêtre.</p>
+<p>— Il refuse d’unir son fils avec la fille de sa majesté, car il l’estime issue d’une… Comment l’a-t-il écrit, père Arnaud ?</p>
+<p>— Je ne pense pas que ce soit nécessaire, mon père, intervient le seigneur Orval, avec un masque de diplomatie.</p>
+<p>— Si, c’est nécessaire ! Qu’est-ce qu’il a écrit ?! De quoi ma fille est-elle issue ?</p>
+<p>— Majesté, je… Je ne peux pas.</p>
+<p>— Enfin, père Arnaud ! Crachez le morceau ou je vous fais écarteler !</p>
+<p>Sachant que la menace n’était pas faite en l’air, Norbert vient au secours du prêtre :</p>
+<p>— La lettre parlait d’une « brute sanguinaire » ? C’est bien cela ?</p>
+<p>Arnaud devient livide à l’évocation du contenu de la lettre du roi Fleoch. Il ne répond rien. Morgon met lui-même une seconde à encaisser le choc.</p>
+<p>— Une brute sanguinaire ?! Qui ça ?! Moi ?! L’empaffé ! Le salopard ! Je lui offre ma fille et c’est comme ça qu’il me remercie ?!</p>
+<p>Le conseil reste silencieux. Il faut à tout prix calmer Morgon, mais Fleoch est difficile à défendre.</p>
+<p>— Enfin, majesté…  Peut-être ses paroles ont-elles dépassé sa pensée ? Peut-être était-ce même un compliment ? Peut-être loue-t-il votre férocité et votre ardeur au combat ?</p>
+<p>— Mon cher Duc de Révanne, si c’était un compliment, pourquoi refuserait-il ma fille ?</p>
+<p>Le conseiller se raidit dans son fauteuil. Morgon est rustre et violent, mais ça n’est pas un imbécile. Un silence de mort flotte autour de la table. Le roi pense. Tout le monde craint ses prochaines paroles. Alors que le sire Norbert ouvre la bouche dans une vaine tentative de trouver les mots justes pour consoler le roi. Ce dernier éclate d’un grand rire en contemplant le bois de la table entre ses deux mains.</p>
+<p>— Tout cela est parfait ! Vraiment !</p>
+<p>La joie soudaine du souverain ne rassure pas les conseillers.</p>
+<p>— Il me fallait un prétexte pour envahir le royaume de Brondice et voilà que ce falot me l’offre sur un plateau !</p>
+<p>— Majesté, vous n’envisagez tout de même pas…</p>
+<p>— C’est la guerre !</p>
+<p>Voilà. La conclusion tant redoutée tombait comme un couperet.</p>
+<p>— Encore ?! répond le sire Norbert. Mais nous sortons à peine de la campagne contre le Duc de Verrière !</p>
+<p>— Certes, et nous n’avons arraché la victoire qu’au prix de la vie de nombreux hommes, abonde le baron De Lambres, sortant de son mutisme.</p>
+<p>— C’est la guerre, je vous dis !</p>
+<p>— Mais, majesté ! C’est la sixième campagne en quatre ans ! Et L’hiver approche ! De surcroit les récoltes n’ont pas été aussi bonnes que prévues, votre peuple ne vous suivra pas, implora le père Arnaud.</p>
+<p>— D’autant qu’une fraction non négligeable de l’ost est déjà mobilisée pour mater les jacqueries des provinces du Sud, intervint Orval. La moitié de mes bannerets s’y attèlent.</p>
+<p>— Alors je devrais me laisser insulter ?</p>
+<p>— Certes, non, Majesté, mais demandez réparation avant de prendre les armes, je vous en conjure par tous les dieux.</p>
+<p>Morgon marque une pause, pensif. Sans lever les yeux de la surface de la table, il reprend la parole :</p>
+<p>— Père Arnaud, vous qui êtes si lettré, vous devez savoir qu’on n’écrit pas les légendes avec des réparations.</p>
+<p>— Je vous demande pardon ?</p>
+<p>Le roi se lève, faisant choir son trône de bois avec fracas. De Lambres, qui s’était réassoupi, sursaute. Le souverain se met à marcher pour faire le tour de la table et lève les mains au ciel dans un mouvement théâtral de son manteau en zibeline.</p>
+<p>—  Messires, dites-moi. Quel est le roi qui a mené le plus de guerres ?</p>
+<p>— Hé bien techniquement…</p>
+<p>— Pas vous, père Arnaud. Vous avez passé votre vie à étudier l’Histoire. Vous pourriez, de tête, me faire la liste de tous les héritiers mort-nés du royaume. Être digne de la mémoire d’un érudit n’est pas un honneur que je recherche. Je veux que dans cent ans le moindre pécore se souvienne de mon nom. Tenez, seigneur De Lambres. Il est notoire que vous êtes analphabète.</p>
+<p>— Sire, je…</p>
+<p>— Quel est le roi qui a mené le plus de guerres ?</p>
+<p>— Eh bien, je… Ne…</p>
+<p>— Vous ne sauriez dire ?</p>
+<p>Un silence. Les seigneurs restent muets face à la question du roi, tandis que le père Arnaud piaffe de répondre à la question. Le souverain reprend :</p>
+<p>— Vous voyez ? Mes ancêtres sont connus pour avoir mené des batailles, certains pour leurs grandes victoires, leurs conquêtes, d’autres pour être tombé vaillamment au champ d’honneur, mais lequel de mes augustes aïeux peut-il s’enorgueillir d’avoir déclaré le plus de guerres ?</p>
+<p>— Enfin, sire… Est-ce vraiment ainsi que vous voulez marquer l’Histoire ? Par le sang ? La douleur ?</p>
+<p>— Et n’est-ce pas là ce qu’il y a de plus marquant ? N’avez-vous pas de vifs souvenirs de vos années d’écuyer à souffrir le rythme de la vie de chevalier ? Ne pouvez-vous pas me conter le jour exact où vous avez reçu chacune de vos cicatrices ?</p>
+<p>— Certes, mais je me souviens aussi de l’amour de ma mère et de veillées au coin du feu.</p>
+<p>— Je ne peux pas veiller avec tous mes sujets. On n’écrit pas de veillées dans les livres d’Histoire. Quant à l’amour, le bas peuple est bien trop ingrat, bien trop inconstant pour s’attendre à ce qu’il me le rende.</p>
+<p>— Tandis que la haine…</p>
+<p>L’impudence du commentaire spontané de De Lambres glace le sang des conseillers.</p>
+<p>— Oui, la haine est facile à susciter, mais ce n’est pas là mon dessein. Peut-on vraiment savoir à quel point on est haï ? Voilà quelque chose qu’on ne peut compter. En revanche, les guerres, les campagnes, les batailles, les ennemis vaincus, les hommes sacrifiés, voilà quelque chose qui se compte aisément. Père Arnaud, qui a mené le plus de guerres ?</p>
+<p>— Eh bien, je dirais qu’il s’agit de Lancrate Le Deuxième. Si l’on compte la victoire éclair pour reprendre la baronnie de Wescoff.</p>
+<p>— Et combien de guerres cela fait-il ?</p>
+<p>— Douze.</p>
+<p>— Douze ?</p>
+<p>Les nobles se prennent le front. L’érudition et la candeur du père Arnaud les mènerait à leur perte. Pourquoi n’avait-il pas réduit les exploits de Lancrate le Deuxième ?</p>
+<p>— Et encore, il n’a pas vécu vieux.</p>
+<p>— Alors je dois bien mener encore six ou sept guerres avant de le dépasser ! Pourvu que je ne meure pas dans l’entreprise.</p>
+<p>Les conseillers se prennent à penser l’inverse. Norbert, qu’on nomme le Hardi, essaie une dernière fois de faire revenir le roi à la raison :</p>
+<p>— Sire, quelles guerres mènerez-vous quand vous n’aurez plus d’hommes ? Plus de gens à gouverner ?</p>
+<p>— Gouverner, sire Norbert, est un métier bien malheureux. Le pouvoir sur les autres hommes n’est qu’un moyen de s’élever et d’inscrire son nom dans l’Histoire. Si pour entrer dans la légende, je dois faire combattre chaque vieillard, rombière ou marmot du royaume jusqu’au dernier, si je dois être le dernier debout sur une terre imbibée du sang de mon peuple, qu’il en soit ainsi. Ma légende sera inoubliable.</p>
+
+
+
+<ul class="links-nextprev">
+    <li><b>Thème :</b> Belliciste</li><li><b>Crédits image :</b> House of the Dragon, HBO </i>
+</ul>
+
+
+
+
+		</main>
+		
+		
+
+	
+
+
+		<!-- Current page: /nouvelles/le-record-du-roi/ -->
+	</body>
+</html>
