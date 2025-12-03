@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>14/52 - L&#39;Auberviliade</title>
+		<meta name="description" content="Narrative design en analyses">
+		<link rel="icon" type="image/x-icon" href="/img/avatar.png">
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="From Atozi">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="From Atozi">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+		
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+* { box-sizing: border-box; }
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #dad8d8;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #fdff61;
+	--text-color-link-active: #ffc861;
+	--text-color-link-visited: #fdff61;
+
+	--syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #fdff61;
+		--text-color-link-active: #ffc861;
+		--text-color-link-visited: #fdff61;
+
+		--background-color: #0f0e26 ;
+	}
+}
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	color: var(--text-color);
+	
+	height: auto;
+
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+
+/* élargir le body*/
+body {
+	max-width: 80em;
+	--background-color: #080713 ;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+
+	
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+	font-size: larger;
+	text-justify: auto;
+	max-width: 800px;
+	margin-top: 0em;
+	margin-bottom: 0.7em;
+
+}
+
+
+
+li {
+	font-size: larger;
+	line-height: 1.8;
+	margin-top: 0;
+	max-width: 680px;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+main {
+	padding: 1rem;
+	padding-left: 7em;
+	padding-right: 7em;
+	padding-top:2em;
+	min-height: auto;
+	text-align: justify;
+
+}
+main :first-child {
+	margin-top: 0;
+}
+
+header {
+	height: 150px;
+	padding-left: 2% ;
+	background-color: #fdff61;
+	--text-color-link: #000000;
+	--text-color-link-active: #5a210f;
+	--text-color-link-visited: #000000;
+	font-size: 2em;
+	font-family: 'Libre Baskerville', serif;
+}
+header:after {
+	content: "";
+	display: table;
+	clear: both;
+	--background-color: #ad9f1d;
+
+}
+
+.links-nextprev {
+	list-style: none;
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+}
+code {
+	word-break: break-all;
+}
+
+
+
+/* Header */
+header {
+	display: flex;
+	gap: 1em .5em;
+	flex-wrap: wrap-reverse;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px;
+	height: auto;
+}
+.home-link {
+	font-size: 1em; /* 16px /16 */
+	font-weight: 700;
+	margin-right: 2em;
+}
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	font-size: 0.7em;
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+	margin-right: 1em;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav-item a[href]:hover {
+	text-decoration: none;
+
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+	font-weight: bold;
+
+}
+
+/* Posts list */
+.postlist {
+	list-style: none;
+	padding: 0;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+.postlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	font-style: italic;
+	font-size: small;
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 3em;
+}
+.post-metadata time {
+	margin-right: 1em;
+}
+
+/* Direct Links / Markdown Headers */
+.header-anchor {
+	text-decoration: none;
+	font-style: normal;
+	font-size: 1em;
+	margin-left: .1em;
+}
+a[href].header-anchor,
+a[href].header-anchor:visited {
+	color: transparent;
+}
+a[href].header-anchor:focus,
+a[href].header-anchor:hover {
+	text-decoration: underline;
+}
+a[href].header-anchor:focus,
+:hover > a[href].header-anchor {
+	color: #aaa;
+}
+
+
+
+
+h1 {
+	font-family: 'Libre Baskerville', serif;
+
+	color: white;
+}
+
+h2 + .header-anchor {
+
+	font-family: 'Libre Baskerville', serif;
+	font-weight: bold;
+	font-size: 1.5em;
+	color: white;
+}
+
+.site-footer {
+
+	background: orange;
+	color: black;
+	position: relative;
+	min-height: 5%-150px;
+
+}
+
+.site-title{
+	display: flex;
+	flex-grow: 1;
+	gap: 1em .5em;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: right;
+	color: black;
+	font-weight: bolder;
+
+}
+
+ul {
+
+	padding-top: 0;
+
+}
+
+.footer-note {
+	color: grey;
+	font-style: italic;
+	font-size: medium;
+
+}
+
+.button {
+  background-color: #fdff61; /* Green */
+  
+  width: 250px;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 8px;
+  text-decoration: none;
+--text-color-link: #150323;
+--text-color-link-active: #fdff61;
+--text-color-link-visited: #150323;
+}
+
+.button:hover{
+	background-color: #0b3a3b
+}
+@media screen and (max-width: 800px) {
+	main {
+	  padding-left: 2em;
+	  padding-right: 2em;
+	  font-size: smaller;
+	  text-align: justify;
+	}
+
+	p {
+		line-height: 1.5;
+		font-size: larger;
+		text-justify: auto;
+		max-width: 1000px;
+		margin-top: 0em;
+		margin-bottom: 0.7em;
+	
+	}
+  }
+
+picture {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}</style>
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<nav>
+				<h2 class="visually-hidden">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/">Accueil</a></li>
+					<li class="nav-item"><a href="/blog/">Articles</a></li>
+					<li class="nav-item"><a href="/about/me/">À propos</a></li>
+					<li class="nav-item"><a href="/about/portfolio/">Portfolio</a></li>
+					<li class="nav-item"><a href="/writing/">Nouvelles</a></li>
+				
+				</ul>
+			</nav>
+			<div class=site-title>From Atozi<img src="/img/avatar.png" alt="Atozi's logo" width=100 height=100>
+			</div>
+			
+
+		</header>
+
+		<main id="skip">
+			
+<h1>14/52 - L&#39;Auberviliade</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2025-12-03">03/12/2025</time></li>
+	<li><a href="/tags/nouvelles/" class="post-tag">nouvelles</a></li>
+</ul>
+
+
+<p><a href="/img/30iCvU6Mzk-1017.jpeg" target="_blank"><picture><source type="image/avif" srcset="/img/30iCvU6Mzk-1017.avif 1017w"><source type="image/webp" srcset="/img/30iCvU6Mzk-1017.webp 1017w"><img alt="Une barre d'immeubles la nuit" loading="lazy" decoding="async" src="/img/30iCvU6Mzk-1017.jpeg" width="1017" height="447"></picture></a></p>
+<p>« Il va jamais sortir. »</p>
+<p>Déjà cinq heures que les quatre gars poireautaient, le cul vissé dans la voiture. Neuf qu’ils étaient partis de Vitry. Ils avaient passé la journée à faire le tour de Paris, à écumer Aubervilliers pour se rencarder et trouver l’adresse.
+« Si ça se trouve c’est pas là, s’inquiète Milos.</p>
+<p>— Mais si, c’est là. C’est sûr. C’est son nom sur l’interphone. » le rassure Oualid.</p>
+<p>Les fenêtres éclairées de la barre d'immeuble se faisaient de plus en plus rare. Il commençait à se faire tard. La police était passée plusieurs fois, mais c’était encore légal d’attendre dans sa bagnole.</p>
+<p>« Je crois que le kebab passe mal, dit Milos.</p>
+<p>— Allah te punit de nous avoir fait perdre une journée, répondit Hakim, le plus sérieusement du monde. T’as pas intérêt à loufer. »</p>
+<p>L’ambiance était délétère dans l’habitacle. Hakim avait d’abord refusé de venir dans cette expédition. Oualid l’avait travaillé au corps pendant presque un quart d’heure pour le convaincre. Il lui avait dit que c’était une question de fierté masculine, qu’il fallait pas se laisser faire par les femmes. Ça avait convaincu Hakim le matin, mais sa patience commençait à franchement s’étioler.</p>
+<p>« Vas-y ça sert à rien là ! On rentre, putain ! » s’énerva le jeune homme sur la banquette arrière, en donnant un coup dans le siège du conducteur. Augustin, au volant, se crispait sur sa cigarette. Dans la cité, Hakim avait sa réputation : il faisait peur à tout le monde. Une force de la nature sans filtre, sans bornes, qui pouvait t’envoyer à l’hôpital d’un coup de poing dans la clavicule, dans ses bons jours. C’est pour ça que les frères Andreovic avaient insisté pour qu’il vienne.</p>
+<p>« Casse les couilles de se peler le cul pour deux pointeurs tchécoslovaques, là !</p>
+<p>— Hé, oh ! » se rebiffa Milos en retournant vers Hakim avec autorité.</p>
+<p>Il était sensible à cette accusation. Lou-Nina — « LN » pour les intimes — avait à peine vingt ans, et lui, près du double. Augustin ne releva pas le fait d’être mis dans le même panier que son frère. Hakim avait des raisons de lui en vouloir. Une autre histoire de meufs.</p>
+<p>« Hé, vous cassez la tête, là, finit par lâcher Augustin pour calmer le jeu. On attend encore un peu, ils vont bientôt sortir.</p>
+<p>— S’il faut ils vont dormir là, répondit Oualid.</p>
+<p>— OK, ben la prochaine fois que quelqu’un rentre, on le suit, on monte et on récupère LN.</p>
+<p>— Mais qui va rentrer ? Il est une heure du mat’ là ! On aurait dû y aller depuis longtemps. »</p>
+<p>Hakim n’avait pas tort. Les Vitriots semblaient bon pour dormir dans la voiture. Augustin commençait à se demander si tout cela valait bien la peine. Milos s’était fait piquer sa meuf, soit, il n’avait qu’à sortir avec des filles de son âge. Ils avaient réussi à savoir que le mec s’appelait Alexandre. Avec son grand frère Victor, ils étaient venus rendre visite à leur cousin à Vitry et par un concours de circonstances étaient venus squatter la même soirée que Milos et Lou. Sûrement une soirée craignos entre quadras où on parlait foot en fumant du mauvais shit sous une lumière blafarde. LN était sûrement la plus belle meuf de la cité, alors évidemment, quand un petit beau gosse de vingt piges s’était pointé, fallait pas s’étonner qu’elle se barre avec. Augustin en était conscient, mais en tant que chef de gang, il fallait se faire respecter. Il fallait montrer qu’on piquait pas meuf de son frère impunément, et montrer qui faisait la loi, même s’il fallait faire la moitié du tour du périph et poireauter toute la nuit.</p>
+<p>« J’ai une idée. dit soudain Oualid, tirant Gus de ses méditations. Venez, prenez les battes. »</p>
+<p>Remontés comme des ressorts, les quatre caïds bondirent hors de la voiture en empoignant tous des barres de fer. Tous, sauf Hakim, les poings serrés dans les poches de son bomber noir.
+Arrivés devant l’interphone, sous le regard médusé de ses trois comparses, Oualid fit passer ses doigts sur tous les boutons d’appel. Après quelques secondes, une voix répondit :</p>
+<p>« Oui ?</p>
+<p>— C’est le livreur, ouvrez. » répondit Oualid en prenant un accent africain. Les autres derrière lui eurent du mal à réprimer un rire.
+Une seconde de flottement, et le buzz caractéristique de la porte électronique se fit entendre. Milos entra comme une flèche, suivi de son frère, de Oualid et enfin d’Hakim. Les quatre hommes riaient, fiers de leur coup. Ils avaient bien fait de prendre Oualid avec eux, c’était un malin. L’appartement de Victor était au quatrième étage, c’étaient là qu’ils se terraient avec Alexandre et Lou. Les Vitriots montèrent les marches quatre à quatre, jusqu’à entendre le bruit de l’ascenseur. Soudain, la vérité frappa Augustin :</p>
+<p>« Oualid, t’as appuyé sur tous les boutons ? »</p>
+<p>L’intéressé ne répondit pas. Ses yeux écarquillèrent quand il réalisa sa connerie. Hakim ne les attendit pas, fit volte-face et descendit les marches encore plus vite qu’il ne les avait montées. Animé par la rage, il se laissait presque choir en bas des marches.
+De retour dans le hall, la porte de l’ascenseur s’ouvrit et Alexandre, Victor et Lou en sortirent. En voyant Hakim, la jeune fille poussa un cri.  Victor, le plus courageux, alla au contact. Hakim, sans une pointe d’hésitation, sortit son cran d’arrêt et le planta dans le jeune homme. Au niveau de l’épaule heureusement, mais ça saignait déjà fort. Lou hurla de plus belle à la vue du sang. Terrifié, Alexandre eut un réflexe, celui de sauver son frère. Il envoya sans réfléchir un coup de pied dans le genou d’Hakim. Alexandre n’était pas un bagarreur, mais un grand chanceux : son adversaire s’effondra devant lui, tombant à la renverse. Il fut cueilli par ses amis, derrière lui, qui venaient seulement de finir de descendre les marches. La belle LN prit les jambes à son cou avec les deux Albertivillariens. Ils montèrent à trois sur un scooter garé devant l’immeuble et filèrent en direction de l’hôpital. Dans le hall, Hakim hurlait à la mort.</p>
+<p>« Qu’est-ce qu’il a ? demanda Milos.</p>
+<p>— Rupture des ligaments croisés, répondit Oualid sur un ton grave. Il a dû arrêter le foot y a cinq ans, c’est pour ça qu’il est toujours aussi vénère.</p>
+<p>— C’est quoi ce bordel ? Je vais appeler la police, interrompit une voix résonnant dans la cage d’escalier.</p>
+<p>— Faut qu’on se barre. » conclut Augustin, sentencieux.</p>
+<p>Alors les quatre Vitriots se barrèrent, Oualid servant de béquille à Hakim, tombé au combat. Les quatre remontèrent dans la voiture et reprirent la route de leur banlieue.
+Une fois sous les lumières jaunes du périph’, alors qu’Hakim calmait sa douleur en tirant sur un joint, Augustin dit pour lui-même : « On reviendra. Faut les défoncer. »</p>
+
+
+
+<ul class="links-nextprev">
+    <li><b>Thème :</b> Iliade</li><li><b>Crédits image :</b> Markus Lenk sur Unsplash </i>
+</ul>
+
+
+
+
+		</main>
+		
+		
+
+	
+
+
+		<!-- Current page: /nouvelles/auberviliade/ -->
+	</body>
+</html>
