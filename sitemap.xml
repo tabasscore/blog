@@ -107,6 +107,21 @@
 	</url>
 	
 	<url>
+		<loc>https://example.com/tags/postmortem/</loc>
+		<lastmod>2026-01-07</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/tags/procedural/</loc>
+		<lastmod>2026-01-07</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/tags/ecriture/</loc>
+		<lastmod>2026-01-07</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://example.com/tags/analyse/</loc>
 		<lastmod>2026-01-07</lastmod>
 	</url>
@@ -123,21 +138,6 @@
 	
 	<url>
 		<loc>https://example.com/tags/take/</loc>
-		<lastmod>2026-01-07</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/tags/postmortem/</loc>
-		<lastmod>2026-01-07</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/tags/procedural/</loc>
-		<lastmod>2026-01-07</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/tags/ecriture/</loc>
 		<lastmod>2026-01-07</lastmod>
 	</url>
 	

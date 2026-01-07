@@ -4,6 +4,7 @@ description: Vais-je vraiment devenir youtuber ?
 date: 2025-12-30
 
 ---
+{% image "./jtt.jpg", "key art du jeu Jump the Track" %}
 
 
 2025 s'achève et vient fatalement l'heure des bilans. Cette année n'aura pas été de tout repos. J'ai eu le plaisir de boucler l'écriture et la production de *Jump the Track,* sorti au mois de Mai dans ce qu'on pourrait qualifier d'indifférence polie. Je suis assez attristé que ce jeu n'ait pas eu les moyens de ses ambitions, ni le temps d'avoir une existence en ligne suffisante pour développer une vraie campagne marketing. Écrire un post-mortem de cette production serait, je pense, bénéfique pour les aspirants créateurs de jeux vidéo voulant sortir un jeu narratif dans le marasme qu'est le marché indépendant de nos jours. Cependant, je suis très fier de ce que nous avons accompli avec Seed by Seed. C'est un jeu original, bizarre, et hautement politique. Il reflète à la fois nos valeurs et nos ambitions créatives, et à ce titre je pense qu'il mérite qu'on s'y attarde. Malheureusement, *Jump the Track* ne semble pas avoir trouvé son public. Ce qui est d'autant plus regrettable quand on lit les critiques Steam du jeu : les gens qui y jouent l'aiment, rient, s'émeuvent de son histoire et de ses personnages. Le propos du jeu trouve un résonnance avec leurs propres aspirations. Ces commentaires positifs mettent du baume au coeur et me font penser que tout ce travail n'aura pas été vain.
