@@ -4,12 +4,29 @@
 	<subtitle>Narrative design en analyses</subtitle>
 	<link href="https://example.com/feed/feed.xml" rel="self"/>
 	<link href="https://example.com/"/>
-	<updated>2025-09-16T00:00:00Z</updated>
+	<updated>2025-12-30T00:00:00Z</updated>
 	<id>https://example.com/</id>
 	<author>
 		<name>Antonin Demeilliez</name>
 		<email>antonin.demeilliez@protonmail.com</email>
 	</author>
+	
+	<entry>
+		<title>Bilan 2025 : vers un horizon nouveau</title>
+		<link href="https://example.com/blog/bilan2025/"/>
+		<updated>2025-12-30T00:00:00Z</updated>
+		<id>https://example.com/blog/bilan2025/</id>
+		<content type="html">&lt;p&gt;2025 s&#39;achève et vient fatalement l&#39;heure des bilans. Cette année n&#39;aura pas été de tout repos. J&#39;ai eu le plaisir de boucler l&#39;écriture et la production de &lt;em&gt;Jump the Track,&lt;/em&gt; sorti au mois de Mai dans ce qu&#39;on pourrait qualifier d&#39;indifférence polie. Je suis assez attristé que ce jeu n&#39;ait pas eu les moyens de ses ambitions, ni le temps d&#39;avoir une existence en ligne suffisante pour développer une vraie campagne marketing. Écrire un post-mortem de cette production serait, je pense, bénéfique pour les aspirants créateurs de jeux vidéo voulant sortir un jeu narratif dans le marasme qu&#39;est le marché indépendant de nos jours. Cependant, je suis très fier de ce que nous avons accompli avec Seed by Seed. C&#39;est un jeu original, bizarre, et hautement politique. Il reflète à la fois nos valeurs et nos ambitions créatives, et à ce titre je pense qu&#39;il mérite qu&#39;on s&#39;y attarde. Malheureusement, &lt;em&gt;Jump the Track&lt;/em&gt; ne semble pas avoir trouvé son public. Ce qui est d&#39;autant plus regrettable quand on lit les critiques Steam du jeu : les gens qui y jouent l&#39;aiment, rient, s&#39;émeuvent de son histoire et de ses personnages. Le propos du jeu trouve un résonnance avec leurs propres aspirations. Ces commentaires positifs mettent du baume au coeur et me font penser que tout ce travail n&#39;aura pas été vain.&lt;/p&gt;
+&lt;p&gt;N&#39;hésitez pas à  &lt;a href=&quot;https://store.steampowered.com/app/1866320/Baladins/&quot; target=&quot;blank&quot;&gt;jouer au jeu sur Steam&lt;/a&gt; et à laisser une review positive, c&#39;est très précieux dans la période actuelle !&lt;/p&gt;
+&lt;p&gt;Un page se tourne, donc. Cette année marque indéniablement pour moi la fin d&#39;un cycle et le début d&#39;un nouveau. Sans trop en dire, ma situation professionnelle a évolué, évolue, et va évoluer prochainement. Tout est encore un peu flou, mais les nuages à l&#39;horizon devraient bientôt se lever.&lt;/p&gt;
+&lt;p&gt;Pour ce qui est de mon activité de commentateur et d&#39;analyste de la narration dans le jeu vidéo, j&#39;ai décidé de commencer à poser mes réflexions sur de nouveaux formats, en particulier en vidéo sur Youtube et Tiktok. Cela fait des années que je regarde des vidéos sur internet et apprend des centaines de choses grâce à cela. On pourrait même dire que j&#39;y ai appris ce que je sais sur l&#39;écriture et le &lt;em&gt;narrative design&lt;/em&gt;, en tout cas les bases qui m&#39;ont permis de me lancer dans ce métier. Depuis le lycée, j&#39;ai des idées de formats, vidéo ou audio, pour parler de jeux vidéo. Si j&#39;ai réussi à en sortir quelques uns (plus accessibles aujourd&#39;hui, heureusement), cela fait bien longtemps que je tourne autour de la création vidéo sans pour autant m&#39;y lancer pleinement.&lt;/p&gt;
+&lt;p&gt;Alors en cette fin d&#39;année, je n&#39;ai pas attendu pour prendre de bonnes résolutions et me jeter à l&#39;eau. Mon idée première est d&#39;essayer de délivrer mes réflexions et mes idées sur le &lt;em&gt;narrative design&lt;/em&gt; dans des formats courts et pop, taillés pour la consommation contemporaine de contenu. Je pense que les contraintes du format seront pour moi un bon exercice d&#39;écriture, tout comme peut l&#39;être l&#39;écriture de micro-nouvelles. Cependant j&#39;ai aussi envie de développer mon propos sur des formats plus longs, comparables aux articles de blog. Ces derniers ont été trop rares cette année, j&#39;ai sous le coude un brouillon d&#39;article que je peine à boucler. Le format vidéo est pour moi un espace que je ressens comme moins exigent et qui me permet de m&#39;exprimer plus librement. Vous pouvez donc m&#39;écouter parler dans une longue vidéo dans laquelle je fais mon bilan de l&#39;année 2025  :&lt;/p&gt;
+&lt;div class=&quot;frame&quot;&gt;  &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/T2x3bJHszx0?si=V_bIBRgVuqUuAmFy&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt; &lt;br&gt; &lt;/div&gt;
+&lt;br&gt;
+&lt;p&gt;
+N&#39;hésitez pas à vous abonner à la chaîne pour me donner un petit coup de pouce. J&#39;espère varier les formats pour faire exister des choses que j&#39;ai en tête depuis longtemps. C&#39;est un peu le mot d&#39;ordre de cette nouvelle année : faire exister les idées ! Je vous souhaite aussi de faire exister vos idées, et une très bonne année 2026 !&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Arcane : la quête du cool</title>
