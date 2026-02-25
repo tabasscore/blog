@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Avowed, le colonialisme dans le sang</title>
+		<meta name="description" content="Peut-on faire un jeu de rôle décolonial avec des vieilles recettes ?">
+		<link rel="icon" type="image/x-icon" href="/img/avatar.png">
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="From Atozi">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="From Atozi">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+		
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+* { box-sizing: border-box; }
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #dad8d8;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #fdff61;
+	--text-color-link-active: #ffc861;
+	--text-color-link-visited: #fdff61;
+
+	--syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #fdff61;
+		--text-color-link-active: #ffc861;
+		--text-color-link-visited: #fdff61;
+
+		--background-color: #0f0e26 ;
+	}
+}
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	color: var(--text-color);
+	
+	height: auto;
+
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+
+/* élargir le body*/
+body {
+	max-width: 80em;
+	--background-color: #080713 ;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+
+	
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+	font-size: larger;
+	text-justify: auto;
+	max-width: 800px;
+	margin-top: 0em;
+	margin-bottom: 0.7em;
+
+}
+
+
+
+li {
+	font-size: larger;
+	line-height: 1.8;
+	margin-top: 0;
+	max-width: 680px;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+main {
+	padding: 1rem;
+	padding-left: 7em;
+	padding-right: 7em;
+	padding-top:2em;
+	min-height: auto;
+	text-align: justify;
+
+}
+main :first-child {
+	margin-top: 0;
+}
+
+header {
+	height: 150px;
+	padding-left: 2% ;
+	background-color: #fdff61;
+	--text-color-link: #000000;
+	--text-color-link-active: #5a210f;
+	--text-color-link-visited: #000000;
+	font-size: 2em;
+	font-family: 'Libre Baskerville', serif;
+}
+header:after {
+	content: "";
+	display: table;
+	clear: both;
+	--background-color: #ad9f1d;
+
+}
+
+.links-nextprev {
+	list-style: none;
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+}
+code {
+	word-break: break-all;
+}
+
+
+
+/* Header */
+header {
+	display: flex;
+	gap: 1em .5em;
+	flex-wrap: wrap-reverse;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px;
+	height: auto;
+}
+.home-link {
+	font-size: 1em; /* 16px /16 */
+	font-weight: 700;
+	margin-right: 2em;
+}
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	font-size: 0.7em;
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+	margin-right: 1em;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav-item a[href]:hover {
+	text-decoration: none;
+
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+	font-weight: bold;
+
+}
+
+/* Posts list */
+.postlist {
+	list-style: none;
+	padding: 0;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+.postlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	font-style: italic;
+	font-size: small;
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 3em;
+}
+.post-metadata time {
+	margin-right: 1em;
+}
+
+/* Direct Links / Markdown Headers */
+.header-anchor {
+	text-decoration: none;
+	font-style: normal;
+	font-size: 1em;
+	margin-left: .1em;
+}
+a[href].header-anchor,
+a[href].header-anchor:visited {
+	color: transparent;
+}
+a[href].header-anchor:focus,
+a[href].header-anchor:hover {
+	text-decoration: underline;
+}
+a[href].header-anchor:focus,
+:hover > a[href].header-anchor {
+	color: #aaa;
+}
+
+
+
+
+h1 {
+	font-family: 'Libre Baskerville', serif;
+
+	color: white;
+}
+
+h2 + .header-anchor {
+
+	font-family: 'Libre Baskerville', serif;
+	font-weight: bold;
+	font-size: 1.5em;
+	color: white;
+}
+
+.site-footer {
+
+	background: orange;
+	color: black;
+	position: relative;
+	min-height: 5%-150px;
+
+}
+
+.site-title{
+	display: flex;
+	flex-grow: 1;
+	gap: 1em .5em;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: right;
+	color: black;
+	font-weight: bolder;
+
+}
+
+ul {
+
+	padding-top: 0;
+
+}
+
+.footer-note {
+	color: grey;
+	font-style: italic;
+	font-size: medium;
+
+}
+
+.button {
+  background-color: #fdff61; /* Green */
+  
+  width: 250px;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 8px;
+  text-decoration: none;
+--text-color-link: #150323;
+--text-color-link-active: #fdff61;
+--text-color-link-visited: #150323;
+}
+
+.button:hover{
+	background-color: #0b3a3b
+}
+@media screen and (max-width: 800px) {
+	main {
+	  padding-left: 2em;
+	  padding-right: 2em;
+	  font-size: smaller;
+	  text-align: justify;
+	}
+
+	p {
+		line-height: 1.5;
+		font-size: larger;
+		text-justify: auto;
+		max-width: 1000px;
+		margin-top: 0em;
+		margin-bottom: 0.7em;
+	
+	}
+  }
+
+picture {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.frame {
+
+
+    display: flex; 
+    max-width: 800px;
+    justify-content: center;
+    align-items: center;
+}</style>
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<nav>
+				<h2 class="visually-hidden">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/">Accueil</a></li>
+					<li class="nav-item"><a href="/blog/">Articles</a></li>
+					<li class="nav-item"><a href="/about/me/">À propos</a></li>
+					<li class="nav-item"><a href="/about/portfolio/">Portfolio</a></li>
+					<li class="nav-item"><a href="/writing/">Nouvelles</a></li>
+				
+				</ul>
+			</nav>
+			<div class=site-title>From Atozi<img src="/img/avatar.png" alt="Atozi's logo" width=100 height=100>
+			</div>
+			
+
+		</header>
+
+		<main id="skip">
+			
+<h1>Avowed, le colonialisme dans le sang</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2026-02-25">25/02/2026</time></li>
+	<li><a href="/tags/jdr/" class="post-tag">jdr</a>, </li>
+	<li><a href="/tags/politique/" class="post-tag">politique</a></li>
+</ul>
+
+<p><a href="/img/wahkUNO_vq-1920.jpeg" target="_blank"><picture><source type="image/avif" srcset="/img/wahkUNO_vq-1920.avif 1920w"><source type="image/webp" srcset="/img/wahkUNO_vq-1920.webp 1920w"><source type="image/png" srcset="/img/wahkUNO_vq-1920.png 1920w"><img alt="Screenshot du jeu Avowed. On y voit des ruines anciennes en coupoles sur un fond de nuit étoilée." loading="lazy" decoding="async" src="/img/wahkUNO_vq-1920.jpeg" width="1920" height="1080"></picture></a></p>
+<p><strong>Après <em>The Outer Worlds</em> et son Far West capitaliste spatial, Obsidian continue de revisiter l'histoire de l'Amérique avec <em>Avowed</em>. Le jeu propose une critique de la colonisation des Amériques à travers son univers de fantasy. Pourtant, un malaise subsiste quand on joue au jeu. Pourquoi ? Parce que le <em>gameplay</em> ne semble pas raconter la même histoire.</strong></p>
+<h2 id="american-history" tabindex="-1">American History <a class="header-anchor" href="#american-history">#</a></h2>
+<p><em>Avowed</em> nous fait incarner l'émissaire d'un empire colonial envoyé sur un continent peuplé par des descendants de colons : les Terres Vivantes. Ses habitants sont aux prises avec une peste d'origine magique : le Malrêve. Sous couvert d'envoyer quelqu'un pour les aider, l'empire d'Aedyr compte bien resserrer son emprise sur eux, et surtout sur les gisements d'Adra, un minerai magique d'une grande valeur. Il est facile de tirer des parallèles entre le contexte et les enjeux d'<em>Avowed</em> et l'histoire réelle de la colonisation du continent américain, notamment de l'Amérique du Sud. C'est ce qu'a fait le journaliste brésilien Gabriel Zissou sur le site Safezonegames (article en portugais), qui relève comment les colons portugais ont accaparé les ressources du Brésil comme Aedyr avec l'Adra et comment le Malrêve semble être une métaphore des maladies que les européens ont apportées avec eux et qui ont décimé les populations locales.</p>
+<p><a href="/img/YxReUBn9is-1920.jpeg" target="_blank"><picture><source type="image/avif" srcset="/img/YxReUBn9is-1920.avif 1920w"><source type="image/webp" srcset="/img/YxReUBn9is-1920.webp 1920w"><source type="image/png" srcset="/img/YxReUBn9is-1920.png 1920w"><img alt="Screenshot du jeu Avowed. On y voit un gigantesque cristal bleu dans un temple à colonnes recouvertes de végétation. La lumière provient d'un trou circulaire dans le plafond." loading="lazy" decoding="async" src="/img/YxReUBn9is-1920.jpeg" width="1920" height="1080"></picture></a></p>
+<p><em>Le précieux Adra, nerf de la guerre dans le monde magique d'Avowed.</em></p>
+<p>À travers les Terres Vivantes, <em>Avowed</em> évoque aussi l'histoire des États-Unis. Ses premiers colons rappellent ceux arrivés à bord de navires comme le Mayflower pour s'installer sur une terre supposément vierge et hostile, qu'il a fallu dompter pour survivre ; des colons qui peu à peu ont voulu prendre leur indépendance sur le grand empire Britannique, incarné dans <em>Avowed</em> par Aedyr. De plus, l'espace aux abords de la nature sauvage où vivent les habitants des Terres Vivantes est qualifié de « <em>frontier</em> » en version originale, un terme lourd de sens puisque c'est celui qui désignait l'avancée de la colonisation pendant la conquête de l'Ouest. Obsidian est coutumier du fait : déjà dans <em>The Outer Worlds</em> l'imaginaire du western était convoqué avec ses chapeaux de cow-boy et son capitalisme débridé. Que ce soit dans l'espace futuriste ou dans un monde de fantasy, le studio d'Irvine semble vouloir parler de son pays d'origine dans ses productions récentes, et souvent dans l'optique le questionner, voire le critiquer.</p>
+<h2 id="le-mythe-du-bon-colon" tabindex="-1">Le mythe du bon colon <a class="header-anchor" href="#le-mythe-du-bon-colon">#</a></h2>
+<p>Très vite, on comprend que le colonialisme sera au cœur des thématiques d'<em>Avowed</em>. Au fil de l'histoire, le choix nous sera donné d'aider l'Empire à consolider son emprise, ou au contraire d'aider les populations « locales » (en réalité, déjà des colons de deuxième ou troisième génération) à disposer d'elles-mêmes et garder leur indépendance. Cette tension est au cœur des arcs narratifs des différentes quêtes, et particulièrement de la quête principale.</p>
+<p>Et c'est là que le récit d'<em>Avowed</em> pose un premier problème. Si le jeu donne l'impression que l'on va pouvoir avoir une action anticolonialiste, il n'en est rien. Le fait même de sous-entendre la possibilité que les représentants de l'empire puissent œuvrer à la libération des peuples est déjà une manière d'ériger le mythe du « bon colon ». Le colonisateur, lui-même, aurait le choix d'aider les populations locales et aurait le pouvoir et la capacité d'être leur libérateur. Les colons du monde réel auraient été méchants par essence alors qu'ils auraient pu choisir d'aider les populations locales. C'est une manière de rassurer le joueur, certainement imaginé, en premier lieu, comme américain, en lui montrant qu'une autre voie est possible dans le colonialisme. C'est évidemment nier tout le système raciste dans lequel le colonialisme a fondé son origine, et les mécaniques de pensée dans lesquelles les colonisateurs étaient enfermés.</p>
+<p><a href="/img/3rAIMfAPbi-1920.jpeg" target="_blank"><picture><source type="image/avif" srcset="/img/3rAIMfAPbi-1920.avif 1920w"><source type="image/webp" srcset="/img/3rAIMfAPbi-1920.webp 1920w"><source type="image/png" srcset="/img/3rAIMfAPbi-1920.png 1920w"><img alt="Screenshot du jeu Avowed. Une scène de dialogue avec le personnage de Kai. Ce dernier dit 'Et vous devez choisir un camp. Autant dire que je ne vous envie pas.' On peut répondre trois possibilités : '1. Aedyr est mon foyer. Je ne peux simplement pas tourner le dos à mon peuple. 2. J'ai été envoyé pour arrêter un fléau, pas mener une guerre. 3. Le peuple des terres vivantes mérite la liberté. Je n'aiderai personne à les soumettre.'" loading="lazy" decoding="async" src="/img/3rAIMfAPbi-1920.jpeg" width="1920" height="1080"></picture></a></p>
+<p><em>Le choix moral fondamental du personnage : tourner le dos à sa nation ou aider les peuples à disposer d'eux-mêmes ?</em></p>
+<p>De plus, dans <em>Avowed</em>, il n'est jamais posé la question d'aider les peuples premiers des Terres Vivantes. Les habitants des villes sont présentés comme les colonisés, mais sont aussi les colonisateurs. Les Ékidiens, premiers habitants du continent, tiennent d'ailleurs plus des Atlantes que des Mayas, puisqu'ils ont tous disparu dans un cataclysme, laissant derrière eux de nombreuses ruines à travers les Terres Vivantes vierges, et n'ont jamais eu de contact avec les peuples colonisateurs. Les seuls peuples pré-colonisation présentés dans <em>Avowed</em> semblent être les Xaurips. Ce sont des hommes lézards vivant dans des campements disséminés dans les zones sauvages. Ils portent des vêtements et des bijoux, utilisent des armes, fabriquent des poteries et des tentes, et peignent sur les parois des cavernes pour, semble-t-il, vénérer des dieux. Tout cela semble donner l'indication que les Xaurips sont des êtres intelligents, fait d'ailleurs confirmé par une quête secondaire très tôt dans le jeu. De plus, leur représentation les rapproche des peuples natifs américains. Pourtant, jamais dans le jeu il ne nous est donné l'occasion d'interagir avec eux autrement que par le combat, ou plutôt par le massacre, voire le génocide. Un joueur consciencieux aura tôt fait de débarrasser la carte de toutes ces créatures et <em>Avowed</em> n'hésite pas à faire de cette métaphore des peuples natifs de simples <em>trash mobs</em>. Et au-delà de ces êtres doués de raison, les animaux et les plantes vont aussi subir notre soif de pillage. Les scarabées géants, les champignons humanoïdes seront exterminés. On peut cueillir de nombreuses plantes pour les consommer et fabriquer des remèdes. Rien de bien original, me direz-vous : nous sommes dans un jeu de rôle traditionnel. Et c'est bien là, selon moi, le problème.</p>
+<p><a href="/img/H3Rnr-5skq-1920.jpeg" target="_blank"><picture><source type="image/avif" srcset="/img/H3Rnr-5skq-1920.avif 1920w"><source type="image/webp" srcset="/img/H3Rnr-5skq-1920.webp 1920w"><source type="image/png" srcset="/img/H3Rnr-5skq-1920.png 1920w"><img alt="Screenshot du jeu Avowed. On y voit une statue représentant une créature à grande bouche, grande dents, yeux ronds et langue tendue, au milieu de ce qui ressemble à des algues et des coraux, mais en plein désert." loading="lazy" decoding="async" src="/img/H3Rnr-5skq-1920.jpeg" width="1920" height="1080"></picture></a></p>
+<p><em>L'art Xaurip. N'en parlez pas au Musée du Quai Branly.</em></p>
+<h2 id="hypocrisie-ludonarrative" tabindex="-1">Hypocrisie ludonarrative <a class="header-anchor" href="#hypocrisie-ludonarrative">#</a></h2>
+<p>La progression dans <em>Avowed</em> suit les codes du jeu de rôle traditionnel. On explore à la recherche de trésors pour améliorer notre équipement, on tue des ennemis pour gagner de l'expérience et devenir plus fort. Les Terres Vivantes, notre terrain de jeu, ont été conçues à la main, et présentent un contenu fini. Chaque coffre, chaque ennemi, a été posé à la main et ne réapparaîtra pas. Tout ce qui est pris ou détruit le reste pour de bon. Le jeu consiste donc à littéralement dépeupler le continent, le vider de sa faune et de sa flore, laissant des terres plus aussi vivantes après votre passage.</p>
+<p>Le problème d'<em>Avowed</em> réside dans les verbes d'action proposés aux joueurs et joueuses : on ne peut que prendre et tuer. Si le jeu est magnifique et suscite bien souvent la contemplation, le <em>gameplay</em> nous conditionne à ne voir ces paysages que comme une terre à conquérir, à soumettre, à piller. On explore chaque recoin à la recherche de la moindre miette de richesse, on tue la moindre créature parce qu'elle nous rendra plus puissant. Cette mécanique confine au ridicule quand, bien souvent, on se retrouve à piller les maisons de gens qu'on nous a présentés comme mourant de faim. Le jeu ne nous en tiendra jamais rigueur, n'adressera jamais ce pillage par une conséquence négative. Le système de jeu valide cette manière d'appréhender le monde, il l'encourage. On peut faire les choix les plus &quot;pro-Terres Vivantes&quot; lors des dialogues et des quêtes, le jeu nous oblige à ruiner ces terres par le biais du <em>gameplay</em>.</p>
+<p><a href="/img/2hG3cLwjgR-1920.jpeg" target="_blank"><picture><source type="image/avif" srcset="/img/2hG3cLwjgR-1920.avif 1920w"><source type="image/webp" srcset="/img/2hG3cLwjgR-1920.webp 1920w"><source type="image/png" srcset="/img/2hG3cLwjgR-1920.png 1920w"><img alt="Screenshot du jeu Avowed. Un paysage forestier, paisible, au lever du soleil." loading="lazy" decoding="async" src="/img/2hG3cLwjgR-1920.jpeg" width="1920" height="1080"></picture></a></p>
+<p><em>À perte de vue, un si beau paysage à soumettre, piller et vider de ses habitants.</em></p>
+<p>C'est donc, comme bien souvent, d'un problème de dissonance ludonarrative que vient le malaise d'<em>Avowed</em>. Le système de jeu, les actions qu'on peut y faire, entrent en contradiction directe avec ce que l'œuvre aimerait bien nous raconter. La vague critique de l'action coloniale Aedyrienne ne s'accompagne jamais d'une véritable possibilité pour le joueur ou la joueuse de mettre cette critique en action. Le <em>gameplay</em> est donc lui-même fondé sur un mode de pensée colonisateur, et il est impossible de faire un choix différent. Impossible de laisser la faune tranquille ou de ne pas chercher à piller le continent : c'est la seule manière de faire progresser son personnage, et la prévalence du combat dans le jeu rend nécessaire de devenir plus fort. Aucun système de <em>gameplay</em> ne nous permet de protéger la faune locale, replanter des arbres ou restituer des objets volés aux populations locales. Cela aurait pu donner lieu à des mécaniques intéressantes. Par exemple : récupérer les biens spoliés par l'Empire pour les rendre aux Xaurips et autres habitants des Terres Vivantes. Mais <em>Avowed</em> est enfermé dans des carcans de <em>gameplay</em> et ne peut les dépasser pour proposer une manière de jouer non-coloniale.</p>
+<h2 id="main-character-syndrom" tabindex="-1">Main-character Syndrom <a class="header-anchor" href="#main-character-syndrom">#</a></h2>
+<p>Cette dissonance atteint son paroxysme à la fin du jeu, quand c'est au personnage principal de choisir, seul, le destin réservé aux Terres Vivantes. On peut certes choisir de rendre le pouvoir aux locaux, mais ceux-ci acceptent docilement notre choix, voire nous encouragent à choisir pour eux. La promesse éternelle du RPG est de nous faire incarner un héros agissant dont les choix auront un impact sur le monde. Cette image de l'homme providentiel, cette <em>power fantasy</em>, est une incarnation de la pensée libérale. Elle est la négation du collectif, du pouvoir du peuple et des mouvements sociaux. L'homme blanc sauveur arrive en terres inconnues pour façonner le monde de ses actions et imposer ses choix. Il est le héros de sa propre histoire, mais aussi de celle des autres.</p>
+<p><a href="/img/iYUmV9SseQ-1920.jpeg" target="_blank"><picture><source type="image/avif" srcset="/img/iYUmV9SseQ-1920.avif 1920w"><source type="image/webp" srcset="/img/iYUmV9SseQ-1920.webp 1920w"><source type="image/png" srcset="/img/iYUmV9SseQ-1920.png 1920w"><img alt="Screenshot du jeu Avowed. Dialogue avec l'ambassadeur Falscen Hylgard. Ce dernier dit : 'Alors ? Paradis est plongée dans le chaus, alors cessons de nous tourner les pouces.' On peut lui répondre 5 possibilités: '1. Le mieux serait que les Terres vivantes deviennent une colonie officielle d'Aedyr. 2. Je pense que nous devrions tenter de former un gréfram. 3. Je pense que nous devrions nous battre pour l'union des Terres vivantes. 4. Les dirigeants des Terres vivantes vont voter, et j'accepterai leur décision. 5. Je dois être aux côtés de Lödwyn et du Garrot d'acier.'" loading="lazy" decoding="async" src="/img/iYUmV9SseQ-1920.jpeg" width="1920" height="1080"></picture></a></p>
+<p><em>Le choix final du jeu.</em></p>
+<p>On aurait facilement pu imaginer une tournure des événements où, ayant favorisé l'indépendance des Terres Vivantes pendant notre partie, ce choix final nous serait enlevé. Les leaders locaux nous auraient gentiment remerciés pour notre aide et auraient repris les choses en main, imposant leur vision collective et légitime, plutôt qu'attendre qu'on leur dise quoi faire. Cela aurait impliqué de déposséder les joueurs et joueuses du sacro-saint pouvoir de choisir, une hérésie en termes de <em>game design</em>, mais une hérésie porteuse d'un sens fort. Cette pirouette de design aurait aussi permis de mettre les joueurs et joueuses face aux conséquences de leurs actes passés dans tout le jeu, ce qui aurait certes été moins cool que de donner à choisir la sentence de tout un peuple, mais aurait certainement été plus satisfaisant d'un point de vue de la cohérence globale du récit. Abandonner la position de personnage principal, savoir se mettre en retrait pour laisser parler les concernés, ne plus usurper leur parole, aurait été une belle manière de porter un message décolonial à travers le <em>gameplay</em>.</p>
+<h2 id="le-changement-ne-viendra-pas-des-puissants" tabindex="-1">Le changement ne viendra pas des puissants <a class="header-anchor" href="#le-changement-ne-viendra-pas-des-puissants">#</a></h2>
+<p>Ce qui tue le message d'<em>Avowed</em>, c'est donc son allégeance aveugle aux systèmes de <em>gameplay</em> du jeu de rôle. Ces systèmes, rappelons-le, ont été développés à partir des années 70 sur la base de <em>Donjons et Dragons</em>, une œuvre américaine elle-même descendue du <em>wargame</em>, la simulation militaire. Difficile dans ces conditions d'utiliser ces systèmes pour raconter une histoire qui s'écarte de l'impérialisme américain. Obsidian, semble vouloir proposer une critique de cet impérialisme, mais ne fait pas mouche, car ce récit est porté par des mécaniques de jeu fondées sur la violence et l'accaparement des richesses d'autrui. Le constat est sans appel : si aujourd'hui on veut faire mûrir le jeu de rôle, le faire raconter de nouvelles histoires porteuses de propos politiques, il faut en faire évoluer les systèmes et, pour cela, il faut expérimenter. Or, on sait la difficulté qu'ont les studios de jeux vidéo à expérimenter dans l'économie actuelle. Pourtant, Obsidian, avec son historique et la renommée attachée à son nom, pourrait être justement en position de proposer de nouvelles voix, de nouvelles manières d'appréhender le genre, mais la frilosité et la recherche de la sacro-sainte efficacité (et du fun) semblent les en empêcher.</p>
+
+<ul class="links-nextprev"><li>Article prédécent: <a href="/blog/bilan2025/">Bilan 2025 : vers un horizon nouveau</a></li>
+</ul>
+
+
+
+		</main>
+		
+		
+
+	
+
+
+		<!-- Current page: /blog/avowed/ -->
+	</body>
+</html>
