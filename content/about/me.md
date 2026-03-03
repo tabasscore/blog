@@ -28,7 +28,7 @@ Aujourd'hui, j'ai donc une approche **rationnelle et technique** de l'art du *ga
 <hr class="solid">
 
 # Interviews
-- <a href="https://pod.link/PQTJ/episode/NTk4YWE1ZDgtNjNmNC00N2IxLWFjYzktMjJkOWY5OTg3ZmY1" target="_blank" >À quoi tu joues ?</a> (Podcast, 2026)
+- <a href="https://pod.link/PQTJ/episode/NTk4YWE1ZDgtNjNmNC00N2IxLWFjYzktMjJkOWY5OTg3ZmY1" target="_blank" >Pourquoi tu joues ?</a> (Podcast, 2026)
 - <a href="https://indie500.lepodcast.fr/jump-the-track-le-visual-novel-qui-croise-le-pachinko-slash-indie-500" target="_blank" >Indie500</a> (Podcast, 2025)
 - <a href="https://playstationinside.fr/conversation-interview-antonin-demeilliez-narrative-designer-baladins" target="_blank">PSI</a> (2024)
 - <a href="https://www.youtube.com/watch?v=DFAFH3VBrew" target="_blank">Games Made In France 2024</a> (Vidéo, 2024)
