@@ -58,6 +58,10 @@ Vous pourrez trouver ici mon mémoire intitulé "Le Glitch comme moyen de révol
 🐘 <a href="https://mastodon.gamedev.place/@atozi" target="_blank">Mastodon</a> </br>
 🦋 <a href="https://bsky.app/profile/atozi.bsky.social" target="_blank">Bluesky</a> </br>
 🟦 <a href="https://www.linkedin.com/in/antonin-demeilliez/" target="_blank">Linkedin</a> </br>
+📹 <a href="https://www.youtube.com/@atozi_nd" target="_blank">Youtube</a> </br>
+📺  <a href="https://www.twitch.tv/atozi_" target="_blank">Twitch</a> </br>
+
+
 </br>
 </br>
 </br>
