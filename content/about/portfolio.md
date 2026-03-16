@@ -246,7 +246,29 @@ Réflexion sur la notion de première et troisième personne dans une fiction in
 </div>
 </div>
 
-<hr class="solid">
+<div style = "max-width:800px">
+
+  <hr class="solid">
+
+</div>
+
+# Création de contenu 📹
+
+Depuis fin 2025, j'ai lancé mes chaînes Youtube et Tiktok pour créer des vidéos sur le thème du game design et du narrative design, notamment à travers des formats courts.
+
+<div style = "max-width:800px; padding-right:100px">
+<div style="text-align: center;">
+    </br>
+    <a href="https://www.youtube.com/@atozi_nd" class="button" target="_blank" >Voir sur Youtube</a>
+    <a href="https://www.tiktok.com/@atozi_nd" class="button" target="_blank" >Voir sur Tiktok</a> </br></br>
+</div>
+</div>
+
+<div style = "max-width:800px">
+
+  <hr class="solid">
+
+</div>
 
 # Cours 📖
 J'ai la chance de pouvoir donner des cours de *game design* dans différents établissements universitaires.
