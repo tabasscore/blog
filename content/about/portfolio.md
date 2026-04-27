@@ -274,8 +274,9 @@ Depuis fin 2025, j'ai lancé mes chaînes Youtube et Tiktok pour créer des vid�
 J'ai la chance de pouvoir donner des cours de *game design* dans différents établissements universitaires.
 
 - Le design de jeux mobile (CNAM ENJMIN, Sorbonne Paris Nord, depuis 2022)
-- Introduction au *narrative design* (Sorbonne Paris Nord, depuis 2025)
-- La Conception de jeux vidéo (Paris 3 Sorbonne Nouvelle, depuis 2024)
+- Introduction au *narrative design* (Sorbonne Paris Nord, depuis 2025 / Les Gobelins, formation IDE, depuis 2026)
+- La Conception de jeux vidéo (Paris 3 Sorbonne Nouvelle, depuis 2023)
 - *UX design* appliqué au jeu vidéo (Futurae, 2020)
+- Écriture de dialogues (Paris 3 Sorbonne Nouvelle, depuis 2025)
 
 
